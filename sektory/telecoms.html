@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4YS3XQQPJ2');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 pre operátorov telekomunikácií na Slovensku — požiadavky 2026</title>
+  <meta name="description" content="NIS2 povinnosti pre telekomových operátorov, ISP a poskytovateľov CDN na Slovensku. Bezpečnosť sieťovej infraštruktúry, hlásenie incidentov a zákonné odposlúchavanie — deadline 2026.">
+  <link rel="canonical" href="https://nis2-nastroje.sk/sektory/telecoms.html">
+  <meta property="og:title" content="NIS2 pre operátorov telekomunikácií na Slovensku — požiadavky 2026">
+  <meta property="og:description" content="NIS2 povinnosti pre telekomových operátorov, ISP a poskytovateľov CDN na Slovensku. Bezpečnosť sieťovej infraštruktúry, hlásenie incidentov a zákonné odposlúchavanie — deadline 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.sk/sektory/telecoms.html">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="NIS2-Nastroje.sk">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 pre operátorov telekomunikácií na Slovensku — požiadavky 2026">
+  <meta name="twitter:description" content="NIS2 povinnosti pre telekomových operátorov, ISP a poskytovateľov CDN na Slovensku. Bezpečnosť sieťovej infraštruktúry, hlásenie incidentov a zákonné odposlúchavanie — deadline 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domovská stránka",
+      "item": "https://nis2-nastroje.sk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-nastroje.sk/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 pre telekomových operátorov a ISP na Slovensku — Essential entity požiadavky do 2026",
+      "item": "https://nis2-nastroje.sk/sektory/telecoms.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Aká veľkosť outage vyžaduje hlásenie NBÚ podľa NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hlásenie je povinné ak výpadok postihne viac ako 3 % vašich abonentov alebo aspoň 1 000 absolútne abonentov. Ak je váš ISP malý s 5 000 abonentmi, outage 150+ ľudí je hlásením. Ak máte 100 000 abonentov, limit je 3 000. Report musíte zaslať NBÚ do 24 hodín od detekcie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Potrebujeme RPKI certifikáty od RIPE NCC na všetky naše BGP adresy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Áno, RPKI certifikáty sú požadované pre všetky AS (Autonomous System) bloku, ktoré inzerujete. Zaregistrujte sa na ripe.net ako resource holder, vyžiadajte si RPKI povolenie a vydajte ROA (Route Origin Authorisation) pre vaše prefixy. NBÚ očakáva, že túto kontrolu budete mať do konca 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aké sú pokuty za nesplnenie NIS2 povinností do 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokuta za porušenie NIS2 (zákon č. 69/2018 Z. z.) môže dosiahnuť až 2 % ročného obratu spoločnosti pre kritické subjekty (Essential entities), maximálne až 20 miliónov EUR. NBÚ môže uložiť pokutu aj pred hrozbou či bezpečnostným testom bez hlásenia incidentu v lehote 24 hodín."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Nástroje</span>.sk</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Porovnanie nástrojov</a></li>
+        <li><a href="../kalkulator.html">Kalkulátor NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Zistiť či sa vás týka →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domovská stránka</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 pre telekomových operátorov a ISP na Slovensku — Essential entity požiadavky do 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha I — Kritický subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre telekomových operátorov a ISP na Slovensku — Essential entity požiadavky do 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená operátorom mobilných sietí, poskytovateľom internetových služieb a CDN spoločnostiam, ktoré sú klasifikované ako subjekty kritickej infraštruktúry. Dozviete sa konkrétne technické a organizačné opatrenia vyžadované zákonom č. 69/2018 Z. z. a rozhodnutiami Národného bezpečnostného úradu.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Platí pre operátorov telekomunikačnej infraštruktúry, ktorí poskytujú základné síťové služby vrátane pripojenia na internet, mobilných sietí, routingu BGP alebo DNS rozlišovacích služieb. Povinnosti sa vzťahujú na všetky spoločnosti registrované v Slovenskej republike, ktoré sú obsahom internetu alebo sieťovej infraštruktúry z hľadiska definície NBÚ. Zahŕňa aj menších ISP s rozsiahlejšou абонентskou základňou na jednotlivom území.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kľúčové povinnosti NIS2 pre tento sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť sieťovej infraštruktúry a ochrana BGP routingu</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Operátoři musí implementovať Route Origin Validation (ROV) a RPKI (Resource Public Key Infrastructure) na ochranu svojich BGP trás proti hijackingu. Vyžaduje sa monitoring core routerov v reálnom čase, detekcia anomálií v routovacích tabulkách a okamžitá izolacia podozrivých trás. Všetky kritické routery a switche musia mať zakázaný telnet a šifrované (SSH) vzdialeného prístupu s multifaktorovou autentifikáciou.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť DNS infraštruktúry a rezolvérov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">DNS servery musia byť chránené proti DNS amplifikačným útokom, DNS poisoning a DoS útokom prostredníctvom rate limitingu a GeoIP filtrami. Vyžaduje sa implementácia DNSSEC na všetkých autoritatívnych DNS zonách a monitorovanie DNS query vzorcov pre detekciu botnetov. DNS rezolvéry musia byť konfiguráciou limited len pre legitimné ISP siete a oddelené od verejne dostupných koncových bodov.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov a outages vplývajúcich na kritický počet abonentov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Telekomové operátoři sú povinní nahlásiť NBÚ všetky incidenty spôsobujúce výpadok služby pre viac ako 3 % svojich abonentov alebo 1 000 absolútne abonentov (v závislosti od veľkosti). Incident report musí byť podaný do 24 hodín od objavovania s detailným popisom príčiny, výpadkov a činu. Vyžaduje sa tiež hlásenie do MISP (Malware Information Sharing Platform) centrály NBÚ pre bezpečnostné hrozby.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľského reťazca sieťového vybavenia</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sieťové zariadenia (routery, switche, base stationss, optické multiplexory) musia pochádzať od overeného dodávateľa s kontraktom obsahujúcim bezpečnostné záväzky. Všetky firmware aktualizácie musia prejsť bezpečnostným testovaním pred ich nasadením. Operátoři sú povinní sledovať údaje o zraniteľnostiach svojho vybavenia a zabezpečiť, aby žiadne zariadenie nebeží s firmwere bez bezpečnostnej podpory dodávateľa dlhšie ako 12 mesiacov.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť a audit zákonného odposlúchavania a lawful interception</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Prístupové body pre zákonné odposlúchavanie (LI) a interceptačné systémy musia mať rigoróznu prístupovú kontrolu s audit logmi všetkých údajov, ktoré sú prístupné. Všetci technici s prístupom k LI infraštruktúre musia prejsť bezpečnostným clearancom a školením. Vyžaduje sa šifrovanie všetkých interception kanálov a dochádza k fyzickej izolácii LI infraštruktúry z verejných sietí.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typické medzery v súlade v tomto sektore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BGP route filtering a RPKI nie sú aktivované nacore routeroch — telekomovi si myslú, že BGP je inherentne bezpečný, ale bez ROV sú zraniteľní voči prefix hijackingu. Implementujte RPKI validáciu a monitorovanie s RIPE NCC certifikátmi.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sieťové zariadenia (Cisco, Huawei, Nokia) bežia na starom firmware bez bezpečnostných patchov — viacero critical CVE zostáva nerozriešených. Vypracujte inventúru s dátumami EoSM a zavádzte quarterly patching plán.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>DNS rezolvéry sú dostupné z internetu a slúžia ako amplifikácia pre DDoS útoky — chýba geografické filtrovanie a rate limiting. Implementujte striktné ACL na DNS porty a spustiť monitoring query vzorcov.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Monitoring core network anomálií je pasívny alebo chýba úplne — operátoři nemajú real-time alert pri neobvyklom routovacom správaní alebo detekcii BGP hijackingu. Nasaďte NetFlow/sFlow monitoring s automatizovanými alertami na zmeny v routovacích tabuľkách.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Odporúčané nástroje pre tento sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Vanta</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Často kladené otázky</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká veľkosť outage vyžaduje hlásenie NBÚ podľa NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Hlásenie je povinné ak výpadok postihne viac ako 3 % vašich abonentov alebo aspoň 1 000 absolútne abonentov. Ak je váš ISP malý s 5 000 abonentmi, outage 150+ ľudí je hlásením. Ak máte 100 000 abonentov, limit je 3 000. Report musíte zaslať NBÚ do 24 hodín od detekcie.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Potrebujeme RPKI certifikáty od RIPE NCC na všetky naše BGP adresy?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Áno, RPKI certifikáty sú požadované pre všetky AS (Autonomous System) bloku, ktoré inzerujete. Zaregistrujte sa na ripe.net ako resource holder, vyžiadajte si RPKI povolenie a vydajte ROA (Route Origin Authorisation) pre vaše prefixy. NBÚ očakáva, že túto kontrolu budete mať do konca 2026.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú pokuty za nesplnenie NIS2 povinností do 2026?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pokuta za porušenie NIS2 (zákon č. 69/2018 Z. z.) môže dosiahnuť až 2 % ročného obratu spoločnosti pre kritické subjekty (Essential entities), maximálne až 20 miliónov EUR. NBÚ môže uložiť pokutu aj pred hrozbou či bezpečnostným testom bez hlásenia incidentu v lehote 24 hodín.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Skontrolujte požiadavky pre vašu organizáciu</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NBÚ/NIS2 · Slovensko · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Spustiť kalkulátor →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Nastroje.sk · NBÚ/NIS2 · NBÚ
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domovská stránka</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Porovnanie nástrojov</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

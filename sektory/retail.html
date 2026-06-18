@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4YS3XQQPJ2');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 pre veľké maloobchodné reťazce a e-commerce — Slovensko 2026</title>
+  <meta name="description" content="Povinnosti NIS2 pre veľké obchodné siete a operátorov elektronického obchodu so spracovaním platieb. Deadline 2026, bezpečnosť POS terminálov, ochrana údajov zákazníkov.">
+  <link rel="canonical" href="https://nis2-nastroje.sk/sektory/retail.html">
+  <meta property="og:title" content="NIS2 pre veľké maloobchodné reťazce a e-commerce — Slovensko 2026">
+  <meta property="og:description" content="Povinnosti NIS2 pre veľké obchodné siete a operátorov elektronického obchodu so spracovaním platieb. Deadline 2026, bezpečnosť POS terminálov, ochrana údajov zákazníkov.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.sk/sektory/retail.html">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="NIS2-Nastroje.sk">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 pre veľké maloobchodné reťazce a e-commerce — Slovensko 2026">
+  <meta name="twitter:description" content="Povinnosti NIS2 pre veľké obchodné siete a operátorov elektronického obchodu so spracovaním platieb. Deadline 2026, bezpečnosť POS terminálov, ochrana údajov zákazníkov.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domovská stránka",
+      "item": "https://nis2-nastroje.sk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-nastroje.sk/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 pre veľké maloobchodné reťazce a e-commerce operátorov v Slovenskej republike — povinnosti a deadline 2026",
+      "item": "https://nis2-nastroje.sk/sektory/retail.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ktoré maloobchodné podniky sú povinné splniť NIS2 v Slovenskej republike?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veľké maloobchodné reťazce a e-commerce operátori s viac ako 250 zamestnancami alebo ročným obratom nad 50 miliónov EUR, ktorí spracúvajú platobné údaje alebo osobné údaje zákazníkov. Zákon č. 69/2018 Z. z. ich zaraďuje do kategórie dôležitých subjektov (Príloha II) podľa direktívy NIS2. Ak máte menej ako 250 zamestnancov, ale špecializujete sa na online spracovanie platieb s výrazným počtom transakcií v eurozóne, môže sa na vás vzťahovať aj PCI-DSS nezávisle od NIS2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ako dlho máte čas nahlásiť porušenie bezpečnosti NBÚ a ako sa počítajú 72 hodín?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porušenie bezpečnosti (napr. zistenie neoprávneného prístupu k údajom kariet alebo osobným údajom) musíte bez zbytočného odkladu oznámiť NBÚ najneskôr do 72 hodín od zistenia porušenia — nie od jeho vzniku. Paralelne musíte notifikovať postihnutých zákazníkov bez zbytočného odkladu, pričom nie je prísne vyžadovaných 72 hodín, ale musíte jednotne informovať všetkých dotknutých. Zlyhaní operátori hrozia pokuty až do 10 miliónov EUR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aké minimálne bezpečnostné prvky musím zaviesť pre POS terminály a platobné brány podľa NIS2 a PCI-DSS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum zahrnuje end-to-end šifrovanie transakcií (TLS 1.2+), tokenizáciu citlivých údajov (čísiel kariet), izoláciu POS sietí od ostatného interného IT (network segmentation), monitorovanie v reálnom čase (SIEM), dvojfaktorovú autentifikáciu pre administratívny prístup, jednoročný penetračný test a audit od certifikovaného subjektu, a povinné maskovanie čísiel kariet v logoch. Legacy terminály bez podpory moderného šifrovania musíte vyradiť alebo fyzicky izolovať do dedikovanej siete s vlastným firewallom a maximálnym monitoringom."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Nástroje</span>.sk</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Porovnanie nástrojov</a></li>
+        <li><a href="../kalkulator.html">Kalkulátor NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Zistiť či sa vás týka →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domovská stránka</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 pre veľké maloobchodné reťazce a e-commerce operátorov v Slovenskej republike — povinnosti a deadline 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitý subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre veľké maloobchodné reťazce a e-commerce operátorov v Slovenskej republike — povinnosti a deadline 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená pre riaditeľov IT bezpečnosti, manažérov compliance a vedúcich operácií v sieťach maloobchodu a e-commerce s viac ako 250 zamestnancami alebo obratem nad 50 miliónov eur. Dozviete sa konkrétne povinnosti podľa NIS2, ktoré sa vzťahujú na vašu infraštruktúru platieb, údaje zákazníkov a supply chain.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Kategóriu dôležitých subjektov podľa NIS2 musia splniť veľké maloobchodné reťazce a operátori e-commerce, ktorí majú viac ako 250 zamestnancov alebo ročný obrat prevyšujúci 50 miliónov EUR a zároveň spracúvajú údaje zákazníkov vrátane platobných údajov. Vzťahuje sa na nich zákon č. 69/2018 Z. z. v znení neskorších predpisov a direktíva NIS2 transpozitná do národnej legislatívy.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kľúčové povinnosti NIS2 pre tento sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť infraštruktúry POS terminálov a spracovanie platieb podľa NIS2 a PCI-DSS</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky POS terminály, platobné brány a systémy na spracovanie kariet musia spĺňať minimálne požiadavky podľa PCI Data Security Standard verzia 3.2.1 a súčasne povinnosti NIS2. Ich infraštruktúra musí byť izolovaná od ostatných obchodných systémov, zašifrovaná end-to-end a monitorovaná v reálnom čase. Vrátane legacy terminálov — tie musia byť buď vyradené, alebo presunuté do izolovanej, maximálne chránenej siete s dodatočnými penetračnými testami najmenej raz za rok.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Notifikácia porušení bezpečnosti a incident reporting pre zákazníkov v lehote 72 hodín</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Prípad, že dôjde k porušeniu bezpečnosti údajov zákazníkov (vrátane čísiel kreditných kariet, osobných údajov z lojalitných programov), musíte do 72 hodín oznámiť Národnému bezpečnostnému úradu (NBÚ) a postihnutým zákazníkom bez zbytočného odkladu. Oznámenie musí obsahovať povahu porušenia, dosiahnutý rozsah údajov, zoznam dotknutých osôb a prijaté opatrenia. Zlyhaní operátori hrozí pokuta až do 10 miliónov eur alebo do 2 % ročného obratu.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť v dodávateľskom reťazci — logistika a správa inventáru</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetci externí dodávatelia logistiky, správy skladov a systémov na synchronizáciu inventáru musia mať fyzicky a digitálne ohraničený prístup iba k údajom a systémom, ktoré potrebujú pre svoju činnosť. Podľa NIS2 musíte zaviesť záväzné zmluvy s dodávateľmi, ktoré zahrňujú audit bezpečnosti najmenej raz ročne a povinnosť incident reporting bez zbytočného odkladu. Nesmú mať trvalý prístup k POS systémom, platobným údajom alebo databázam so zbieraním osobných údajov zákazníkov.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Správa a retenčné obdobia lojalitných programov a databáz zákazníkov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Údaje zo systémov lojalitných programov — vrátane emailov, telefónnych čísiel, histórie nákupov a preferovaných platieb — musia byť uchovávané len na čas potrebný na splnenie konkrétneho účelu. Podľa GDPR a NIS2 musíte nastaviť automatizované mazanie starších ako 3 roky, pokiaľ zákazník neudelia izolovaný súhlas na dlhšie uchovávanie. Databázy musia byť šifrované, zálohované a uložené v geograficky oddelených lokalitách vrátane zálohy v EÚ.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Riadenie kryptografických kľúčov a certifikácia bezpečnosti IT systémov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky kryptografické kľúče používané na šifrovanie platobných údajov, interných komunikácií a záloh musia byť generované, uchovávané a spravované v dedikovanom kľúčovom úložisku (HSM — Hardware Security Module), ktoré je fyzicky chránené a auditované. Minimálne raz ročne musíte zabezpečiť nezávislý bezpečnostný audit alebo penetračný test od certifikovaného audítora podľa ISO 27001 alebo ekvivalentného štandardu na certifikáciu stavu svojej IT bezpečnosti.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typické medzery v súlade v tomto sektore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Legacy POS terminály bez podpory modernej kryptografie sú stále bezprostredne pripojené k obchodným sieťam bez izolačných opatrení — musíte ich fyzicky vyradiť alebo presunúť do dedikovanej izolovanej siete s vlastným firewallom.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Lojalitné programy a databázy zákazníkov uchovávajú údaje bez časového limitu alebo s rozplývavými retenčnými politikami — zavedením automatizovaného mazania po 3 rokoch a explicitného souhlasu pre dlhšie uloženie dostanete do súladu s GDPR a NIS2.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Prístup tretích strán (logistika, tretí výrobcovia, správcovia inventáru) nie je dostatočne riadený — musia mať fyzicky a digitálne ohraničené práva s audit trail a bez prístupu k platobným systémom alebo osobným údajom zákazníkov.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Absentuje formálna procedúra hlásenia incidentov a notifikácie porušení bezpečnosti, alebo je hlásenie odložené dlhšie ako 72 hodín — zavedením centralizovaného incident response procesu s konkrétnou zodpovednosťou a monitorovaním SLA budete v súlade s NIS2.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Odporúčané nástroje pre tento sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">NordLayer</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Často kladené otázky</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ktoré maloobchodné podniky sú povinné splniť NIS2 v Slovenskej republike?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Veľké maloobchodné reťazce a e-commerce operátori s viac ako 250 zamestnancami alebo ročným obratom nad 50 miliónov EUR, ktorí spracúvajú platobné údaje alebo osobné údaje zákazníkov. Zákon č. 69/2018 Z. z. ich zaraďuje do kategórie dôležitých subjektov (Príloha II) podľa direktívy NIS2. Ak máte menej ako 250 zamestnancov, ale špecializujete sa na online spracovanie platieb s výrazným počtom transakcií v eurozóne, môže sa na vás vzťahovať aj PCI-DSS nezávisle od NIS2.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako dlho máte čas nahlásiť porušenie bezpečnosti NBÚ a ako sa počítajú 72 hodín?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Porušenie bezpečnosti (napr. zistenie neoprávneného prístupu k údajom kariet alebo osobným údajom) musíte bez zbytočného odkladu oznámiť NBÚ najneskôr do 72 hodín od zistenia porušenia — nie od jeho vzniku. Paralelne musíte notifikovať postihnutých zákazníkov bez zbytočného odkladu, pričom nie je prísne vyžadovaných 72 hodín, ale musíte jednotne informovať všetkých dotknutých. Zlyhaní operátori hrozia pokuty až do 10 miliónov EUR.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké minimálne bezpečnostné prvky musím zaviesť pre POS terminály a platobné brány podľa NIS2 a PCI-DSS?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimum zahrnuje end-to-end šifrovanie transakcií (TLS 1.2+), tokenizáciu citlivých údajov (čísiel kariet), izoláciu POS sietí od ostatného interného IT (network segmentation), monitorovanie v reálnom čase (SIEM), dvojfaktorovú autentifikáciu pre administratívny prístup, jednoročný penetračný test a audit od certifikovaného subjektu, a povinné maskovanie čísiel kariet v logoch. Legacy terminály bez podpory moderného šifrovania musíte vyradiť alebo fyzicky izolovať do dedikovanej siete s vlastným firewallom a maximálnym monitoringom.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Skontrolujte požiadavky pre vašu organizáciu</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NBÚ/NIS2 · Slovensko · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Spustiť kalkulátor →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Nastroje.sk · NBÚ/NIS2 · NBÚ
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domovská stránka</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Porovnanie nástrojov</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

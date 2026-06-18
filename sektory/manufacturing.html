@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4YS3XQQPJ2');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 pre priemyselných výrobcov na Slovensku - Požiadavky 2026</title>
+  <meta name="description" content="Záväzné požiadavky NIS2 pre výrobcov s pripojenými výrobnými linkami. Segmentácia siete OT/IT, správa dodávateľskej reťaze, hlásenie incidentov. Lehota 2026.">
+  <link rel="canonical" href="https://nis2-nastroje.sk/sektory/manufacturing.html">
+  <meta property="og:title" content="NIS2 pre priemyselných výrobcov na Slovensku - Požiadavky 2026">
+  <meta property="og:description" content="Záväzné požiadavky NIS2 pre výrobcov s pripojenými výrobnými linkami. Segmentácia siete OT/IT, správa dodávateľskej reťaze, hlásenie incidentov. Lehota 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.sk/sektory/manufacturing.html">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="NIS2-Nastroje.sk">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 pre priemyselných výrobcov na Slovensku - Požiadavky 2026">
+  <meta name="twitter:description" content="Záväzné požiadavky NIS2 pre výrobcov s pripojenými výrobnými linkami. Segmentácia siete OT/IT, správa dodávateľskej reťaze, hlásenie incidentov. Lehota 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domovská stránka",
+      "item": "https://nis2-nastroje.sk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-nastroje.sk/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 pre priemyselných výrobcov na Slovensku — Požiadavky na bezpečnosť výrobných systémov do roku 2026",
+      "item": "https://nis2-nastroje.sk/sektory/manufacturing.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ako viem, či môj podnik spadá pod NIS2 ako dôležitá entita?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ak prevádzkujete automatizovanú výrobu s PLC systémami a vaša výroba má ekonomický dopad na Slovensko, pravdepodobne ste dôležitá entita. NBÚ preveruje kriteriá ako počet zamestnancov (väčšinou > 50), ročný obrat (> 10 miliónov EUR) a kritickosť výroby pre ekonomiku. Najjistejšie je kontaktovať NBÚ s popisom vašej výrobnej infraštruktúry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ako bezpečne aktualizovať firmware PLC bez zastavenia výroby?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Implementujte redundanciu — prevádzkujte paralelne dva PLC systémy, jeden aktivní a jeden ako záloha. Update vykonajte na záložnom systéme a otestujte ho v izolovanej testovacej sieti. Následne prepnite na aktualizovaný systém počas plánovanej prestávky. Vždy si vytvorte backup aktuálnej verzie pred update."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aké sú sankcie za porušenie NIS2 požiadaviek do roku 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NBÚ môže uložiť pokutu do 10 miliónov EUR alebo 2% ročného obratu za kritické nedostatky. Pre podstatné porušenia segmentácie siete alebo nehlásení incidentov hrozí pokuta do 50 miliónov EUR. Okrem peňažných sankcií hrozí nútená správa bezpečnosti cez regulátora a pozastavenie prevádzky kritických systémov."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Nástroje</span>.sk</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Porovnanie nástrojov</a></li>
+        <li><a href="../kalkulator.html">Kalkulátor NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Zistiť či sa vás týka →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domovská stránka</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 pre priemyselných výrobcov na Slovensku — Požiadavky na bezpečnosť výrobných systémov do roku 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitá entita</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre priemyselných výrobcov na Slovensku — Požiadavky na bezpečnosť výrobných systémov do roku 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Podnik s automatizovanými výrobnými linkami, PLC kontrolérmi a Industry 4.0 infraštruktúrou musí do konca roku 2026 zavedenie komplexného systému kybernetickej bezpečnosti na základe NIS2. Táto príručka vám vysvetľuje konkrétne povinnosti a kroky implementácie.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnosťami NIS2 sú viazané priemyselné výrobcovské podniky so sídlom na Slovensku, ktoré prevádzkujú kritické výrobné procesy prostredníctvom pripojených PLC systémov, priemyselného internetu vecí alebo Industry 4.0 infraštruktúry. Kategória sa vzťahuje aj na malých a stredných výrobcov, ak ich výroba má významný ekonomický dopad na ekonomiku alebo bezpečnosť štátu.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kľúčové povinnosti NIS2 pre tento sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť operačných technológií (OT/ICS) na výrobných líniách</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte zaviesť špecializované bezpečnostné opatrenia pre PLC kontroléry, priemyselné senzory a riadiace systémy. To zahŕňa fyzickú bezpečnosť prístupových bodov, monitorovanie anomálií v komunikácii zariadení a okamžité zistenie neoprávnených zmien konfigurácie. Bezpečnosť OT systémov sa nesmie vzorovať s bezpečnosťou klasických IT systémov — vyžaduje špecialista na OT bezpečnosť.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Segmentácia sietí OT a IT s aktívnym monitoringom</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Výrobné linky nesmú byť priamo pripojené k podnikovej sieti bez bezpečnostného hraničného zariadenia. Implementujte luftovanú (air-gapped) alebo hlboko segmentovanú sieť s kontrolovanými Most-Of-Trust bodmi. Na hraniciach musí prebiehať nepretržitý monitoring komunikácie s možnosťou detekcie a blokovania podozrivých správ v reálnom čase.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Správa bezpečnosti dodávateľskej reťaze a firmware</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vašich dodávateľov priemyselných komponentov, PLC firmware a softvéru musíte povinne auditovať na ich bezpečnostné praktiky. Vyžadujte od nich aktualizované bezpečnostné certifikáty alebo prehlásenia o bezpečnosti. Udržujte zoznam všetkých kritických komponentov s verzionizáciou a datumami posledného auditu bezpečnosti.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov s vplyvom na výrobu</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Výpadky výrobných liniek spôsobené kybernetickým útokom alebo bezpečnostným incidentom musíte nahlásiť Národnému bezpečnostnému úradu (NBÚ) do 72 hodín. Hlásenie je povinné, ak incident spôsobil stratu výrobnej kapacity väčšiu ako 48 hodín alebo finančnú stratu presahujúcu 100 000 EUR. Zavedite proces zber a dokumentácie incidentov s jasnou eskalačnou procedurou.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Správa aktív a inventár priemyselného internetu vecí</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte udržiavať presný inventár všetkých pripojeného zariadení vrátane PLC kontrolérov, senzory, aktora a IoT brán s údajmi o verzii firmware, dátume nasadenia a správcoch. Inventár sa musí aktualizovať mesačne. Bez aktuálneho inventára nemôžete vykonať patching a bezpečnostné vylepšenia.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typické medzery v súlade v tomto sektore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>PLC systémy sú priamo pripojené k podnikovej sieti bez firewallu alebo gateway zariadení — výrobcovia väčšinou nevedia, že OT a IT bezpečnosť sú rozdielne disciplíny.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Žiadny formálny proces update firmwaru pre priemyselné kontroléry — mnohé zariadenia bežia na verzií z rokov 2015-2018 bez bezpečnostných záplat.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vzdialený prístup pre údržbu je umožnený cez RDP, SSH bez VPN vrátane bezpečnosti heslá — údržbárom sa dá prístup jednoducho ako heslo v EMaily.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nie je inventáru IoT zariadení — podnikový IT manažér často nevie, koľko a aké zariadenie sú na výrobných líniách aktívne.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Odporúčané nástroje pre tento sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Často kladené otázky</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako viem, či môj podnik spadá pod NIS2 ako dôležitá entita?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ak prevádzkujete automatizovanú výrobu s PLC systémami a vaša výroba má ekonomický dopad na Slovensko, pravdepodobne ste dôležitá entita. NBÚ preveruje kriteriá ako počet zamestnancov (väčšinou > 50), ročný obrat (> 10 miliónov EUR) a kritickosť výroby pre ekonomiku. Najjistejšie je kontaktovať NBÚ s popisom vašej výrobnej infraštruktúry.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako bezpečne aktualizovať firmware PLC bez zastavenia výroby?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Implementujte redundanciu — prevádzkujte paralelne dva PLC systémy, jeden aktivní a jeden ako záloha. Update vykonajte na záložnom systéme a otestujte ho v izolovanej testovacej sieti. Následne prepnite na aktualizovaný systém počas plánovanej prestávky. Vždy si vytvorte backup aktuálnej verzie pred update.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú sankcie za porušenie NIS2 požiadaviek do roku 2026?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NBÚ môže uložiť pokutu do 10 miliónov EUR alebo 2% ročného obratu za kritické nedostatky. Pre podstatné porušenia segmentácie siete alebo nehlásení incidentov hrozí pokuta do 50 miliónov EUR. Okrem peňažných sankcií hrozí nútená správa bezpečnosti cez regulátora a pozastavenie prevádzky kritických systémov.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Skontrolujte požiadavky pre vašu organizáciu</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NBÚ/NIS2 · Slovensko · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Spustiť kalkulátor →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Nastroje.sk · NBÚ/NIS2 · NBÚ
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domovská stránka</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Porovnanie nástrojov</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
