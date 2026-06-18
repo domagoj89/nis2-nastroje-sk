@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-4YS3XQQPJ2');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 Penetration Testing: Požiadavky článku 21(2)(f)</title>
+  <meta name="description" content="Komplexný sprievodca povinným testami penetrácie podľa NIS2 články 21(2)(f). Ako vybrať poskytovatela, ceny, a plnenie požiadaviek.">
+  <link rel="canonical" href="https://nis2-nastroje.sk/penetracne-testovanie.html">
+  <meta property="og:title" content="NIS2 Penetration Testing: Požiadavky článku 21(2)(f)">
+  <meta property="og:description" content="Komplexný sprievodca povinným testami penetrácie podľa NIS2 články 21(2)(f). Ako vybrať poskytovatela, ceny, a plnenie požiadaviek.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.sk/penetracne-testovanie.html">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="nis2-nastroje.sk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "NIS2 Penetration Testing: Požiadavky článku 21(2)(f)", "description": "Komplexný sprievodca povinným testami penetrácie podľa NIS2 články 21(2)(f). Ako vybrať poskytovatela, ceny, a plnenie požiadaviek.", "author": {"@type": "Organization", "name": "nis2-nastroje.sk"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kto presne musí vykonať penetračný test podľa NIS2?", "acceptedAnswer": {"@type": "Answer", "text": "Všetci majitelia a operátori subjektov kľúčovej infraštruktúry (KIS) v sektore energie, dopravy, bankovníctva, zdravotníctva atď. Tiež dôležité digitálne subjekty (DSU) s viac ako 250 zamestnancami alebo výnosmi nad 50 mil. EUR. Úplný zoznam nájdete v <a href='https://www.nist.sk'>Národnom úrade bezpečnosti informácií</a>."}}, {"@type": "Question", "name": "Ako často musím vykonať penetračný test?", "acceptedAnswer": {"@type": "Answer", "text": "Minimálne <strong>raz ročne podľa článku 21(2)(f)</strong>. Pre kritické systémy alebo v prípade významných zmien infraštruktúry (napríklad migrácia do cloudu) by ste mali zvážiť testovanie dvakrát ročne alebo ad-hoc testovanie."}}, {"@type": "Question", "name": "Aké sú typické náklady?", "acceptedAnswer": {"@type": "Answer", "text": "Pre malý až stredný podnik: €3,000–15,000 za ročný test v závislosti od rozsahu aplikácií, servery a počtu testovateľov. <a href='https://cobalt.io'>Cobalt.io</a> ponúka pevné ceny; tradičné agentúry môžu byť drahšie. Zarezervujte si 1–2 dni pred koncom finančného roka na rozpočtovanie."}}, {"@type": "Question", "name": "Čo ak som SME a nemám dedikovaný bezpečnostný tím?", "acceptedAnswer": {"@type": "Answer", "text": "Presne preto existujú PenTest as a Service platformy ako Cobalt.io, HackerOne a Synack. Môžete si najať externého testera bez investície do interného personálu. Správu z testu môžete zdieľať s vaším IT poskytovateľom na opravu."}}, {"@type": "Question", "name": "Ako dlho trvá, kým dostanem výsledky?", "acceptedAnswer": {"@type": "Answer", "text": "Typicky 2–4 týždne od spustenia testu po finálnu správu. Vždy si rezervujte čas dopredu – máj až september sú najzapnutejšie mesiace. Zarezervujte si test v marci/apríli, ak chcete výsledky na leto."}}]}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">NIS2<span>Nástroje</span>.sk</a>
+      <ul class="nav__links"><li><a href="porownanie.html">Porovnanie nástrojov</a></li><li><a href="sektory-ksc.html">Sektory NIS2</a></li><li><a href="kalkulator.html">Kalkulačka NIS2</a></li><li><a href="faq.html">FAQ</a></li></ul>
+      <a href="kalkulator.html" class="nav__cta">Zarezervujte test</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span>
+    NIS2 Penetračné testovanie
+  </div>
+</div>
+
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span class="eyebrow">NIS2 Compliance</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);margin:.5rem 0 1rem;">Penetračné testovanie podľa NIS2: Povinnosť, ktorú väčšina SME ignoruje</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);">Článok 21(2)(f) NIS2 vyžaduje ročné testy bezpečnosti kritických systémov. Dozviete sa, čo presne musíte robiť, ako vybrať poskytovatela a koľko to stojí.</p>
+    <a href="https://cobalt.io" class="btn btn--primary" style="margin-top:1.25rem;" target="_blank" rel="nofollow noopener">Zarezervujte penetračný test teraz →</a>
+  </div>
+</div>
+
+
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Čo presne vyžaduje NIS2 článok 21(2)(f)?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>NIS2 článok 21(2)(f)</strong> stanovuje povinnosť zaviesť <em>politiky a postupy na hodnotenie účinnosti opatrení riadenia kyberbezpečnostného rizika</em>. V praxi to znamená: <strong>ročné penetračné testy kritických systémov</strong>.</p><p>Táto požiadavka sa vzťahuje na:</p><ul><li>Subjekty kľúčovej infraštruktúry (KIS)</li><li>Dôležité digitálne subjekty (DSU) s viac ako 250 zamestnancami alebo výnosmi nad 50 mil. EUR</li><li>Všetkých majiteľov a operátorov iných poskytovateľov služieb podľa NIS2</li></ul><p>Nie je to iba odporúčanie – je to <strong>právne vymáhateľná povinnosť</strong>. Porušenie môže viesť k pokutám do 10 mil. EUR alebo 2 % globálneho ročného obratu.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Čo presne zahŕňa penetračný test?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Penetračný test je <strong>simulovaný útok na vašu IT infraštruktúru</strong> vykonaný kvalifikovanými bezpečnostným odborníkmi.</p><p><strong>Rozsah typického testu:</strong></p><ul><li>Externý test – útok z internetu na vaše verejne dostupné systémy (web, e-mail, VPN)</li><li>Interný test – simulácia útoku zevnitri firemnej siete</li><li>Testy sociálneho inžinierstva – phishing, pretexting</li><li>Test fyzickej bezpečnosti – pokus o vstup do serverovne</li></ul><p><strong>Trvanie:</strong> 1–3 týždne v závislosti od rozsahu. <strong>Výstup:</strong> detailná správa s priehľadom zraniteľností, ich závažnosti a konkrétnych odporúčaní na nápravu.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Penetračný test vs. skenovanie zraniteľností – aký je rozdiel?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>Skenovanie zraniteľností:</strong> Automatizované nástroje vyhľadávajú známe bezpečnostné chyby (napr. zastarané pluginy, slabé hesla). Rýchle, lacné, ale povrchné.</p><p><strong>Penetračný test:</strong> Reálni ľudia pracujú ako hackeři. Kombinujú automatizáciu s manuálnym analytickým myslením, aby objavili zraniteľnosti, ktoré skenery premeškajú. Zisťujú, či by útočník mohol skutočne získať prístup k citlivým údajom.</p><p><strong>Pre NIS2:</strong> Požiadavka explicitne vyžaduje penetračné testovanie (nie len skenovanie). <a href='https://cobalt.io'>PenTest as a Service platformy ako Cobalt.io</a> vám umožňujú kombinovať obe metódy efektívne.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Ako vybrať poskytovatela penetračného testu?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>Kľúčové kritériá:</strong></p><ul><li><strong>Certifikácie:</strong> Hľadajte OSCP, CEH, alebo GIAC certifikácie testerov</li><li><strong>Refs a track record:</strong> Požiadajte referencie v podobnom priemysle</li><li><strong>Rozsah a metodika:</strong> Malo by sa zaoberať OWASP Top 10, NIST alebo CIS frameworky</li><li><strong>Správa a opravy:</strong> Jasný proces na dokumentáciu zraniteľností a follow-up test</li><li><strong>Cena a flexibilita:</strong> <a href='https://cobalt.io'>Cobalt.io</a> ponúka crowdsourcovaných testerov s pevnou cenou (€3,000–15,000 pre SME). <a href='https://www.hackerone.com'>HackerOne</a>, <a href='https://www.synack.com'>Synack</a> a <a href='https://www.pentestpeople.com'>Pentest People</a> sú ďalšie zavedené možnosti.</li></ul><p><strong>Dôležité:</strong> Rezervujte si teraz – nasledujúce sloty sú Often obsadené na 4 týždne.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Ako funguje PenTest as a Service (Cobalt.io)?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><a href='https://cobalt.io'>Cobalt.io</a> ponúka inovatívny model:</p><ul><li><strong>Crowdsourcovaní testeri:</strong> Platforma spája vás s overenými bezpečnostnými výskumníkmi z celého sveta</li><li>Bez dlhodobých zmlúv – flexibilita podľa vašich potrieb</li><li><strong>Pevné ceny:</strong> Vedieť dopredu, koľko zaplatíte (typicky €3,000–15,000 v závislosti od rozsahu)</li><li><strong>Rýchly turnaround:</strong> 2–4 týždne od objednávky k finálnej správe</li><li><strong>Transparentnosť:</strong> Real-time dashboard s nájdenými zraniteľnosťami a ich opravou</li></ul><p>Ideálne pre SME, ktoré potrebujú compliance bez vysokych fixných nákladov na interných testerov.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Čo robiť so správou z penetračného testu?</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>Fáza 1 – Triedenie (Triage):</strong> Identifikujte kritické zraniteľnosti (critical & high severity). Začnite opravou tých najnižšie zavesených ovocia.</p><p><strong>Fáza 2 – Oprava (Remediation):</strong> Pracujte so svojím IT tímom na otvorení ticketov, alokácii zdrojov a implementácii opráv. Typicky 4–12 týždňov.</p><p><strong>Fáza 3 – Re-test:</strong> Požiadajte o validáciu opráv (skúsený test). Väčšina testovacích spoločnosti ponúkajú rabat na re-test pre klientov.</p><p><strong>Dokumentácia:</strong> Uložte si celú správu a log opráv – audítori NIS2 budú chcieť dôkaz, že ste test vykonali a reagovali ste na zistenia.</p></div>
+        </div>
+      </section>
+
+
+<section style="padding:2.5rem 0;background:#fff;">
+  <div class="container--narrow">
+    <h2 style="font-size:1.2rem;margin-bottom:1.25rem;">Často kladené otázky o NIS2 penetračnom testovaní</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Kto presne musí vykonať penetračný test podľa NIS2?</button>
+          <div class="faq-answer"><p>Všetci majitelia a operátori subjektov kľúčovej infraštruktúry (KIS) v sektore energie, dopravy, bankovníctva, zdravotníctva atď. Tiež dôležité digitálne subjekty (DSU) s viac ako 250 zamestnancami alebo výnosmi nad 50 mil. EUR. Úplný zoznam nájdete v <a href='https://www.nist.sk'>Národnom úrade bezpečnosti informácií</a>.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Ako často musím vykonať penetračný test?</button>
+          <div class="faq-answer"><p>Minimálne <strong>raz ročne podľa článku 21(2)(f)</strong>. Pre kritické systémy alebo v prípade významných zmien infraštruktúry (napríklad migrácia do cloudu) by ste mali zvážiť testovanie dvakrát ročne alebo ad-hoc testovanie.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Aké sú typické náklady?</button>
+          <div class="faq-answer"><p>Pre malý až stredný podnik: €3,000–15,000 za ročný test v závislosti od rozsahu aplikácií, servery a počtu testovateľov. <a href='https://cobalt.io'>Cobalt.io</a> ponúka pevné ceny; tradičné agentúry môžu byť drahšie. Zarezervujte si 1–2 dni pred koncom finančného roka na rozpočtovanie.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Čo ak som SME a nemám dedikovaný bezpečnostný tím?</button>
+          <div class="faq-answer"><p>Presne preto existujú PenTest as a Service platformy ako Cobalt.io, HackerOne a Synack. Môžete si najať externého testera bez investície do interného personálu. Správu z testu môžete zdieľať s vaším IT poskytovateľom na opravu.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Ako dlho trvá, kým dostanem výsledky?</button>
+          <div class="faq-answer"><p>Typicky 2–4 týždne od spustenia testu po finálnu správu. Vždy si rezervujte čas dopredu – máj až september sú najzapnutejšie mesiace. Zarezervujte si test v marci/apríli, ak chcete výsledky na leto.</p></div>
+        </div></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Pripravte sa na NIS2 audit – zarezervujte penetračný test dnes</h2>
+    <p>Penetračné testovanie podľa NIS2 článku 21(2)(f) nie je voliteľné. Audit nie je ďaleko. Zarezervujte si svoj slot teraz – kapacity sa rýchlo zaplňujú.</p>
+    <a href="kalkulator.html" class="btn btn--primary btn--lg">Zarezervujte penetračný test</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">NIS2<span>Nástroje</span>.sk</div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="porownanie.html">Porovnanie nástrojov</a>
+        <a href="kalkulator.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+    <p class="footer__disclaimer">
+      Ujawnienie afiliacyjne: niektóre linki na tej stronie mogą być linkami afiliacyjnymi.
+      Treść ma charakter informacyjny i nie stanowi porady prawnej.
+    </p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

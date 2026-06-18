@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-4YS3XQQPJ2');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Školenia kybernetickej bezpečnosti podľa NIS2: Požiadavky a implementácia</title>
+  <meta name="description" content="Komplexný sprievodca povinným školeniami kybernetickej bezpečnosti podľa NIS2 pre vedenie a zamestnancov. Najlepšie riešenia a rýchla implementácia.">
+  <link rel="canonical" href="https://nis2-nastroje.sk/skolenia-nis2.html">
+  <meta property="og:title" content="Školenia kybernetickej bezpečnosti podľa NIS2: Požiadavky a implementácia">
+  <meta property="og:description" content="Komplexný sprievodca povinným školeniami kybernetickej bezpečnosti podľa NIS2 pre vedenie a zamestnancov. Najlepšie riešenia a rýchla implementácia.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.sk/skolenia-nis2.html">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="nis2-nastroje.sk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Školenia kybernetickej bezpečnosti podľa NIS2: Požiadavky a implementácia", "description": "Komplexný sprievodca povinným školeniami kybernetickej bezpečnosti podľa NIS2 pre vedenie a zamestnancov. Najlepšie riešenia a rýchla implementácia.", "author": {"@type": "Organization", "name": "nis2-nastroje.sk"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Je školenie kybernetickej bezpečnosti podľa NIS2 povinné?", "acceptedAnswer": {"@type": "Answer", "text": "Pre vedenie: áno, je to právna povinnosť podľa čl. 20 NIS2. Pre zamestnancov: čl. 21(2)(g) odporúča školenia, čo znamená, že bez nich nemôžete preukázať náležitú starostlivosť pri audite. V Slovenskej republike sú školenia vedenia povinné od januára 2025."}}, {"@type": "Question", "name": "Koľko hodín školení musia absolvovať vedúci", "acceptedAnswer": {"@type": "Answer", "text": "Minimálne 4 až 8 hodín ročne, zatiaľ čo zamestnanci: 2 až 4 hodiny ročne podľa ich pozície a prístupu k citlivým údajom. Školenia musia byť relevantné a aktuálne; prognózuje sa ročné obnoveníe."}}, {"@type": "Question", "name": "Ako dokážem, že som absolvoval školenia podľa NIS2?", "acceptedAnswer": {"@type": "Answer", "text": "Musíte mať záznamy: zoznam účastníkov, dátumy školení, obsah, výsledky testov a správy o simuláciách phishingu. Platforma ako KnowBe4 generuje automatické certifikáty a audit reports, ktoré sú akceptované pri kontrole NIS2."}}, {"@type": "Question", "name": "Je bezplatná skúška KnowBe4 vhodná pre audit NIS2?", "acceptedAnswer": {"@type": "Answer", "text": "Áno, bezplatná skúška umožňuje pilotný projekt a testovanie. Keď prejdete na platenú verziu, môžete exportovať všetky správy a certifikáty, ktoré sú vhodné pre audit NIS2."}}, {"@type": "Question", "name": "Čo by sa malo stať, ak sa zamestnanci vzdelávacich školení nemajú", "acceptedAnswer": {"@type": "Answer", "text": "Podľa ONAS/NÚKIB je to porušenie NIS2. Pri kontrole alebo incidente hrozí pokuty až 100 000 EUR za podľa porušení (fyzické osoby) a až 1% celoročného obratu za právnické osoby. Školenia sú lacnejšie ako pokuty."}}]}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">NIS2<span>Nástroje</span>.sk</a>
+      <ul class="nav__links"><li><a href="porownanie.html">Porovnanie nástrojov</a></li><li><a href="sektory-ksc.html">Sektory NIS2</a></li><li><a href="kalkulator.html">Kalkulačka NIS2</a></li><li><a href="faq.html">FAQ</a></li></ul>
+      <a href="kalkulator.html" class="nav__cta">Začať s bezplatnou skúškou</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span>
+    NIS2 Školenia
+  </div>
+</div>
+
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span class="eyebrow">NIS2 Požiadavky</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);margin:.5rem 0 1rem;">Školenia kybernetickej bezpečnosti podľa NIS2</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);">Vedenie podniku má povinnosť absolvovať školenia kybernetickej bezpečnosti. Zamestnanci sú právne odporúčaní. Naučte sa, čo presne vyžaduje NIS2 a ako rýchlo implementovať.</p>
+    <a href="https://knowbe4.com" class="btn btn--primary" style="margin-top:1.25rem;" target="_blank" rel="nofollow noopener">Spustite bezplatnú skúšku KnowBe4 →</a>
+  </div>
+</div>
+
+
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Čo presne vyžaduje NIS2 článok 20 a 21(2)(g)</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>Školenia vedenia podniku sú právne povinné.</strong> Podľa čl. 20 NIS2 sú členovia vedúceho orgánu (správnej rady, predstavenstva) povinní absolvovať školenia kybernetickej bezpečnosti aspoň raz ročne. Vedenie musí byť schopné vyhodnocovať kybernetické riziká a rozhodovať o investíciách do bezpečnosti.</p><p><strong>Školenia zamestnancov sú právne odporúčané.</strong> Čl. 21(2)(g) odporúča, aby všetci zamestnanci absolvovali školenia zamerané na bezpečnosť údajov, detekciu phishingu a sociálneho inžinierstva. To znamená, že bez školení zamestnancov nemôžete preukázať náležitú starostlivosť.</p><p>Rozhodujúci rozdiel: vedenie = <strong>povinnosť</strong>, zamestnanci = <strong>právna rekomendácia</strong> s vážnymi dôsledkami pri porušení.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Povinný obsah školení: čo musí byť zahrnuté</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Školenia kybernetickej bezpečnosti musia pokryť tieto oblasti:</p><ul><li><strong>Phishing a email bezpečnosť:</strong> Rozpoznávanie falošných správ, podozrivých odkazov a príloह.</li><li><strong>Sociálny inžiniering:</strong> Taktiky manipulácie, pretexting, fyzické bezpečnosť.</li><li><strong>Správa hesiel:</strong> Silné heslá, jednorazové hesla, správcovia hesiel.</li><li><strong>Viacfaktorová autentifikácia (MFA/2FA):</strong> Implementácia a správne používanie.</li><li><strong>Manipulácia s údajmi:</strong> Klasifikácia, bezpečný prenos, mazanie a archivovanie. </li><li><strong>Incidenty a hlásenie:</strong> Procedúry nahlasovateľnosti.</li></ul><p>Školenia musia byť aktuálne, prispôsobené úlohe zamestnanca a merateľné.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Vedenie podniku: špeciálne požiadavky podľa čl. 20</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p>Vedúci orgán (predstavenstvo, správna rada) musí mať hlbšie vedomosti ako bežní zamestnanci:</p><ul><li><strong>Vyhodnocovanie kybernetických rizík:</strong> Vedenie musí pochopiť existujúce hrozby a ich dopad na podnik.</li><li><strong>Investičné rozhodnutia:</strong> Schopnosť zdôvodniť a schvaľovať výdavky na bezpečnosť.</li><li><strong>Stratégia a compliance:</strong> Pochopenie NIS2, NIS1, GDPR a iných relevantných právnych predpisov.</li><li><strong>Incidentný manažment:</strong> Ako reagovať na kybernetické útoky.</li><li><strong>Dezinformácie a sociálny inžiniering:</strong> Vedenie sú osobitný cieľ útočníkov.</li></ul><p>Minimálne <strong>4 až 8 hodín školení ročne</strong> sa považuje za primerané.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">KnowBe4: rýchla a účinná implementácia</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><a href='https://knowbe4.com' target='_blank'><strong>KnowBe4</strong></a> je vedúca platforma na školenia kybernetickej bezpečnosti, ktorá spĺňa všetky požiadavky NIS2:</p><ul><li><strong>Simulácie phishingu:</strong> Automatizované kampane učia zamestnancov rozpoznávať falošné emaily.</li><li><strong>Moduly školení:</strong> Viac ako 2 000 interaktívnych lekcií v slovenčine, zabudované v kontexte úloh.</li><li><strong>Vedúci panelov:</strong> Vrátenie správ pre vedenie o úspešnosti školení, rizikách a zhode.</li><li><strong>Automatizácia:</strong> Automatické nasadzovanie, sledovanie a reports bez dodatočnej práce IT.</li><li><strong>Certifikácia:</strong> Digitálne certifikáty po absolvovaní školení pre NIS2 audit.</li></ul><p>KnowBe4 ponúka <strong>30-dňovú bezplatnú skúšku bez nutnosti kreditnej karty</strong> — ideálne na pilotný projekt.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Ako nasadiť školenia v menej ako 30 minútach</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>Krok 1 (5 minút):</strong> Zaregistrujte sa na bezplatnú skúšku KnowBe4 na <a href='https://knowbe4.com' target='_blank'>knowbe4.com</a>. Nepotrebujete kreditnú kartu.</p><p><strong>Krok 2 (5 minút):</strong> Vytvorte skupiny: vedenie, IT, ostatní zamestnanci. Importujte adresár zamestnancov zo svojej pošty alebo ručne.</p><p><strong>Krok 3 (10 minút):</strong> Vyberte školenia: pre vedenie vyberte moduly o stratégii a rizikovom manažmente; pre zamestnancov vyberte phishing, sociálny inžiniering, heslá. Nastavte plán nasadzovania (naraz alebo postupne).</p><p><strong>Krok 4 (5 minút):</strong> Aktivujte simulácie phishingu. KnowBe4 automaticky odosiela prázdne správy a sleduje, kto klikne.</p><p><strong>Krok 5 (5 minút):</strong> Nastavte automatické reporty pre vedenie mesačne. Hotovo.</p><p>Alternatívne: <a href='https://hornetsecurity.com/en/' target='_blank'>Hornetsecurity Security Awareness Service</a> a <a href='https://www.proofpoint.com/us/products/security-awareness-training' target='_blank'>Proofpoint Security Awareness Training</a> ponúkajú podobné funkcie.</p></div>
+        </div>
+      </section>
+      <section style="padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.3rem;margin-bottom:1rem;">Porovnanie nákladov na školenia</h2>
+          <div style="font-size:.95rem;color:var(--gray-700);line-height:1.75;"><p><strong>KnowBe4:</strong> 1-4 EUR na zamestnanca/mesiac (v závislosti od počtu; voľná skúška).</p><p><strong>Hornetsecurity Security Awareness Service:</strong> 2-5 EUR na zamestnanca/mesiac; špecializácia na email bezpečnosť.</p><p><strong>Proofpoint Security Awareness Training:</strong> 3-8 EUR na zamestnanca/mesiac; integrované s email filtrami.</p><p><strong>Vlastné interné školenia:</strong> 20-50 EUR na zamestnanca (čas IT tímu); vysoký prevádzkový režim.</p><p><strong>Kombinácia:</strong> Interný modul pre vedenie (interný, špecializovaný) + KnowBe4 alebo Hornetsecurity pre zamestnancov (škálovateľné).</p><p><strong>Záver:</strong> KnowBe4 je najpraktickejší pomer nákladov a funkcií. Bezplatná skúška vám umožňuje otestovať bez závazkov.</p></div>
+        </div>
+      </section>
+
+      <section style="background:var(--gray-50);padding:2rem 0;">
+        <div class="container--narrow">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Checklist nasadzovania NIS2 školení</h2>
+          <ul style="list-style:none;padding:0;margin:0;background:#fff;border-radius:8px;padding:1rem;"><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Vedenie absolvovalo školenie o kybernetických rizikách a stratégii (min. 4 hodiny ročne)</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Zamestnanci absolvovali školenia o phishingu a sociálnom inžinierstve</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Školenia pokrývajú spravovanie hesiel a viacfaktorovú autentifikáciu</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Školenia pokrývajú klasifikáciu a manipuláciu s údajmi</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Školenia pokrývajú procedúry incidentov a hlásenia</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Zhromažďujete reporty o úspešnosti školení a rizikách</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Školenia sú aktualizované aspoň raz ročne</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Máte digitálne certifikáty alebo záznamy o absolvovaní</li><li style="padding:.4rem 0;border-bottom:1px solid #e5e7eb;font-size:.9rem;">✓ Vedenie pravidelne dostáva správy o súlade s NIS2</li></ul>
+        </div>
+      </section>
+
+<section style="padding:2.5rem 0;background:#fff;">
+  <div class="container--narrow">
+    <h2 style="font-size:1.2rem;margin-bottom:1.25rem;">Často kladené otázky o NIS2 školeniach</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Je školenie kybernetickej bezpečnosti podľa NIS2 povinné?</button>
+          <div class="faq-answer"><p>Pre vedenie: áno, je to právna povinnosť podľa čl. 20 NIS2. Pre zamestnancov: čl. 21(2)(g) odporúča školenia, čo znamená, že bez nich nemôžete preukázať náležitú starostlivosť pri audite. V Slovenskej republike sú školenia vedenia povinné od januára 2025.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Koľko hodín školení musia absolvovať vedúci</button>
+          <div class="faq-answer"><p>Minimálne 4 až 8 hodín ročne, zatiaľ čo zamestnanci: 2 až 4 hodiny ročne podľa ich pozície a prístupu k citlivým údajom. Školenia musia byť relevantné a aktuálne; prognózuje sa ročné obnoveníe.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Ako dokážem, že som absolvoval školenia podľa NIS2?</button>
+          <div class="faq-answer"><p>Musíte mať záznamy: zoznam účastníkov, dátumy školení, obsah, výsledky testov a správy o simuláciách phishingu. Platforma ako KnowBe4 generuje automatické certifikáty a audit reports, ktoré sú akceptované pri kontrole NIS2.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Je bezplatná skúška KnowBe4 vhodná pre audit NIS2?</button>
+          <div class="faq-answer"><p>Áno, bezplatná skúška umožňuje pilotný projekt a testovanie. Keď prejdete na platenú verziu, môžete exportovať všetky správy a certifikáty, ktoré sú vhodné pre audit NIS2.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Čo by sa malo stať, ak sa zamestnanci vzdelávacich školení nemajú</button>
+          <div class="faq-answer"><p>Podľa ONAS/NÚKIB je to porušenie NIS2. Pri kontrole alebo incidente hrozí pokuty až 100 000 EUR za podľa porušení (fyzické osoby) a až 1% celoročného obratu za právnické osoby. Školenia sú lacnejšie ako pokuty.</p></div>
+        </div></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Začnite s NIS2 školeniami dnes</h2>
+    <p>KnowBe4 ponúka 30-dňovú bezplatnú skúšku bez kreditnej karty. Nasadiť úplný program školení je možné v menej ako 30 minútach. Spustite pilotný projekt pre vedenie a zamestnancov ešte dnes.</p>
+    <a href="kalkulator.html" class="btn btn--primary btn--lg">Spustite bezplatnú skúšku KnowBe4</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">NIS2<span>Nástroje</span>.sk</div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="porownanie.html">Porovnanie nástrojov</a>
+        <a href="kalkulator.html">Quiz</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+    <p class="footer__disclaimer">
+      Ujawnienie afiliacyjne: niektóre linki na tej stronie mogą być linkami afiliacyjnymi.
+      Treść ma charakter informacyjny i nie stanowi porady prawnej.
+    </p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
