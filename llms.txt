@@ -1,0 +1,29 @@
+# NIS2-Nastroje.sk
+
+> The only Slovak-language independent comparison hub that maps NIS2/zákon 69/2018 compliance requirements directly to vetted SaaS tools, saving Slovak businesses hundreds of hours of vendor evaluation while providing localized guidance aligned with NBÚ expectations and the 2026 enforcement deadline
+
+NIS2-Nastroje.sk covers Cybersecurity Compliance (NIS2 Directive SaaS Tools Comparison & Reviews) for SK, CZ.
+
+## Key pages
+- [Home](https://nis2-nastroje.sk/): NIS2-Nastroje.sk — NIS2 Directive SaaS Tools Comparison & Reviews
+- [NIS2 Bezpečnosť Dodávateľov: Požiadavky na Dodávateľský Reťazec](https://nis2-nastroje.sk/bezpecnost-dodavatelskych-retazcov.html)
+- [ISO 27001 a NIS2 – Ako sa vzťahujú na seba](https://nis2-nastroje.sk/certifikacia-iso-27001.html)
+- [FAQ NIS2 Slovensko 2026](https://nis2-nastroje.sk/faq.html)
+- [Kalkulačka pokút KSC/NIS2](https://nis2-nastroje.sk/kalkulacka-pokut.html)
+- [Kalkulator NIS2 2026](https://nis2-nastroje.sk/kalkulacka.html)
+- [Kybernetické poistenie a NIS2: Riziková transfer pre firmy](https://nis2-nastroje.sk/kyberneticke-poistenie.html)
+- [Metodológia hodnotení a politika afiliácie](https://nis2-nastroje.sk/metodika.html)
+- [NIS2 Penetration Testing: Požiadavky článku 21(2)(f)](https://nis2-nastroje.sk/penetracne-testovanie.html)
+- [10 najlepších nástrojov NIS2 2026](https://nis2-nastroje.sk/porovnanie.html)
+- [Registrácia NIS2 pri NBÚ](https://nis2-nastroje.sk/registracia-nis2.html)
+- [Sektory podliehajúce NIS2 na Slovensku 2026 – úplný zoznam Príloha I a II](https://nis2-nastroje.sk/sektory-nis2.html)
+- [Školenia kybernetickej bezpečnosti podľa NIS2: Požiadavky a implementácia](https://nis2-nastroje.sk/skolenia-nis2.html)
+- [Implementing Regulation 2024/2690: NIS2 pre MSP a poskytovateľov](https://nis2-nastroje.sk/vykonavacie-nariadenie-nis2.html)
+
+## Collections
+- [nastroje/](https://nis2-nastroje.sk/nastroje/): 15 pages
+- [sektory/](https://nis2-nastroje.sk/sektory/): 31 pages
+
+## Notes
+- Independent, sk-language resource.
+- Content is free to cite with attribution + a link.
