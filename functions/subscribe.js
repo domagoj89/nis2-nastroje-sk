@@ -119,66 +119,24 @@ function buildTags(body) {
 // Immediate sequence email — sent the moment someone subscribes
 async function sendSequenceEmail0(email, tier, env) {
   const EMAILS = {
-    A: {
-      subject: "Twój plan działania NIS2 — 3 dni, 3 kroki",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Właśnie ukończyłeś quiz NIS2 — Twój wynik wskazuje, że masz jeszcze dużo do zrobienia przed terminem.
-<br><br>
-<strong>Dobra wiadomość:</strong> Firmy w podobnej sytuacji osiągają zgodność w 60–90 dni, jeśli zaczną od właściwych kroków.
-</p>
-<h3 style="font-family:sans-serif;color:#1e3a5f;">Twój 3-dniowy plan startowy:</h3>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Dzień 1 (30 min) — Sprawdź status KSC:</strong><br>
-<a href="https://nis2-nastroje.sk/kalkulator.html" style="color:#1e3a5f;">Zweryfikuj czy Twoja firma podlega KSC →</a>
-<br><br>
-<strong>Dzień 2 (20 min) — Uruchom darmowy ISMS:</strong><br>
-<a href="https://isms.online/" style="color:#1e3a5f;">ISMS.online — bezpłatny plan do 25 pracowników →</a>
-<br><br>
-<strong>Dzień 3 (30 min) — Przeszkol zarząd:</strong><br>
-<a href="https://www.knowbe4.com/" style="color:#1e3a5f;">KnowBe4 — 14-dniowy trial →</a>
-<br><br>
-<a href="https://nis2-nastroje.sk/#tracker-section" style="color:#1e3a5f;">Śledź swój postęp w trackerze NIS2 →</a>
-</p>`,
-    },
-    B: {
-      subject: "Twój wynik NIS2: dobry start — oto co dobić do 100%",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Masz już podstawy NIS2 — to dobry znak. Brakuje Ci 2–3 elementów najczęściej sprawdzanych przez organ nadzoru.
-</p>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Testy penetracyjne (Art. 21(2)(f)):</strong><br>
-<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io — testy na żądanie →</a>
-<br><br>
-<strong>MFA dla kont uprzywilejowanych (Art. 21(2)(i)):</strong><br>
-<a href="https://1password.com/" style="color:#1e3a5f;">1Password Business — MFA + menedżer haseł →</a>
-<br><br>
-<strong>Bezpieczeństwo łańcucha dostaw (Art. 21(2)(d)):</strong><br>
-<a href="https://nis2-nastroje.sk/bezpecnost-dodavatelskych-retazcov.html" style="color:#1e3a5f;">Przewodnik bezpieczeństwa dostawców →</a>
-<br><br>
-<a href="https://nis2-nastroje.sk/#tracker-section" style="color:#1e3a5f;">Zaznacz postęp w trackerze NIS2 →</a>
-</p>`,
-    },
-    C: {
-      subject: "Świetny wynik NIS2 — oto Twój ostatni krok",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Wysoki poziom gotowości NIS2 — naprawdę dobry wynik. Jeden niezałatwiony punkt: formalna walidacja zewnętrzna.
-</p>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Test penetracyjny</strong> — dowód skuteczności zabezpieczeń (Art. 21(2)(f)):<br>
-<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io →</a>
-<br><br>
-<strong>Certyfikacja ISO 27001</strong> — zewnętrzna walidacja całego ISMS:<br>
-<a href="https://nis2-nastroje.sk/certifikacia-iso-27001.html" style="color:#1e3a5f;">Przewodnik ISO 27001 →</a>
-<br><br>
-<a href="https://nis2-nastroje.sk/#tracker-section" style="color:#1e3a5f;">Sprawdź ostatnie checkboxy →</a>
-</p>`,
-    },
-  };
+  "A": {
+    "subject": "Váš akčný plán NIS2 — 3 dni, 3 kroky",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Práve ste dokončili kvíz NIS2 — váš výsledok naznačuje, že pred termínom máte ešte veľa práce.<br><br><strong>Dobrá správa:</strong> Firmy v podobnej situácii dosiahnu súlad za 60–90 dní, ak začnú správnymi krokmi.</p><h3 style=\"font-family:sans-serif;color:#1e3a5f;\">Váš 3-dňový štartovací plán:</h3><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Deň 1 (30 min) — Overte status ZKB:</strong><br><a href=\"https://nis2-nastroje.sk/kalkulacka.html\" style=\"color:#1e3a5f;\">Zistite, či vaša firma podlieha ZKB →</a><br><br><strong>Deň 2 (20 min) — Spustite bezplatný ISMS:</strong><br><a href=\"https://nis2-nastroje.sk/nastroje/isms-online.html\" style=\"color:#1e3a5f;\">ISMS.online — bezplatný plán pre firmy do 25 zamestnancov →</a><br><br><strong>Deň 3 (30 min) — Preškoľte vedenie:</strong><br><a href=\"https://nis2-nastroje.sk/skolenia-nis2.html\" style=\"color:#1e3a5f;\">Školenia NIS2 — zdroje pre manažment →</a><br><br><a href=\"https://nis2-nastroje.sk/#tracker-section\" style=\"color:#1e3a5f;\">Sledujte svoj postup v NIS2 trackeri →</a></p>"
+  },
+  "B": {
+    "subject": "Váš výsledok NIS2: dobrý základ — tu je, ako dosiahnuť 100 %",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Základy NIS2 máte zvládnuté — to je dobrý znak. Chýbajú vám 2–3 prvky, ktoré dozorný orgán kontroluje najčastejšie.</p><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Penetračné testovanie (čl. 21(2)(f)):</strong><br><a href=\"https://nis2-nastroje.sk/penetracne-testovanie.html\" style=\"color:#1e3a5f;\">Sprievodca penetračným testovaním →</a><br><br><strong>MFA pre privilegované účty (čl. 21(2)(i)):</strong><br><a href=\"https://nis2-nastroje.sk/nastroje/1password.html\" style=\"color:#1e3a5f;\">1Password Business — MFA + správca hesiel →</a><br><br><strong>Bezpečnosť dodávateľského reťazca (čl. 21(2)(d)):</strong><br><a href=\"https://nis2-nastroje.sk/bezpecnost-dodavatelskych-retazcov.html\" style=\"color:#1e3a5f;\">Sprievodca bezpečnosťou dodávateľov →</a><br><br><a href=\"https://nis2-nastroje.sk/#tracker-section\" style=\"color:#1e3a5f;\">Zaznačte pokrok v NIS2 trackeri →</a></p>"
+  },
+  "C": {
+    "subject": "Skvelý výsledok NIS2 — tu je váš posledný krok",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Vysoká úroveň pripravenosti na NIS2 — skutočne dobrý výsledok. Zostáva jeden nedoriešený bod: formálne externé overenie.</p><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Penetračný test</strong> — dôkaz účinnosti zabezpečenia (čl. 21(2)(f)):<br><a href=\"https://nis2-nastroje.sk/penetracne-testovanie.html\" style=\"color:#1e3a5f;\">Sprievodca penetračným testovaním →</a><br><br><strong>Certifikácia ISO 27001</strong> — externá validácia celého ISMS:<br><a href=\"https://nis2-nastroje.sk/certifikacia-iso-27001.html\" style=\"color:#1e3a5f;\">Sprievodca ISO 27001 →</a><br><br><a href=\"https://nis2-nastroje.sk/#tracker-section\" style=\"color:#1e3a5f;\">Skontrolujte posledné checkboxy →</a></p>"
+  }
+};
 
   const msg = EMAILS[tier] || EMAILS["B"];
   const footer = `<hr style="margin:2rem 0;border:none;border-top:1px solid #e5e7eb;">
 <p style="font-family:sans-serif;font-size:12px;color:#9ca3af;">
-  NIS2-Narzedzia.pl &nbsp;|&nbsp;
+  NIS2-Nastroje.sk &nbsp;|&nbsp;
   <a href="https://nis2-nastroje.sk/unsubscribe?email=${encodeURIComponent(email)}" style="color:#9ca3af;">Wypisz się</a>
 </p>`;
 
