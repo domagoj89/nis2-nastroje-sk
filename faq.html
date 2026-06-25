@@ -28,37 +28,166 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Čo je NIS2 a ako sa líši od slovenského zákona o kybernetickej bezpečnosti?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NIS2 je smernica Európskej únie o bezpečnosti sietí a informácií z roku 2022. Slovenský zákon o kybernetickej bezpečnosti transponuje NIS2 do slovenského práva. Zákon nadobudol účinnosť 1. októbra 2024 a plné požiadavky platia od roku 2026."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kedy uplynie termín na registráciu podľa NIS2 na Slovensku?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Termín na samoidentifikáciu a registráciu je 1. októbra 2026. Firmy musia do tohto dátumu posúdiť, či podliehajú predpisom, a zaregistrovať sa v príslušnom registri vedenom NBÚ."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Aké sankcie hrozia za nedodržanie NIS2 na Slovensku?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pre základné subjekty: do 10 000 000 EUR alebo 2 % celkového ročného svetového obratu (vyššia suma). Pre dôležité subjekty: do 7 000 000 EUR alebo 1,4 % celkového ročného svetového obratu. Vedúci pracovníci subjektov môžu niesť osobnú finančnú zodpovednosť."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-nastroje.sk/faq.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Čo je NIS2 a ako sa líši od slovenského zákona o kybernetickej bezpečnosti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 je smernica Európskeho parlamentu a Rady EÚ 2022/2555 o bezpečnosti sietí a informácií — druhá úroveň európskych požiadaviek na kybernetickú bezpečnosť, prijatá v decembri 2022. Smernica sama o sebe priamo nezaväzuje firmy — musela byť transponovaná do vnútroštátneho práva.\n\nZákon o kybernetickej bezpečnosti je slovenský zákon, ktorý implementuje NIS2 do slovenského právneho poriadku. Povinnosti z neho vyplývajú priamo slovenským firmám — nie smernica samotná.\n\nPraktický rozdiel: slovenský zákon môže obsahovať prísnejšie ustanovenia ako minimum NIS2 (slovenské právo môže ukladať ďalšie povinnosti). V prípade výkladu sa obráťte na príslušné slovenské orgány — NBÚ (Národný bezpečnostný úrad)."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Kedy nadobudol účinnosť slovenský zákon transponujúci NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Slovenský zákon o kybernetickej bezpečnosti transponujúci NIS2 nadobudol účinnosť 1. októbra 2024. Termín na samoidentifikáciu subjektov je 1. októbra 2026. Plné technické požiadavky nadobúdajú účinnosť 1. októbra 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koľko firiem na Slovensku podlieha NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Odhaduje sa, že požiadavky NIS2 sa budú týkať približne 3 000 slovenských subjektov — čo je výrazne viac ako v rámci predchádzajúcej regulácie. Nárast vyplýva z rozšírenia definície „kritických sektorov\" a zníženia prahovej veľkosti firiem, na ktoré sa regulácia vzťahuje."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aký je rozdiel medzi základným a dôležitým subjektom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základné subjekty (Essential Entities): veľké firmy (250+ zamestnancov alebo obrat >50 mil. EUR) zo sektorov prílohy I (energetika, doprava, bankovníctvo, zdravotníctvo, voda, digitálna infraštruktúra, verejná správa, kozmický sektor). Podliehajú aktívnym kontrolám — dozorný orgán vykonáva audity z vlastnej iniciatívy. Sankcie: do 10 mil. EUR alebo 2 % obratu.\n\nDôležité subjekty (Important Entities): stredné firmy z prílohy I alebo firmy akejkoľvek veľkosti z prílohy II (poštové služby, výroba, chemikálie, potraviny, digitálne služby). Podliehajú reaktívnym kontrolám — audit len po incidente alebo sťažnosti. Sankcie: do 7 mil. EUR alebo 1,4 % obratu.\n\nTechnické požiadavky sú pre obe kategórie podobné — líši sa intenzita dohľadu a výška sankcií."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sú mikropodniky a malé firmy oslobodené od NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Áno, vo všeobecnosti. Mikropodniky (menej ako 10 zamestnancov a ročný obrat pod 2 mil. EUR) a malé podniky (menej ako 50 zamestnancov a obrat pod 10 mil. EUR) sú vyňaté z pôsobnosti NIS2.\n\nDôležité výnimky: malé firmy môžu podliehať NIS2, ak: sú jediným poskytovateľom kritickej služby na Slovensku; poskytujú dôveryhodné služby (kvalifikované elektronické podpisy); sú registrami doménových mien; sú poskytovateľmi služieb DNS; alebo ich regulačný orgán uzná za kľúčové z dôvodu vplyvu na bezpečnosť."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kedy uplynie termín na samoidentifikáciu podľa NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Termín na samoidentifikáciu uplynie 1. októbra 2026. Do tohto dátumu musí každý subjekt podliehajúci NIS2:\n\nPosúdiť, či spĺňa kritériá základného alebo dôležitého subjektu\n\nZaregistrovať sa v príslušnom registri vedenom NBÚ alebo príslušným sektorovým orgánom\n\nUrčiť osobu zodpovednú za kybernetickú bezpečnosť\n\nNedodržanie termínu registrácie do 1. októbra 2026 môže mať za následok správnu sankciu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kedy musia byť plne implementované technické požiadavky?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plná technická zhoda (implementované opatrenia riadenia rizík, postupy, ISMS) sa vyžaduje do 1. októbra 2027. Externý audit kybernetickej bezpečnosti pre základné subjekty sa vyžaduje do 1. októbra 2028."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Čo znamená „určenie zodpovednej osoby\"? Musím zamestnať CISO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zákon vyžaduje určenie osoby alebo tímu zodpovedného za riadenie kybernetickej bezpečnosti. Nemusí to byť nevyhnutne CISO na plný úväzok — môže to byť:\n\nInterný zamestnanec IT s rozšírenými povinnosťami\n\nExterný konzultant alebo poskytovateľ služieb (MSSP)\n\nKonateľ alebo riaditeľ v prípade malých dôležitých subjektov\n\nKľúčové je formálne určenie tejto úlohy v dokumentácii a jej skutočné vykonávanie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aká je lehota na hlásenie bezpečnostných incidentov?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 vyžaduje trojstupňové hlásenie kybernetických incidentov:\n\n24 hodín od zistenia: včasné varovanie príslušnému orgánu (NBÚ alebo sektorový dozorný orgán)\n\n72 hodín od zistenia: úplné hlásenie incidentu s posúdením jeho dopadu\n\n1 mesiac od zistenia: podrobná záverečná správa s analýzou príčin a prijatými opatreniami\n\nHlásenie sa týka len závažných incidentov s podstatným vplyvom na kontinuitu služieb — nie každého bezpečnostného upozornenia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aké konkrétne technické opatrenia musím implementovať?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Článok 21 smernice NIS2 (implementovaný slovenským zákonom) vyžaduje minimálne:\n\nPolitiky analýzy rizík a bezpečnosti informačných systémov\n\nPostupy riešenia bezpečnostných incidentov (detekcia, hlásenie, reakcia)\n\nRiadenie kontinuity činnosti (zálohovanie, obnova po havárii, krízové riadenie)\n\nBezpečnosť dodávateľského reťazca (hodnotenie dodávateľov a partnerov)\n\nBezpečnosť pri obstarávaní, vývoji a údržbe sietí a systémov\n\nPolitiky a postupy hodnotenia účinnosti opatrení riadenia rizík\n\nZákladné praktiky kybernetickej hygieny a školenia\n\nPolitiky a postupy týkajúce sa kryptografie a šifrovania\n\nBezpečnosť ľudských zdrojov, riadenie prístupu, správa aktív\n\nPoužívanie viacfaktorovej autentifikácie (MFA) alebo SSO\n\nNástroje ISMS pokrývajú všetky tieto požiadavky — porovnajte nástroje →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Oslobodzuje certifikát ISO 27001 od povinností podľa NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neoslobodzuje úplne, ale výrazne uľahčuje splnenie požiadaviek. ISO 27001 a NIS2 majú prekrývajúci sa rozsah — odhaduje sa, že firma s certifikátom ISO 27001 spĺňa asi 80–85 % technických požiadaviek NIS2.\n\nZostávajúcich 15–20 % tvoria prvky špecifické pre NIS2: postupy hlásenia incidentov verejným orgánom, hodnotenie bezpečnosti dodávateľského reťazca podľa kritérií NIS2, registrácia v registri subjektov. Mať ISO 27001 môže zmierniť sankcie a je pozitívne hodnotené dozornými orgánmi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Musím si kúpiť špeciálny softvér na správu súladu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nie, neexistuje zákonná požiadavka na kúpu konkrétneho softvéru. NIS2 vyžaduje splnenie technických a procedurálnych požiadaviek — neurčuje, ako má firma tento proces riadiť.\n\nV praxi veľké firmy (základné subjekty) budú potrebovať nástroj GRC na správu dokumentácie, dôkazov a monitoringu — manuálna správa pri 50+ kontrolách je nereálna. Malé dôležité subjekty môžu začať s bezplatným plánom Reglyze alebo Microsoft Purview. Porovnajte možnosti →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Čo je ISMS a prečo je dôležitý pre NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISMS (Information Security Management System) je systém riadenia informačnej bezpečnosti — súbor politík, postupov, procesov a kontrol slúžiacich na riadenie rizík kybernetickej bezpečnosti. Štandardom definujúcim ISMS je ISO/IEC 27001.\n\nNIS2 nevyžaduje certifikáciu ISO 27001, ale vyžaduje implementáciu prvkov ISMS (politiky bezpečnosti, riadenie rizík, postupy pri incidentoch). Nástroje ako Reglyze, Secfix alebo ISMS.online automatizujú budovanie a udržiavanie ISMS špeciálne pre NIS2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koľko stojí implementácia súladu s NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Náklady na implementáciu sa výrazne líšia v závislosti od prístupu a veľkosti firmy:\n\nMalé firmy (dôležitý subjekt, 50–100 zamestnancov): €2 000–15 000 jednorazovo + €500–2 000/rok za nástroje a údržbu\n\nStredné firmy (100–250 zamestnancov): €10 000–50 000 implementácia + €3 000–8 000/rok\n\nVeľké firmy (základný subjekt): €50 000–250 000+ implementácia + €15 000–50 000/rok\n\nNáklady na audit ISO 27001 (voliteľný, ale užitočný) sú ďalších €8 000–25 000 v závislosti od audítorskej spoločnosti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Potrebujem slovenského dodávateľa nástroja pre NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nie — NIS2 nevyžaduje používanie slovenských dodávateľov softvéru. Môžete používať nástroje z akejkoľvek krajiny EÚ alebo mimo EÚ, pokiaľ sú údaje spracúvané v súlade s GDPR.\n\nOdporúča sa však venovať pozornosť: umiestneniu údajov (EÚ vs. mimo EÚ), technickej podpore v slovenskom jazyku, znalosti slovenských predpisov zo strany dodávateľa. Pozrite si porovnanie →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aký nástroj NIS2 vybrať pre malú firmu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pre malé firmy (dôležitý subjekt, 50–100 zamestnancov) odporúčame začať s:\n\nReglyze (bezplatný plán) — vykonajte samoidentifikáciu a hodnotenie medzier. Generujte bezpečnostné politiky pomocou AI. Ideálny východiskový bod, nulové náklady.\n\nMicrosoft Purview (ak máte M365 E3+) — pripravená šablóna NIS2 v nástroji, ktorý už máte zaplatený. Doplňte Reglyze o monitoring v Purview.\n\nPo hodnotení medzier: rozhodnite sa, či potrebujete platený nástroj (ISMS.online od £375/mes.) na základe konkrétnych nedostatkov.\n\nPoužite kalkulačku NIS2 → a najskôr zistite, aký typ subjektu sa týka vašej firmy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ktoré nástroje NIS2 sídlia v EÚ a uchovávajú dáta v EÚ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nástroje so sídlom a spracovaním dát v EÚ:\n\nReglyze — sídlo v EÚ ✓\n\nComplyCloud — Dánsko ✓\n\nSecfix — Nemecko ✓ (dáta v EÚ)\n\nISMS Copilot — Nemecko ✓\n\nNástroje z USA (Vanta, Drata, Sprinto) a UK (ISMS.online) môžu spracúvať dáta mimo EÚ — pred kúpou skontrolujte ich DPA (Data Processing Agreement) a SCC. Microsoft Purview spracúva dáta v regiónoch Azure — možno nakonfigurovať EU Data Boundary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aké sankcie hrozia za nedodržanie NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základné subjekty:\n\nDo 10 000 000 EUR alebo 2 % celkového ročného svetového obratu (vyššia suma)\n\nZákaz výkonu riadiacich funkcií pre osoby zodpovedné za porušenie\n\nDôležité subjekty:\n\nDo 7 000 000 EUR alebo 1,4 % celkového ročného svetového obratu (vyššia suma)\n\nDozorné orgány môžu ukladať sankcie za: neregistráciu, chýbajúci ISMS, nehlásenie incidentov, neplnenie technických požiadaviek. Prvé sankcie sa očakávajú po uplynutí prechodného obdobia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kto kontroluje, či firma spĺňa požiadavky NIS2 na Slovensku?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dohľad nad NIS2 na Slovensku vykonávajú rôzne orgány v závislosti od sektora:\n\nNBÚ (Národný bezpečnostný úrad) — celková koordinácia, všeobecný dohľad\n\nCSIRT.SK — koordinácia riešenia kybernetických incidentov\n\nRegulačný úrad pre sieťové odvetvia (RÚSO) — energetický sektor\n\nÚrad pre reguláciu elektronických komunikácií\n\nMáš ďalšie otázky?\n\nNenašiel si odpoveď? Pozri si naše podrobné recenzie nástrojov alebo použij kalkulačku NIS2.\n\nSpusti kalkulačku NIS2 →\n\nViac ako 3 000 slovenskej firiem si overilo stav NIS2 na tejto stránke"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

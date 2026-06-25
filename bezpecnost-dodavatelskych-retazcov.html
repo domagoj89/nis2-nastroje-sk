@@ -18,7 +18,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "NIS2 Bezpečnosť Dodávateľov: Požiadavky na Dodávateľský Reťazec", "description": "Komplexný sprievodca NIS2 Článkom 21(2)(d) pre slovenské spoločnosti. Implementujte bezpečnosť dodávateľov, posudžujte rizika a splňte povinnosti.", "author": {"@type": "Organization", "name": "nis2-nastroje.sk"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Musím monitorovať všetkých dodávateľov alebo len nich критical?", "acceptedAnswer": {"@type": "Answer", "text": "NIS2 Článok 21(2)(d) výslovne vyžaduje bezpečnostné požiadavky pre <strong>všetkých priamych dodávateľov</strong> — bez výnimiek. To zahŕňa aj malých dodávateľov. Avšak v praxi ich môžete kategorizovať podľa rizika a prideliť úrovne sledovania. Vysokorizikoví dodávatelia (cloud, softvér) potrebujú kontinuálny monitoring; nízkorizikoví (spotrebný materiál) potrebujú minimálne ročný dotazník."}}, {"@type": "Question", "name": "Aká je najčastejšia chyba, ktorú robia firmy?", "acceptedAnswer": {"@type": "Answer", "text": "Firmy sa často zameriavajú iba na IT dodávateľov a zabúdajú na fyzickú bezpečnosť. Bezpečnostný strážca s prístupom do server roomy, údržbári HVAC, poskytovatelia internetu — všetci sú dodávateľmi podľa NIS2. Ďalšia chyba: mať zmluvy bez bezpečnostných klauzúl. Staré zmluvy z 2015 s poskytovateľom cloudu neobsahujú NIS2 požiadavky — musíte ich aktualizovať alebo si budete porušovať zákon."}}, {"@type": "Question", "name": "Ako často musím auditovať dodávateľov?", "acceptedAnswer": {"@type": "Answer", "text": "NIS2 nešpecifikuje frekvenciu, ale stanovuje povinnosť <strong>práv na audit</strong>. Odporúčané best practice: vysokorizikoví dodávatelia ročne, strední raz za 2 roky. Ak používate automatizované platformy ako SecurityScorecard, monitorujete kontinuálne a audity môžete redukovať na ciele incidenty. Ak sa bezpečnosť dodávateľa zhoršuje, iniciujte urgentný audit."}}, {"@type": "Question", "name": "Čo robiť, ak dodávateľ odmietne podpísať NIS2 klauzuly?", "acceptedAnswer": {"@type": "Answer", "text": "Máte tri možnosti: (1) Požiadajte dodávateľa o výmenu — explicitne vysvetlite, že sú to právne požiadavky slovenského a eukódexu; (2) Nájdite alternatívneho dodávateľa, ktorý súlad ponúka; (3) Ak nie je alternatíva, zdokumentujte riziko v záznamoch a implementujte náhrádne bezpečnostné opatrenia (vyšší monitoring, izolácia údajov). Nikdy nepodpíšte zmluvu bez bezpečnostných klauzúl — je to porušenie NIS2."}}, {"@type": "Question", "name": "Potrebujem platenú platformu ako SecurityScorecard alebo stačí dotazník?", "acceptedAnswer": {"@type": "Answer", "text": "Dotazník je legálne postačujúci začiatok, ale má limity: závisí od odpovedi dodávateľa, nie je aktuálny a vyžaduje ročnú aktualizáciu. Bezpečnostné hodnotenia (SecurityScorecard, BitSight) sú jednorázovú alebo malú investíciu, ale dávajú objektívne, kontinuálne skóre bez administratívnej záťaže. Pre středné až veľké firmy s 50+ dodávateľmi sú automatizované platformy prakticky nevyhnutné. Reglyze kombinuje ISMS správu aj riadenie dodávateľov v jednom nástroji."}}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-nastroje.sk/bezpecnost-dodavatelskych-retazcov.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Musím monitorovať všetkých dodávateľov alebo len nich критical?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 Článok 21(2)(d) výslovne vyžaduje bezpečnostné požiadavky pre všetkých priamych dodávateľov — bez výnimiek. To zahŕňa aj malých dodávateľov. Avšak v praxi ich môžete kategorizovať podľa rizika a prideliť úrovne sledovania. Vysokorizikoví dodávatelia (cloud, softvér) potrebujú kontinuálny monitoring; nízkorizikoví (spotrebný materiál) potrebujú minimálne ročný dotazník."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aká je najčastejšia chyba, ktorú robia firmy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Firmy sa často zameriavajú iba na IT dodávateľov a zabúdajú na fyzickú bezpečnosť. Bezpečnostný strážca s prístupom do server roomy, údržbári HVAC, poskytovatelia internetu — všetci sú dodávateľmi podľa NIS2. Ďalšia chyba: mať zmluvy bez bezpečnostných klauzúl. Staré zmluvy z 2015 s poskytovateľom cloudu neobsahujú NIS2 požiadavky — musíte ich aktualizovať alebo si budete porušovať zákon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ako často musím auditovať dodávateľov?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 nešpecifikuje frekvenciu, ale stanovuje povinnosť práv na audit. Odporúčané best practice: vysokorizikoví dodávatelia ročne, strední raz za 2 roky. Ak používate automatizované platformy ako SecurityScorecard, monitorujete kontinuálne a audity môžete redukovať na ciele incidenty. Ak sa bezpečnosť dodávateľa zhoršuje, iniciujte urgentný audit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Čo robiť, ak dodávateľ odmietne podpísať NIS2 klauzuly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Máte tri možnosti: (1) Požiadajte dodávateľa o výmenu — explicitne vysvetlite, že sú to právne požiadavky slovenského a eukódexu; (2) Nájdite alternatívneho dodávateľa, ktorý súlad ponúka; (3) Ak nie je alternatíva, zdokumentujte riziko v záznamoch a implementujte náhrádne bezpečnostné opatrenia (vyšší monitoring, izolácia údajov). Nikdy nepodpíšte zmluvu bez bezpečnostných klauzúl — je to porušenie NIS2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Potrebujem platenú platformu ako SecurityScorecard alebo stačí dotazník?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dotazník je legálne postačujúci začiatok, ale má limity: závisí od odpovedi dodávateľa, nie je aktuálny a vyžaduje ročnú aktualizáciu. Bezpečnostné hodnotenia (SecurityScorecard, BitSight) sú jednorázovú alebo malú investíciu, ale dávajú objektívne, kontinuálne skóre bez administratívnej záťaže. Pre středné až veľké firmy s 50+ dodávateľmi sú automatizované platformy prakticky nevyhnutné. Reglyze kombinuje ISMS správu aj riadenie dodávateľov v jednom nástroji."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
