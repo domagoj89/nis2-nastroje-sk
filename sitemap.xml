@@ -61,4 +61,9 @@
   <url><loc>https://nis2-nastroje.sk/skolenia-nis2.html</loc><lastmod>2026-06-21</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-nastroje.sk/vykonavacie-nariadenie-nis2.html</loc><lastmod>2026-06-21</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-nastroje.sk/report-nis2-2022-2555-sk.html</loc><priority>0.90</priority></url>
+  <url>
+    <loc>https://nis2-nastroje.sk/kalkulacka-nakladov-nis2.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
