@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pre dodávateľov pitnej vody na Slovensku - Požiadavky 2026</title>
-  <meta name="description" content="Kompletný sprievodca NIS2 povinnosťami pre vodárenské spoločnosti. Ochrana SCADA systémov, bezpečnosť chemických dávkovacích zariadení a hlásenie incidentov do 31.12.2026.">
+  <title>NIS2 pre dodávateľov pitnej vody a operátorov v SR 2026</title>
+  <meta name="description" content="NIS2 povinnosti pre vodárenské podniky v Slovenskej republike. Ochrana SCADA systémov, reportovanie incidentov a termíny 2026.">
   <link rel="canonical" href="https://nis2-nastroje.sk/sektory/water.html">
-  <meta property="og:title" content="NIS2 pre dodávateľov pitnej vody na Slovensku - Požiadavky 2026">
-  <meta property="og:description" content="Kompletný sprievodca NIS2 povinnosťami pre vodárenské spoločnosti. Ochrana SCADA systémov, bezpečnosť chemických dávkovacích zariadení a hlásenie incidentov do 31.12.2026.">
+  <meta property="og:title" content="NIS2 pre dodávateľov pitnej vody a operátorov v SR 2026">
+  <meta property="og:description" content="NIS2 povinnosti pre vodárenské podniky v Slovenskej republike. Ochrana SCADA systémov, reportovanie incidentov a termíny 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.sk/sektory/water.html">
   <meta property="og:locale" content="sk_SK">
   <meta property="og:site_name" content="NIS2-Nastroje.sk">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pre dodávateľov pitnej vody na Slovensku - Požiadavky 2026">
-  <meta name="twitter:description" content="Kompletný sprievodca NIS2 povinnosťami pre vodárenské spoločnosti. Ochrana SCADA systémov, bezpečnosť chemických dávkovacích zariadení a hlásenie incidentov do 31.12.2026.">
+  <meta name="twitter:title" content="NIS2 pre dodávateľov pitnej vody a operátorov v SR 2026">
+  <meta name="twitter:description" content="NIS2 povinnosti pre vodárenské podniky v Slovenskej republike. Ochrana SCADA systémov, reportovanie incidentov a termíny 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pre dodávateľov a operátorov vody na Slovensku — povinnosti podľa Prílohy I",
+      "name": "NIS2 pre dodávateľov pitnej vody a operátorov odpadových vôd v Slovenskej republike",
       "item": "https://nis2-nastroje.sk/sektory/water.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ktoré vodárenské podniky musia dodržiavať NIS2 na Slovensku?",
+      "name": "Aké sankcie hrozia vodárenským podnikom, ak nezískajú zhodu s NIS2 do konca roku 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Všetci operátori, ktorí zásobujú viac ako 30 000 ekvivalentov obyvateľov pitnou vodou alebo spracovávajú odpadné vody v tomto rozsahu. To zahŕňa mestské vodárne, veľké regionálne podniky a niektorých súkromných prevádzkovateľov. Skontrolujte si počet zásobovaného obyvateľstva a počet zamestnancov — podľa Prílohy I ste podstatný subjekt, ak nie ste malá alebo stredná podnikateľská osoba."
+        "text": "Podľa zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti hrozí prevádzkovateľom pitnej vody až 10 miliónov eur alebo 2 % ročného obratu za porušenie povinností NIS2, keďže sú klasifikovaní ako podstatné prvky kritickej infraštruktúry. Pokuty môžu byť uložené NBÚ po skončení lehoty na dosiahnutie zhody."
       }
     },
     {
       "@type": "Question",
-      "name": "Akú sankciu mi hrozí, ak zistím bezpečnostný incident a nenahláším ho NBÚ?",
+      "name": "Ako veľmi podrobne musím dokumentovať fyzickú bezpečnosť čerpacích staníc?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nemechanizované nahlášenie incidentov, ktoré narúšajú dodávku vody významnému počtu ľudí, je porušením NIS2 a môže viesť k sankcii až do 5 miliónov eur alebo 1 % ročného obratu spoločnosti. Malé mestské vodárne môžu očakávať pokuty v desiatisícoch eur. Najdôležitejšie je: hlásenie musí byť v lehotě 24 hodín od detekcie."
+        "text": "Dokumentácia musí obsahovať schému objektu s vyznačením všetkých vstupných a výstupných bodov, zoznam osôb s oprávnením vstupu, záznamy z bezpečnostných kamier za posledných 90 dní a plán pravidelných fyzických kontrol (aspoň mesačne). Tuga dokumentácia musí byť dostupná SK-CERT a NBÚ na požiadanie."
       }
     },
     {
       "@type": "Question",
-      "name": "Musím investovať do nového hardvéru, aby som bol NIS2 kompatibilný?",
+      "name": "Ak sa stane hacking na SCADA systém mého vodovodu, kedy musím nahlasovať incident SK-CERT?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie všetky zmeny vyžadujú nový hardvér. Väčšina gaps sa dá riešiť softwarovou konfiguráciou: zmena hesiel, nastavenie firewallu, vytvorenie sieťových segmentov a audit logov. Ak máte veľmi staré SCADA systémy bez bezpečnostných funkcií, budete možno musieť uvažovať o modernizácii, ale s pomocou nástrojov ako Secfix zistíte, čo je kritické."
+        "text": "Incident musíte nahlasovať SK-CERT do 24 hodín od jeho zistenia. Ak incident ovplyvňuje dodávku vody pre značný počet ľudí (stavy či prevádzky trvajúce dlhšie ako 4 hodiny), musíte informovať aj NBÚ do 72 hodín s detailmi o postihnutých oblastiach a počte dotknutých osôb."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pre dodávateľov a operátorov vody na Slovensku — povinnosti podľa Prílohy I
+    NIS2 pre dodávateľov pitnej vody a operátorov odpadových vôd v Slovenskej republike
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha I — podstatný subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre dodávateľov a operátorov vody na Slovensku — povinnosti podľa Prílohy I</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto príručka je určená manažérom bezpečnosti a IT vedúcim vodárenských podnikov na Slovensku. Dozviete sa konkrétne požiadavky na ochranu SCADA/ICS systémov, fyzicko-kybernetickú bezpečnosť a hlásenie incidentov, ktoré sú pre váš sektor kritické.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha I — podstatný prvok kritickej infraštruktúry</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre dodávateľov pitnej vody a operátorov odpadových vôd v Slovenskej republike</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená prevádzkovateľom vodovodov, čistiarní odpadových vôd a distribučných sietí pitnej vody v SR, ktorí musia do konca roka 2026 dosiahnuť úplnú zhodu so zákonom č. 69/2018 Z. z. o kybernetickej bezpečnosti v znení NIS2. Dozviete sa konkrétne technické a organizačné povinnosti, typické nedostatky a praktické kroky na splnenie.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">NIS2 povinnosti sa vzťahujú na všetkých dodávateľov pitnej vody a operátorov zariadení na čistenie a odvádzanie odpadných vôd, ktorí zásobujú viac ako 30 000 ekvivalentov obyvateľov. Patria sem mestské vodárne, regionálne vodohospodárske podniky a súkromní operátori veľkých vodovodných sietí.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnosťami NIS2 sú viazané všetky vodárenské podniky a operátori čistiarní odpadových vôd v SR, ktoré zásobujú vodu viac ako 30 000 ekvivalentných obyvateľov, alebo ktoré distribuujú vodu v ľudských sídlach s počtom fyzických osôb nad touto hranicou. Patria sem aj správcovia distribučných sietí pitnej vody a prevádzkovatelia verejných vodovodov.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť SCADA a ICS systémov s prioritou na diaľkový prístup</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky SCADA/ICS systémy používané na riadenie čerpacích staníc, čistiacich prevádzok a distribučných sietí musia byť chránené hraničnými firewallami a nesmú byť priamo dostupné z internetu. Implementujte network segmentáciu tak, aby operačné technológie (OT) boli izolované od korporátnych IT sietí. Pravidelne auditujte konfigurácie a aplikujte bezpečnostné záplaty výrobcov SCADA systémov.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť SCADA a priemyselných riadiacich systémov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ochránite všetky systémy na kontrolu úpravy vody, dávkovania chemikálií a čerpania vody pred neoprávneným prístupom a sabotážou. Povinne izolujete operačné siete od korporátnych sietí, zavádzate firewall pravidlá medzi SCADA a internetom a monitorujete zmeny v konfigurácii systémov v reálnom čase. Všetky vzdialené prístupy na priemyselné zariadenia musia byť šifrované a autentifikované s dvojfaktorovým overením.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Ochrana chemických dávkovacích kontrolérov pred manipuláciou</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky ovládacie systémy pre dávkovanie chemikálií (chlóru, koagulálov, dezinfekčných prostriedkov) musia mať zmeny silných hesiel zo základného stavu a musia byť prístupné iba autorizovanému personálu cez zabezpečené pripojenia. Implementujte multi-faktorovú autentifikáciu, monitorujte zmeny v konfiguráciách a vedzte auditný záznam všetkých prístupov s časovými pečiatkami.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Fyzická bezpečnosť čerpacích staníc a technických miestností</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementujete kontrolu vstupu pomocou biometrie alebo elektronických kariet s auditným záznamom ku všetkým priestorom, kde sa nachádzajú kritické komponenty (PLC, servery, opakovače signálu). Inštalujete bezpečnostné kamery s cloud zálohovaním (bez interného pripojenia SCADA siete) a pravidelne kontrolujete fyzickú integritu vrátane detekcie manipulácie so spojmi a krytmi zariadení.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Integrácia fyzickej a kybernetickej bezpečnosti na pumpaciach staniciach</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Čerpávacie a čistiace stanice musia mať fyzickú bezpečnosť (videonadzorovanie, kontrola vstúpu) integrovanú s monitoringom kybernetických útokov. Vytvorte zoznam kritických lokalít a implementujte nepretržitý monitoring podozrivých pokusov o vzdialený prístup alebo fyzické zásahy do hardvéru. Zatvárajte všetky fyzické prístupy bez elektronickej autentifikácie.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Reportovanie incidentov kybernetickej bezpečnosti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pri každom incidente, ktorý ohrozuje alebo prerušuje dodávku pitnej vody alebo čistenie odpadných vôd vplývajúce na významný počet ľudí, musíte informovať SK-CERT bez zbytočného odkladu, maximálne však do 24 hodín od jeho zistenia. V prípade vysokorizikových incidentov informujete Národný bezpečnostný úrad (NBÚ) do 72 hodín s podrobným popisom dotknutých systémov, počtu postihnutých osôb a prijatých opatrení na obnovenie prevádzky.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov narúšajúcich dodávku vody väčšej populácii</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý incident, ktorý vám znemožňuje dodávku pitnej vody viac ako 50 000 ľuďom alebo väčšiemu regiónu, musíte nahlásiť Úradu národnej bezpečnosti (NBÚ) do 24 hodín od detekcie. Vytvorte interný protokol na klasifikáciu incidentov, určite zodpovednosť ohlasovateľov a udržujte záznam všetkých ohlásených prípadov.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Riadenie prístupov a identitných údajov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zavádzate centralizovanú správu používateľov (Active Directory alebo ekvivalent) so zákazom používania štandardných hesiel a účtov vrátane hesiel na SCADA zariadeniach. Všetci technici s prístupom do SCADA siete absolvujú školenie na bezpečnosť a podpisujú NDA dohodu. Prístupy sú časovo limitované a automaticky sa deaktivujú po zmene pracovného zamerania alebo ukončení zamestnania.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnostné posúdenie tretích strán a dodávateľov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetci dodávatelia, ktorí majú prístup k SCADA systémom alebo operačným sieťam (vrátane inžinierov údržby a IT konzultantov), musia byť podrobení bezpečnostným preskúmaniam a musia podpísať záväzky na ochranu dôverných technických informácií. Zahrňte bezpečnostné klauzuly do všetkých zmlúv a pravidelne overujte dodržiavanie.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľských reťazcov a externých partnérov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pri výbere dodávateľa softvéru, hardvéru a služieb na správu SCADA systémov požadujete písomný záväzok na dodržiavanie noriem ISO/IEC 27001 a záväzok na bezpečnosť dodávateľskej reťazce (SBOMy, penetračné testy). Každá zmena verzie firmware alebo softvéru v SCADA systémoch musí byť testovaná v izolovanom prostredí a musí byť k nej dostupný plán vrátenia sa k predchádzajúcej verzii v prípade problémov.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA systémy sú pripojené priamo k internetu bez firewallu alebo sa používajú slabé sieťové hranice — upravte sieť tak, aby OT infraštruktúra bola v samostatnej zóne s filtraním IP adries.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA systémy sú pripojené na internet bez firewallu alebo s otvoreným portom 3389 (RDP) — takto sa umožňuje vonkajší prístup hackerom na kritické čerpania a dávkovací systémy.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dávkovacie kontroléry chemikálií si zachovávajú predvolené alebo jednoduché heslá a chýbajú im záznamy o prístupcoch — okamžite zmeňte všetky heslá, implementujte MFA a aktivujte audit logov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dávkovací automaty chemikálií majú výrobné heslo nezmenené alebo heslo zdieľané medzi všetkými technikmi bez auditného záznamu — podľa NIS2 musí byť každý prístup identifikovateľný.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostáva segmentácia medzi korporátnymi IT sieťami a operačnými sieťami — vytvorte DMZ zónu s prístupovými bodmi a zakážte priamy prístup z kancelárskych počítačov do SCADA.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Korporátna sieť (e-mail, fakturácia) a operačná sieť SCADA sú v rovnakej sieťovej domény bez segmentácie — jeden napadnutý počítač v administratíve ohrozuje celý vodárenský podnik.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chýba vám plán ohlásenia incidentov a kritických tímov — definujte postup s konkrétnymi kontaktmi na NBÚ, vedenie spoločnosti a regulačné orgány v rámci 24 hodín.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chýba centrálny systém na monitorovanie bezpečnostných udalostí (SIEM) — bez neho neviete odhaliť pokus o nedovolený prístup, kým nedôjde k incidentu, ktorý bude viditeľný užívateľom vo forme výpadku vody.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ktoré vodárenské podniky musia dodržiavať NIS2 na Slovensku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sankcie hrozia vodárenským podnikom, ak nezískajú zhodu s NIS2 do konca roku 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Všetci operátori, ktorí zásobujú viac ako 30 000 ekvivalentov obyvateľov pitnou vodou alebo spracovávajú odpadné vody v tomto rozsahu. To zahŕňa mestské vodárne, veľké regionálne podniky a niektorých súkromných prevádzkovateľov. Skontrolujte si počet zásobovaného obyvateľstva a počet zamestnancov — podľa Prílohy I ste podstatný subjekt, ak nie ste malá alebo stredná podnikateľská osoba.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Podľa zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti hrozí prevádzkovateľom pitnej vody až 10 miliónov eur alebo 2 % ročného obratu za porušenie povinností NIS2, keďže sú klasifikovaní ako podstatné prvky kritickej infraštruktúry. Pokuty môžu byť uložené NBÚ po skončení lehoty na dosiahnutie zhody.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Akú sankciu mi hrozí, ak zistím bezpečnostný incident a nenahláším ho NBÚ?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako veľmi podrobne musím dokumentovať fyzickú bezpečnosť čerpacích staníc?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nemechanizované nahlášenie incidentov, ktoré narúšajú dodávku vody významnému počtu ľudí, je porušením NIS2 a môže viesť k sankcii až do 5 miliónov eur alebo 1 % ročného obratu spoločnosti. Malé mestské vodárne môžu očakávať pokuty v desiatisícoch eur. Najdôležitejšie je: hlásenie musí byť v lehotě 24 hodín od detekcie.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Dokumentácia musí obsahovať schému objektu s vyznačením všetkých vstupných a výstupných bodov, zoznam osôb s oprávnením vstupu, záznamy z bezpečnostných kamier za posledných 90 dní a plán pravidelných fyzických kontrol (aspoň mesačne). Tuga dokumentácia musí byť dostupná SK-CERT a NBÚ na požiadanie.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musím investovať do nového hardvéru, aby som bol NIS2 kompatibilný?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ak sa stane hacking na SCADA systém mého vodovodu, kedy musím nahlasovať incident SK-CERT?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie všetky zmeny vyžadujú nový hardvér. Väčšina gaps sa dá riešiť softwarovou konfiguráciou: zmena hesiel, nastavenie firewallu, vytvorenie sieťových segmentov a audit logov. Ak máte veľmi staré SCADA systémy bez bezpečnostných funkcií, budete možno musieť uvažovať o modernizácii, ale s pomocou nástrojov ako Secfix zistíte, čo je kritické.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Incident musíte nahlasovať SK-CERT do 24 hodín od jeho zistenia. Ak incident ovplyvňuje dodávku vody pre značný počet ľudí (stavy či prevádzky trvajúce dlhšie ako 4 hodiny), musíte informovať aj NBÚ do 72 hodín s detailmi o postihnutých oblastiach a počte dotknutých osôb.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Súvisiace sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Súvisiace sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="accountants.html">NIS2 pre účtovné firmy a daňových poradcov v SR 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 pre banky a úverové inštitúcie v SR</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 pre poskytovateľov cloudových služieb na Slovensku 2026</a></li><li style="margin:0"><a href="construction.html">NIS2 pre stavebné spoločnosti a stavbyvedenie na Slovensku 2026</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 pre dodávateľov kybernetickej bezpečnosti na Slovensku 2026</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2 pre zubné kliniky na Slovensku</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

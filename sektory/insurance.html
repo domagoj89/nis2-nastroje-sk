@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pre poisťovne a maklérov na Slovensku — požiadavky 2026</title>
-  <meta name="description" content="Povinnosti NIS2 pre poisťovne, maklérov a reinsurancií na SK. Bezpečnosť údajov poisťencov, kontinuita podnikania a riadenie dodávateľov. Termín compliance: 2026.">
+  <title>NIS2 pre poisťovne a brokerov na Slovensku — požiadavky 2026</title>
+  <meta name="description" content="Povinnosti NIS2 pre poisťovne a brokerov na SK. Ochrana údajov poistencov, kontinuita podnikov, riadenie dodávateľov. Deadline 2026.">
   <link rel="canonical" href="https://nis2-nastroje.sk/sektory/insurance.html">
-  <meta property="og:title" content="NIS2 pre poisťovne a maklérov na Slovensku — požiadavky 2026">
-  <meta property="og:description" content="Povinnosti NIS2 pre poisťovne, maklérov a reinsurancií na SK. Bezpečnosť údajov poisťencov, kontinuita podnikania a riadenie dodávateľov. Termín compliance: 2026.">
+  <meta property="og:title" content="NIS2 pre poisťovne a brokerov na Slovensku — požiadavky 2026">
+  <meta property="og:description" content="Povinnosti NIS2 pre poisťovne a brokerov na SK. Ochrana údajov poistencov, kontinuita podnikov, riadenie dodávateľov. Deadline 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.sk/sektory/insurance.html">
   <meta property="og:locale" content="sk_SK">
   <meta property="og:site_name" content="NIS2-Nastroje.sk">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pre poisťovne a maklérov na Slovensku — požiadavky 2026">
-  <meta name="twitter:description" content="Povinnosti NIS2 pre poisťovne, maklérov a reinsurancií na SK. Bezpečnosť údajov poisťencov, kontinuita podnikania a riadenie dodávateľov. Termín compliance: 2026.">
+  <meta name="twitter:title" content="NIS2 pre poisťovne a brokerov na Slovensku — požiadavky 2026">
+  <meta name="twitter:description" content="Povinnosti NIS2 pre poisťovne a brokerov na SK. Ochrana údajov poistencov, kontinuita podnikov, riadenie dodávateľov. Deadline 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pre poisťovne, maklérov a reinsurancií na Slovensku — požiadavky 2026",
+      "name": "NIS2 pre poisťovne, brokerov a zaistovateľov na Slovensku — požiadavky a povinnosti",
       "item": "https://nis2-nastroje.sk/sektory/insurance.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ktoré poisťovne sa klasifikujú ako dôležité entity podľa NIS2 na Slovensku?",
+      "name": "Koľko času máme na implementáciu všetkých požiadaviek NIS2 na Slovensku?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Všetky poisťovne, makléri a reinsuranceri registered na Slovensku sa automaticky klasifikujú ako dôležité entity (Annex II) — nicht existuje veľkostný prah. Rozhodujúca je povaha služby (spracovanie citlivých údajov poisťencov), nie počet zamestnancov. Ak spracúvajte poisťovací údaje, musíte splniť všetky požiadavky NIS2 do 17. októbra 2026."
+        "text": "Zákon č. 69/2018 Z. z. mal byť implementovaný do 19. októbra 2024, ale príslušné sektorové požiadavky a overovanie compliance pokračujú do roku 2026. NBÚ začína s auditmi od polovice 2025, preto by ste mali mať základné kontroly (MFA, logování, riadenie dodávateľov) zavedené do konca 2024."
       }
     },
     {
       "@type": "Question",
-      "name": "Ako implementovať MFA na portáloch maklérov bez prerušenia ich workflow-u?",
+      "name": "Aké sankcie hrozia, ak nespĺníme požiadavky ako dôležitý subjekt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implementujte MFA postupne: najprv nastavte TOTP (Time-based One-Time Password) aplikácie ako Google Authenticator s backup kódmi, následne migrajte maklérov v skupinách počas nočných hodín. Alternatívou je hardwarový kľúč (security key), ktorý je bezpečnejší ale vyžaduje fyzickú distribúciu. Poskytnutie 30-dňovej grace period na implementáciu a support helpdesku minimalizuje otpor."
+        "text": "Ako dôležitý subjekt v poisťovactsektore hrozia vám pokuty až do 7 miliónov EUR alebo do 1,4% ročného obratu za porušenie povinností riadenia bezpečnosti. Najvyššie pokuty (až 10 miliónov EUR alebo 2% obratu) platia pre podstatné subjekty, ktoré dlhodobo zanedbávajú oznamovanie incidentov."
       }
     },
     {
       "@type": "Question",
-      "name": "Aké sú sankcie za porušenie NIS2 povinností pre poisťovne a aký je termín compliance?",
+      "name": "Musíme zabezpečovať dodávateľov aj vtedy, keď sú mimo EÚ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Poisťovne budú podliehať pokuty až do 10 miliónov EUR alebo 2% globálneho ročného obratu (ktorá je vyššia) za porušenie základných povinností, a až 20 miliónov EUR alebo 4% obratu za porušenie reporting povinností podľa zákona č. 69/2018 Z. z. Termín na implementáciu všetkých požiadaviek je 17. október 2026 — začnite s vendor assessmentom a incident response plánmi ihneď, aby ste mali čas na piloting technických opatrení."
+        "text": "Áno, všetci dodávatelia bez ohľadu na sídlo musia spĺňať bezpečnostné požiadavky, ak spracúvajú údaje poistencov zo Slovenska. Musíte mať v zmluvách definované práva na audit, povinnosť ozamovať incidenty do 24 hodín a potvrdenie, že údaje poistencov sa nešíria do tretích krajín bez vašej explicitnej autorizácie."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pre poisťovne, maklérov a reinsurancií na Slovensku — požiadavky 2026
+    NIS2 pre poisťovne, brokerov a zaistovateľov na Slovensku — požiadavky a povinnosti
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitá entita</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre poisťovne, maklérov a reinsurancií na Slovensku — požiadavky 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená vedúcim IT bezpečnosti, compliance manažérom a vedeniu poisťovní na Slovensku, ktorí musia implementovať povinnosti podľa NIS2/zákona č. 69/2018 Z. z. Dozviete sa konkrétne požiadavky na zabezpečenie systémov spracúvajúcich údaje poisťencov, continuity podnikania a bezpečnostného riadenia dodávateľov.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitý subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre poisťovne, brokerov a zaistovateľov na Slovensku — požiadavky a povinnosti</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená vedúcim bezpečnosti, compliance manažérom a IT riaditeľom v poisťovacích spoločnostiach a sprostredkovateľoch na Slovensku. Dozviete sa, aké konkrétne kontroly a procesy musíte zaviesť, aby ste splnili zákon č. 69/2018 Z. z. a náklady na sankcie sa vyhli.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Poisťovne, poisťovací makléri a reinsuranceri registered na Slovensku, ktorí spracúvajú údaje poisťencov cez digitálne systémy, sa klasifikujú ako dôležité entity podľa NIS2. Táto klasifikácia platí bez ohľadu na počet zamestnancov — rozhodujúca je povaha poskytovanej služby a množstvo citlivých údajov v ich rukách.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Poisťovne, ktoré poskytujú povinné alebo fakultatívne poistenie na Slovensku, poisťovací brokeri s rozhodujúcim vplyvom na bezpečnosť systémov poistencov a zaistovateľa, ktorí spracúvajú údaje o poistencoch rezidentov SR, musia spĺňať požiadavky NIS2. Ako subjekt v Prílohe II platí pre organizácie s počtom zamestnancov nad 250 alebo ročným obratom nad 50 miliónov EUR.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť systémov spracúvajúcich údaje poisťencov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte implementovať technické a organizačné opatrenia na ochranu všetkých systémov obsahujúcich osobné údaje poisťencov, vrátane portálov maklérov, backoffice aplikácií a CRM nástrojov. Minimálne požiadavky zahŕňajú šifrovanie dát v pokoji i v prenose, kontrolu prístupu s MFA, a pravidelné penetračné testy. Táto povinnosť je kritická, pretože poisťovacia data obsahujú zdravotné informácie a finančné údaje chránené GDPR a NIS2 súčasne.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť systémov spracúvajúcich aktuárne a údaje poistencov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte zaviesť kontroly identity prístupu (MFA) na všetkých portáloch brokerov a interných systémoch, ktoré spracúvajú citlivé údaje poistencov vrátane zdravotného stavu a finančných informácií. Vyžaduje sa šifrovanie dát v kľude aj v prevádzke a pravidelné penetračné testy systémov určených na distribúciu a správu zmlúv. Zodpovedajúca správa riadenia prístupu musí byť dokumentovaná a auditovaná najmenej ročne.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontinuita podnikania pre platformy claims processing</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Systémy na spracovanie poistných nárokov musia mať implementovaný formálny plán kontinuity podnikania s RTO (Recovery Time Objective) maximálne 24 hodín a RPO (Recovery Point Objective) maximálne 4 hodiny. Musíte garantovať, že aj pri incidente budete schopní spracovávať nároky bez prerušenia. Testovanie tohto plánu musí prebehnúť minimálne ročne s dokumentovanými výsledkami.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Kontinuita a dostupnosť systémov spracúvania nárokov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Systémy na spracúvanie poistných nárokov musia mať doložený plán kontinuity podnikania s cieľom obnovy v menej ako 4 hodinách. Musíte testovať zálohy a systémy obnovy najmenej dvakrát ročne a udržiavať nezávislú infraštruktúru mimo primárneho dátového centra. Ak používate tretie strany, musíte mať v zmluvách definované SLA s jasne špecifikovanými dobami dostupnosti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Riadenie bezpečnosti dodávateľov softvéru a SaaS nástrojov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý dodávateľ underwriting softwéru, dátových analýz alebo cloud služieb musí byť zaradený do formálneho programu vendor risk management. Musíte vykonať bezpečnostnú audit každého dodávateľa, nastaviť SLA požiadavky na bezpečnosť v zmluvách, a definovať proces pre incidenty ktoré si vyžadujú notifikáciu. Zmluvne si musíte vyhradiť právo na bezpečnostnú audit minimálne raz ročne.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Riadenie bezpečnosti dodávateľov a SaaS nástrojov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetci dodávatelia programovej vybavenosti na underwriting, správu poistiek a analýzu údajov musia prejsť formálnym procesným auditom bezpečnosti pred onboardingom. V zmluvách o obstarávaní SaaS nástrojov musíte vyminiť práva na bezpečnostné audit, oznamovanie incidentov do 24 hodín a povinnosti plánu kontinuity. Musíte viesť register všetkých dodávateľov s ich bezpečnostnými certifikátmi a pravidelne ohodnocovať ich postojavy voči hrozbám.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Pravidelné hodnotenia rizika digitálnych distribučných kanálov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Digitálne kanály (web portály, mobilné aplikácie, e-maily s ponukami poistenia) musia byť predmetom ročného formálneho bezpečnostného hodnotenia. Táto hodnotenie musí zahŕňať identifikáciu hrozieb špecifických pre poisťovací sektor — phishing na poisťencov, man-in-the-middle útoky na platobné brány, a falšovanie totožnosti. Výsledky musia byť zdokumentované a akčné zistenia musia mať priradenú zodpovednosť.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hodnotenie rizík digitálnych kanálov distribúcie</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Webové portály na zápis poistiek, mobilné aplikácie a agentskej siete musia prejsť ročným formálnym hodnotením risika v oblasti kybernetickej bezpečnosti. Zvláštnu pozornosť venujte autentifikácii používateľov, ochrane proti botom a monitorovaniu podozrivých pokusov o prístup. Výsledky hodnotenia risika musia byť zdokumentované a prijaté vedením spoločnosti s jasným plánom na riešenie kritických zistení.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Incident response a reportovanie NBÚ</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte mať implementovaný formálny proces incident response s definovanými rolami, komunikačnými kanálmi a časovými limitami. Havárie ovplyvňujúce kontinuitu claims processing alebo bezpečnosť údajov poisťencov musia byť hlásené NBÚ do 72 hodín. Incident response plán musí obsahovať názvy a kontakty osôb zodpovedných za notifikáciu, ako aj šablóny správ pre NIS2 incident reporting.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Oznamovanie incidentov a logování</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kybernetické incidenty musíte nahlásiť NBÚ a SK-CERT v lehote 24 hodín od zistenia (alebo 72 hodín v prípade rozsiahlych incidentov). Všetky systémy spracúvajúce údaje poistencov musia mať zapnuté logování s logmi uchovávanými minimálne 90 dní. Vedenie spoločnosti musí byť informované o každom incidente s potenciálom na vplyv na poistencov do jednej pracovnej doby.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Portály maklérov a agentov nemajú implementovanú viacfaktorovú autentifikáciu (MFA) — väčšina organizácií spoliehajú iba na heslo, čo je kritická zraniteľnosť pre externú komunikáciu s poisťencami.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Portály brokerov nemajú implementovanú dvojfaktorovú autentifikáciu, čo umožňuje neautorizovaný prístup k údajom poistencov a porušuje zákon č. 69/2018 Z. z.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Legacy systémy na riadenie poistiek nemajú formalizovaný proces patch management — updates sa nasadzujú ad-hoc bez testovania, čo zanecháva bezpečnostné diery mesiace po publikovaní patches.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Staršie systémy riadenia poistiek bez procesu správy záplat a bezpečnostných aktualizácií ostávajú zraniteľní voči známym útokom a nie sú schopní spĺňať požiadavky na update bezpečnosti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zmluvy s SaaS dodávateľmi (underwriting engines, dátové analytické nástroje) neobsahujú požiadavky na bezpečnosť, audit práva alebo povinnosti notifikácie incidentov — riadenie rizika dodávateľa prakticky neexistuje.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chýba formálny proces riadenia rizika dodávateľov — SaaS nástroje na underwriting sú zaviedené bez auditu bezpečnosti a bez povinnosti na oznamovanie incidentov.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Digitálne distribučné kanály (web formuláre na ponuky, e-mailové kampane) nemajú dokumentované bezpečnostné hodnotenia — nie je jasné, ako sa hlásenia podozrivých návštevníkov alebo spam-úniky dát riešia.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Digitálne kanály distribúcie (webové stránky, mobilné aplikácie) nemajú pravidelného hodnotenia rizika a chýba im ochrana proti botom a monitorovanie podozrivých pokusov.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ktoré poisťovne sa klasifikujú ako dôležité entity podľa NIS2 na Slovensku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Koľko času máme na implementáciu všetkých požiadaviek NIS2 na Slovensku?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Všetky poisťovne, makléri a reinsuranceri registered na Slovensku sa automaticky klasifikujú ako dôležité entity (Annex II) — nicht existuje veľkostný prah. Rozhodujúca je povaha služby (spracovanie citlivých údajov poisťencov), nie počet zamestnancov. Ak spracúvajte poisťovací údaje, musíte splniť všetky požiadavky NIS2 do 17. októbra 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zákon č. 69/2018 Z. z. mal byť implementovaný do 19. októbra 2024, ale príslušné sektorové požiadavky a overovanie compliance pokračujú do roku 2026. NBÚ začína s auditmi od polovice 2025, preto by ste mali mať základné kontroly (MFA, logování, riadenie dodávateľov) zavedené do konca 2024.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako implementovať MFA na portáloch maklérov bez prerušenia ich workflow-u?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sankcie hrozia, ak nespĺníme požiadavky ako dôležitý subjekt?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Implementujte MFA postupne: najprv nastavte TOTP (Time-based One-Time Password) aplikácie ako Google Authenticator s backup kódmi, následne migrajte maklérov v skupinách počas nočných hodín. Alternatívou je hardwarový kľúč (security key), ktorý je bezpečnejší ale vyžaduje fyzickú distribúciu. Poskytnutie 30-dňovej grace period na implementáciu a support helpdesku minimalizuje otpor.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ako dôležitý subjekt v poisťovactsektore hrozia vám pokuty až do 7 miliónov EUR alebo do 1,4% ročného obratu za porušenie povinností riadenia bezpečnosti. Najvyššie pokuty (až 10 miliónov EUR alebo 2% obratu) platia pre podstatné subjekty, ktoré dlhodobo zanedbávajú oznamovanie incidentov.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú sankcie za porušenie NIS2 povinností pre poisťovne a aký je termín compliance?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musíme zabezpečovať dodávateľov aj vtedy, keď sú mimo EÚ?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Poisťovne budú podliehať pokuty až do 10 miliónov EUR alebo 2% globálneho ročného obratu (ktorá je vyššia) za porušenie základných povinností, a až 20 miliónov EUR alebo 4% obratu za porušenie reporting povinností podľa zákona č. 69/2018 Z. z. Termín na implementáciu všetkých požiadaviek je 17. október 2026 — začnite s vendor assessmentom a incident response plánmi ihneď, aby ste mali čas na piloting technických opatrení.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Áno, všetci dodávatelia bez ohľadu na sídlo musia spĺňať bezpečnostné požiadavky, ak spracúvajú údaje poistencov zo Slovenska. Musíte mať v zmluvách definované práva na audit, povinnosť ozamovať incidenty do 24 hodín a potvrdenie, že údaje poistencov sa nešíria do tretích krajín bez vašej explicitnej autorizácie.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Súvisiace sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Súvisiace sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="it-outsourcing.html">NIS2 pre IT outsourcing spoločnosti na Slovensku</a></li><li style="margin:0"><a href="law-firms.html">NIS2 pre právne kancelárie v SR - Compliance 2026</a></li><li style="margin:0"><a href="logistics.html">NIS2 zákon č. 69/2018 Z. z.</a></li><li style="margin:0"><a href="managed-services.html">NIS2 pre poskytovateľov spravovaných služieb na Slovensku 2026</a></li><li style="margin:0"><a href="manufacturing.html">NIS2 pre priemyselných výrobcov na Slovensku - Požiadavky 2026</a></li><li style="margin:0"><a href="medical-devices.html">NIS2 pre výrobcov medicínskych zariadení v SR 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

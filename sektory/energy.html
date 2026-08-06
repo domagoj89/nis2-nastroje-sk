@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pre energetikov na Slovensku — Povinnosti 2026</title>
-  <meta name="description" content="Komplexný sprievodca povinnosťami NIS2 pre operátorov sietí, výrobcov elektriny a dodávateľov palív na Slovensku. Deadline 2026.">
+  <title>NIS2 pre energetiku SR — Záväzné požiadavky 2026</title>
+  <meta name="description" content="NIS2 povinnosti pre výrobcov elektriny, operátorov sietí a dodávateľov v SR. Deadline 2026, pokuty až 10 miliónov €.">
   <link rel="canonical" href="https://nis2-nastroje.sk/sektory/energy.html">
-  <meta property="og:title" content="NIS2 pre energetikov na Slovensku — Povinnosti 2026">
-  <meta property="og:description" content="Komplexný sprievodca povinnosťami NIS2 pre operátorov sietí, výrobcov elektriny a dodávateľov palív na Slovensku. Deadline 2026.">
+  <meta property="og:title" content="NIS2 pre energetiku SR — Záväzné požiadavky 2026">
+  <meta property="og:description" content="NIS2 povinnosti pre výrobcov elektriny, operátorov sietí a dodávateľov v SR. Deadline 2026, pokuty až 10 miliónov €.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.sk/sektory/energy.html">
   <meta property="og:locale" content="sk_SK">
   <meta property="og:site_name" content="NIS2-Nastroje.sk">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pre energetikov na Slovensku — Povinnosti 2026">
-  <meta name="twitter:description" content="Komplexný sprievodca povinnosťami NIS2 pre operátorov sietí, výrobcov elektriny a dodávateľov palív na Slovensku. Deadline 2026.">
+  <meta name="twitter:title" content="NIS2 pre energetiku SR — Záväzné požiadavky 2026">
+  <meta name="twitter:description" content="NIS2 povinnosti pre výrobcov elektriny, operátorov sietí a dodávateľov v SR. Deadline 2026, pokuty až 10 miliónov €.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pre energetické podniky na Slovensku — Povinnosti kľúčových subjektov do roku 2026",
+      "name": "NIS2 pre energetiku, distribúciu plynu a vykurovanie na Slovensku — Požiadavky 2026",
       "item": "https://nis2-nastroje.sk/sektory/energy.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Akú lehotu mám na implementáciu bezpečnostných opatrení podľa NIS2?",
+      "name": "Aká je lehota na hlásenie bezpečnostného incidentu, keď výpadok elektrickej siete ovplyvní viacero krajín?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Základná lehota je 18. október 2024. Energetické podniky majú prechodné obdobie do 18. októbra 2026 na úplnú implementáciu všetkých technických opatrení, ako je segmentácia SCADA sietí a nasadenie monitorovania v reálnom čase. Prípravné pracovné tímy a inventáre aktív je však povinné mať hotové do konca roku 2024."
+        "text": "Bezpečnostný incident s potenciálnym cezhraničným dopadom sa musí hlásiť NBÚ a SK-CERT v lehote 72 hodín od identifikácie. Ak incident dotknutý len slovenskú sieť bez cezhraničného vplyvu, lehota je 24 hodín. Hlásenie musí obsahovať typ incidentu, čas detekcie a predbežný odhad dopadom."
       }
     },
     {
       "@type": "Question",
-      "name": "Aké sú konkrétne požiadavky na vzdialený prístup k SCADA systémom?",
+      "name": "Ako musím zabezpečiť SCADA systémy na vzdialené monitorovanie bez ohrozenia bezpečnosti?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vzdialené prístupy musia byť šifrované (VPN s 256-bitovým AES minimálne) a autentifikované dvojfaktorovo. Všetky pripojenia musia byť logované s časovým pečiatkom a identifikáciou používateľa. Prístup musí byť časovo obmedený — maximálne na čas potrebný na vykonanie úlohy — a pre vzdialené výrobcove služby musí existovať výslovný súhlas. Zakázané sú nešifrované protokoly ako Telnet, FTP, HTTP na kontrolu zariadení."
+        "text": "SCADA prístup musí byť implementovaný cez šifrované siete (VPN s IPsec alebo TLS 1.2+) s viacfaktorovou autentifikáciou. Všetky vzdialené spojenia sa musia zaznamenávať (log) a monitorovať v reálnom čase. Regulárne kontrolujte prístupové logy a vykonávajte penetračné testy aspoň ročne podľa požiadaviek CVSS."
       }
     },
     {
       "@type": "Question",
-      "name": "Aké sú sankcií za nesplnenie povinností NIS2 do roku 2026?",
+      "name": "Aké sú pokuty za nesplnenie povinností NIS2 na Slovensku?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Národný bezpečnostný úrad (NBÚ) môže uložiť pokuty až do 5 % ročného obratu alebo 10 miliónov eur za závažné porušenia (napr. nehlásenie incidentu, absencia SCADA segmentácie). Za menej závažné porušenia (napr. neaktualizovaný inventár OT aktív) sú pokuty nižšie. Zároveň NBÚ môže nariadiť operačné zastavenie procesov až do nápravy — pre energetiku je to kritické."
+        "text": "Pre podstatné subjekty (do ktorej kategórie patria energetické spoločnosti) sú pokuty až 10 miliónov EUR alebo 2% celoročného obratu, podľa toho, čo je vyššie. Pre niektoré povinnosti ako zlyhanie v hlásení incidentov alebo v bezpečnosti SCADA hrozia pokuty v hornom rozmedzí. NBÚ presadzuje povinnosti po 2026 — roku, od ktorého je zákon v plnej platnosti."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pre energetické podniky na Slovensku — Povinnosti kľúčových subjektov do roku 2026
+    NIS2 pre energetiku, distribúciu plynu a vykurovanie na Slovensku — Požiadavky 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha I — Kľúčový subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre energetické podniky na Slovensku — Povinnosti kľúčových subjektov do roku 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tento sprievodca je určený prevádzkam distribučných sietí, výrobcom elektriny, operátorom plyn a sietí diaľkového kúrenia, ktorí musia splniť povinnosti NIS2 ako kľúčové subjekty. Naučíte sa konkrétne technické a organizačné požiadavky na bezpečnosť OT/ICS systémov a postup pri hlásení incidentov.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha I — podstatný subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre energetiku, distribúciu plynu a vykurovanie na Slovensku — Požiadavky 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená vedúcim kybernetickej bezpečnosti, technickým riaditeľom a compliance manažérom v energetických spoločnostiach. Dozviete sa konkrétne povinnosti podľa NIS2, ktoré sa vzťahujú na výrobcov elektriny, operátorov distribučných sietí, dodávateľov plynu a tepla na Slovensku.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnosťami NIS2 sú viazaní všetci operátori elektrizačných sietí, výrobcovia elektriny s kapacitou nad 100 MW, operátori distribučných sietí zemného plynu, podniky zabezpečujúce vykurovanie alebo chladenie cez sietě, ako aj veľké dodávateľské podniky palív. Organizácie sú povinné splniť požiadavky od 18. októbra 2024, s prechodným obdobím do 18. októbra 2026 na plnú implementáciu bezpečnostných opatrení.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnosťou sú všetci operátori energetických sietí (elektriny, plynu, tepla), výrobcovia elektriny s kapacitou nad určitými prahmi, distribútori plynu a operátori tepelných sietí na území Slovenskej republiky. Podľa § 3 zákona č. 69/2018 Z. z. sa na tieto subjekty vzťahujú podľa NIS2 požiadavky na úroveň podstatného subjektu bez výnimiek.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť SCADA a priemyselných riadiacich systémov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky OT/ICS/SCADA systémy riadiace fyzické procesy v energetických sieťach musia byť segmentované od sieťovej infraštruktúry IT a chránené viacvrstvovým prístupom. Je zakázané používať nešifrované protokoly (Telnet, FTP) na vzdialený prístup k riadiacim systémom. Implementujte monitorovanie v reálnom čase na detekciu anomálií a podržiavajte aktuálne záplaty a firmware.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť SCADA a priemyselných riadiacich systémov (OT/ICS)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky riadiace systémy energetickej infraštruktúry vrátane SCADA a PLC musia byť fyzicky a logicky segmentované od kancelárskych IT sietí. Implementujte autentifikáciu na viacerých faktoroch pre všetok vzdialený prístup k riadiacim prvkom. Zakážte zastarané protokoly (Telnet, FTP) a zaviste šifrovanie podľa minimálne AES-128 pre všetku komunikáciu medzi zariadeniami.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Fyzická bezpečnosť transformovní a podstancií kombinovaná s kybernetickým monitorovaním</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Rozvodne, transformovne a čerpacie stanice musia mať fyzické bezpečnostné opatrenia (ploty, kamery, kontrola prístupu). Súbežne je povinné nadväzovať kybernetický monitoring napojený na centrálne sieťové centrá (SOC), aby bola detegovaná akákoľvek anomália v riadiacich systémoch. Fyzická a kybernetická bezpečnosť nesmú byť izolovane — logujte všetky prístupy a zmeny konfigurácie.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Inventarizácia a správa OT aktív</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Podržujte úplný register všetkých OT zariadení vrátane výrobcov, verzií firmvéru, postavenia životného cyklu a kritičnosti pre chod siete. Kontrolujte tieto zoznamy minimálne štvrťročne a zdokumentujte všetky zmeny. Identifikujte zariadenia s podporou zastrnutého alebo bez podpory a naplánujte ich vyraďovanie alebo izolácií.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Inventár a manažment OT aktív</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Povinnosťou je vedenie úplného a aktualizovaného inventára všetkých OT zariadení (SCADA servery, PLC, rozvodnice, senzory, komunikačné moduly). Pre každé zariadenie je potrebné dokumentovať: výrobca, firmvér verziu, dátum poslednej aktualizácie, bezpečnostný stav a zodpovedného správcu.Inventár musí byť pravidelne audítovaný a integrovaný s bezpečnostným systémom podľa normy IEC 62541.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľskej reťaze a vzdialený prístup podpory</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Požadujte od všetkých dodávateľov hardvéru a softvéru podpis zmluvy o kybernetickej bezpečnosti obsahujúcej povinnosti bezpečnosti dodávateľskej reťazce. Všetok vzdialený prístup od zamestnancov dodávateľov musí byť registrovaný, časovo limitovaný (max. 4 hodiny) a vyžadovať viacfaktorovú autentifikáciu. Monitorujte všetky aktivity podpory pomocou centralizovaného logovania.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľského reťazca hardvéru a firmvéru</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Je povinné uzatvárame zmluvy so všetkými dodávateľmi hardvéru a firmvéru obsahujúce klauzuly o bezpečnosti, logovaní zmien a obmedzenosti vzdialených prístupov. Vzdialená podpora od výrobcov musí byť povolená iba s časovými obmedzeníami a logovaním všetkých aktivít. Implementujte posúdenie bezpečnosti dodávateľov a pravidelné audity ich procesov.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov a riadenie bezpečnostných udalostí</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky bezpečnostné incidenty ovplyvňujúce alebo môžu ovplyvniť funkcionalitu energetickej siete sa musia hlásiť NBÚ (Národný bezpečnostný úrad) a SK-CERT v lehote 24 hodín od identifikácie. Pre incidenty s potenciálnym cezhraničným dopadom je lehota 72 hodín. Vyžaduje sa proces eskalácie a zdokumentovaný plán obnovy.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov s potenciálnym medzihraniničným vplyvom</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý incident zhoršujúci alebo prekazujúci funkčnosť elektrizačnej, plynovej alebo tepelnej siete s dopadom na iné členské štáty musí byť hlásený Národnému bezpečnostnému úradu (NBÚ) v lehote 24 hodín od objasnenia závažnosti. Hlásenie musí obsahovať: typ incidentu, čas začiatku, rozsah dotknutých oblastí, počet postihnutých spotrebiteľov a prijaté zmierňujúce opatrenia. NBÚ ho ďalej hlási Európskej agentúre pre kybernetickú bezpečnosť (ENISA).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Fyzická bezpečnosť transformačných staníc a správne mestnosti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky kritické fyzické miesta vrátane transformačných staníc, podstanící a server miestností musia mať kombinovanú fyzickú ochranu (plot, kamera, hliadka) s paralelnými kybernetickými alertami. Prístup do správne mestnosti musia mať registrovaní a autentifikovaní len oprávnení pracovníci. Všetky fyzické prístupy sa musia zapisovať a audítovať mesačne.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA systémy sú umiestnené na rovnakých sieťach ako kancelárska IT infraštruktúra bez segmentácie — to umožňuje šírenie malvéru do riadiacich systémov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA systémy sú často pripojené na rovnakú sieť ako kancelárske počítače bez segmentácie, čo umožňuje šírenie malvéru z IT do OT. Bezodkladne implementujte sieťové segmentácie s firewall-ov, VPN a DMZ zóny.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vzdialené prístupy k riadiacim systémom používajú nezabezpečené protokoly bez šifrovania a bez logovania — správcovia výrobcov majú neobmedzený prístup.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vzdialený prístup do riadiacich systémov používa nezašifrované protokoly alebo nie je dostatočne monitorovaný. Všetky vzdialené pripojenia musia prejsť bezpečným kanálom (SSH, HTTPS) s vymaľovanou mufou a viacfaktorovou autentifikáciou.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neexistuje kompletný inventár OT zariadení — vedenie firmy nepozná, koľko je v sieti senzorov, PLC či komunikačných modulov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nie je údržiavaný aktuálny zoznam OT zariadení a softvéru, takže neviete, ktoré systémy sú oranžovo starnuté alebo bez bezpečnostných záplat. Vytvorte centralizovanú inventarizáciu s označením kritičnosti a harmonogramom aktualizáciách.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zmluvy so softvérovými a hardvérovými dodávateľmi neobsahujú bezpečnostné požiadavky a operátori nemajú prehľad o tom, akí dodávatelia majú prístup k produkcii.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zmluvy so zamestnancami tretích strán (dodávateľovia, integrátorov) neobsahujú vymienky o bezpečnosti alebo monitorovaní ich činnosti v sieti. Všetky zmluvy o dodávateľskej podpory musia byť revidovaný na tému kybernetickej bezpečnosti a fyzickej bezpečnosti.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Akú lehotu mám na implementáciu bezpečnostných opatrení podľa NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká je lehota na hlásenie bezpečnostného incidentu, keď výpadok elektrickej siete ovplyvní viacero krajín?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Základná lehota je 18. október 2024. Energetické podniky majú prechodné obdobie do 18. októbra 2026 na úplnú implementáciu všetkých technických opatrení, ako je segmentácia SCADA sietí a nasadenie monitorovania v reálnom čase. Prípravné pracovné tímy a inventáre aktív je však povinné mať hotové do konca roku 2024.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Bezpečnostný incident s potenciálnym cezhraničným dopadom sa musí hlásiť NBÚ a SK-CERT v lehote 72 hodín od identifikácie. Ak incident dotknutý len slovenskú sieť bez cezhraničného vplyvu, lehota je 24 hodín. Hlásenie musí obsahovať typ incidentu, čas detekcie a predbežný odhad dopadom.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú konkrétne požiadavky na vzdialený prístup k SCADA systémom?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako musím zabezpečiť SCADA systémy na vzdialené monitorovanie bez ohrozenia bezpečnosti?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Vzdialené prístupy musia byť šifrované (VPN s 256-bitovým AES minimálne) a autentifikované dvojfaktorovo. Všetky pripojenia musia byť logované s časovým pečiatkom a identifikáciou používateľa. Prístup musí byť časovo obmedený — maximálne na čas potrebný na vykonanie úlohy — a pre vzdialené výrobcove služby musí existovať výslovný súhlas. Zakázané sú nešifrované protokoly ako Telnet, FTP, HTTP na kontrolu zariadení.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SCADA prístup musí byť implementovaný cez šifrované siete (VPN s IPsec alebo TLS 1.2+) s viacfaktorovou autentifikáciou. Všetky vzdialené spojenia sa musia zaznamenávať (log) a monitorovať v reálnom čase. Regulárne kontrolujte prístupové logy a vykonávajte penetračné testy aspoň ročne podľa požiadaviek CVSS.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú sankcií za nesplnenie povinností NIS2 do roku 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú pokuty za nesplnenie povinností NIS2 na Slovensku?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Národný bezpečnostný úrad (NBÚ) môže uložiť pokuty až do 5 % ročného obratu alebo 10 miliónov eur za závažné porušenia (napr. nehlásenie incidentu, absencia SCADA segmentácie). Za menej závažné porušenia (napr. neaktualizovaný inventár OT aktív) sú pokuty nižšie. Zároveň NBÚ môže nariadiť operačné zastavenie procesov až do nápravy — pre energetiku je to kritické.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pre podstatné subjekty (do ktorej kategórie patria energetické spoločnosti) sú pokuty až 10 miliónov EUR alebo 2% celoročného obratu, podľa toho, čo je vyššie. Pre niektoré povinnosti ako zlyhanie v hlásení incidentov alebo v bezpečnosti SCADA hrozia pokuty v hornom rozmedzí. NBÚ presadzuje povinnosti po 2026 — roku, od ktorého je zákon v plnej platnosti.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Súvisiace sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Súvisiace sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="fintech.html">NIS2 pre fintech spoločnosti na Slovensku</a></li><li style="margin:0"><a href="food.html">NIS2 pre potravinárske podniky na Slovensku</a></li><li style="margin:0"><a href="hospitals.html">NIS2 pre nemocnice a kliniky na Slovensku</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 pre dodávateľov HR softvéru a payroll služieb na Slovensku 2026</a></li><li style="margin:0"><a href="index.html">Sektory spadajúce pod NIS2 na Slovensku 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 pre poisťovne a maklérov na Slovensku</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

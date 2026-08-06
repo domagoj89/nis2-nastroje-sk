@@ -3,7 +3,12 @@
   <title>nis2-nastroje.sk</title>
   <link>https://nis2-nastroje.sk/</link>
   <description>nis2-nastroje.sk — latest pages</description>
-  <lastBuildDate>Mon, 22 Jun 2026 11:48:04 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 04 Aug 2026 10:44:12 +0000</lastBuildDate>
+    <item>
+      <title>Porovnanie nástrojov pre EU AI Act 2026</title>
+      <link>https://nis2-nastroje.sk/ai-act-nastroje.html</link>
+      <guid>https://nis2-nastroje.sk/ai-act-nastroje.html</guid>
+    </item>
     <item>
       <title>NIS2 Bezpečnosť Dodávateľov: Požiadavky na Dodávateľský Reťazec</title>
       <link>https://nis2-nastroje.sk/bezpecnost-dodavatelskych-retazcov.html</link>
@@ -15,17 +20,32 @@
       <guid>https://nis2-nastroje.sk/certifikacia-iso-27001.html</guid>
     </item>
     <item>
+      <title>Porovnanie nástrojov DORA 2026</title>
+      <link>https://nis2-nastroje.sk/dora-nastroje.html</link>
+      <guid>https://nis2-nastroje.sk/dora-nastroje.html</guid>
+    </item>
+    <item>
       <title>FAQ NIS2 Slovensko 2026 — najčastejšie otázky o NIS2 | NIS2-Nastroje.sk</title>
       <link>https://nis2-nastroje.sk/faq.html</link>
       <guid>https://nis2-nastroje.sk/faq.html</guid>
     </item>
     <item>
-      <title>Nástroje NIS2/KSC pre firmy na Slovensku 2026 — Porovnanie a Výber</title>
+      <title>Nástroje NIS2/NBÚ pre firmy na Slovensku 2026 — Porovnanie a Výber</title>
       <link>https://nis2-nastroje.sk/</link>
       <guid>https://nis2-nastroje.sk/</guid>
     </item>
     <item>
-      <title>Kalkulačka pokút KSC/NIS2 — aké je riziko Vašej firmy? | NIS2-Nastroje.sk</title>
+      <title>Porovnanie softvéru pre ISO 27001 2026</title>
+      <link>https://nis2-nastroje.sk/iso-27001-nastroje.html</link>
+      <guid>https://nis2-nastroje.sk/iso-27001-nastroje.html</guid>
+    </item>
+    <item>
+      <title>Kalkulačka nákladov NIS2 pre firmy na Slovensku | NBÚ</title>
+      <link>https://nis2-nastroje.sk/kalkulacka-nakladov-nis2.html</link>
+      <guid>https://nis2-nastroje.sk/kalkulacka-nakladov-nis2.html</guid>
+    </item>
+    <item>
+      <title>Kalkulačka pokút NBÚ/NIS2 — aké je riziko Vašej firmy? | NIS2-Nastroje.sk</title>
       <link>https://nis2-nastroje.sk/kalkulacka-pokut.html</link>
       <guid>https://nis2-nastroje.sk/kalkulacka-pokut.html</guid>
     </item>
@@ -120,38 +140,18 @@
       <guid>https://nis2-nastroje.sk/nastroje/vanta.html</guid>
     </item>
     <item>
+      <title>Porovnanie nástrojov EAA prístupnosť webu 2026</title>
+      <link>https://nis2-nastroje.sk/nastroje-pristupnosti-eaa.html</link>
+      <guid>https://nis2-nastroje.sk/nastroje-pristupnosti-eaa.html</guid>
+    </item>
+    <item>
+      <title>NIS2 Štartovací balík, editovateľné šablóny súladu</title>
+      <link>https://nis2-nastroje.sk/nis2-startovaci-balik.html</link>
+      <guid>https://nis2-nastroje.sk/nis2-startovaci-balik.html</guid>
+    </item>
+    <item>
       <title>NIS2 Penetration Testing: Požiadavky článku 21(2)(f)</title>
       <link>https://nis2-nastroje.sk/penetracne-testovanie.html</link>
       <guid>https://nis2-nastroje.sk/penetracne-testovanie.html</guid>
-    </item>
-    <item>
-      <title>10 najlepších nástrojov NIS2 2026 — úplné porovnanie pre slovenské firmy</title>
-      <link>https://nis2-nastroje.sk/porovnanie.html</link>
-      <guid>https://nis2-nastroje.sk/porovnanie.html</guid>
-    </item>
-    <item>
-      <title>Registrácia NIS2 pri NBÚ | Sprievodca pre slovenské firmy</title>
-      <link>https://nis2-nastroje.sk/registracia-nis2.html</link>
-      <guid>https://nis2-nastroje.sk/registracia-nis2.html</guid>
-    </item>
-    <item>
-      <title>NIS2 pre účtovné firmy a daňových poradcov v SR 2026</title>
-      <link>https://nis2-nastroje.sk/sektory/accountants.html</link>
-      <guid>https://nis2-nastroje.sk/sektory/accountants.html</guid>
-    </item>
-    <item>
-      <title>NIS2 pre banky a úverové inštitúcie v SR — požiadavky 2026</title>
-      <link>https://nis2-nastroje.sk/sektory/banks.html</link>
-      <guid>https://nis2-nastroje.sk/sektory/banks.html</guid>
-    </item>
-    <item>
-      <title>NIS2 pre poskytovateľov cloudových služieb na Slovensku 2026</title>
-      <link>https://nis2-nastroje.sk/sektory/cloud-providers.html</link>
-      <guid>https://nis2-nastroje.sk/sektory/cloud-providers.html</guid>
-    </item>
-    <item>
-      <title>NIS2 pre stavebné spoločnosti a stavbyvedenie na Slovensku 2026</title>
-      <link>https://nis2-nastroje.sk/sektory/construction.html</link>
-      <guid>https://nis2-nastroje.sk/sektory/construction.html</guid>
     </item>
 </channel></rss>
