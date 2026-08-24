@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pre zberače komunálneho odpadu na Slovensku 2026</title>
-  <meta name="description" content="Požiadavky NIS2 pre operátorov odpadu na SK. Bezpečnosť systémov správy vozového parku, ochrana záznamov nebezpečného odpadu a oznamovanie incidentov do 30. apríla 2026.">
+  <title>NIS2 pre zberateľov komunálneho odpadu na Slovensku 2026</title>
+  <meta name="description" content="Požiadavky NIS2 pre operátorov odpadu na SK. Povinnosti kybernetickej bezpečnosti, hlásenie incidentov do 24/72 h, pokuty do €7 miliónov.">
   <link rel="canonical" href="https://nis2-nastroje.sk/sektory/waste-management.html">
-  <meta property="og:title" content="NIS2 pre zberače komunálneho odpadu na Slovensku 2026">
-  <meta property="og:description" content="Požiadavky NIS2 pre operátorov odpadu na SK. Bezpečnosť systémov správy vozového parku, ochrana záznamov nebezpečného odpadu a oznamovanie incidentov do 30. apríla 2026.">
+  <meta property="og:title" content="NIS2 pre zberateľov komunálneho odpadu na Slovensku 2026">
+  <meta property="og:description" content="Požiadavky NIS2 pre operátorov odpadu na SK. Povinnosti kybernetickej bezpečnosti, hlásenie incidentov do 24/72 h, pokuty do €7 miliónov.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.sk/sektory/waste-management.html">
   <meta property="og:locale" content="sk_SK">
   <meta property="og:site_name" content="NIS2-Nastroje.sk">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pre zberače komunálneho odpadu na Slovensku 2026">
-  <meta name="twitter:description" content="Požiadavky NIS2 pre operátorov odpadu na SK. Bezpečnosť systémov správy vozového parku, ochrana záznamov nebezpečného odpadu a oznamovanie incidentov do 30. apríla 2026.">
+  <meta name="twitter:title" content="NIS2 pre zberateľov komunálneho odpadu na Slovensku 2026">
+  <meta name="twitter:description" content="Požiadavky NIS2 pre operátorov odpadu na SK. Povinnosti kybernetickej bezpečnosti, hlásenie incidentov do 24/72 h, pokuty do €7 miliónov.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pre zberače komunálneho odpadu a spracovateľov priemyselného odpadu na Slovensku — požiadavky 2026",
+      "name": "NIS2 pre zberateľov komunálneho a nebezpečného odpadu na Slovensku — požiadavky 2026",
       "item": "https://nis2-nastroje.sk/sektory/waste-management.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Musím ako malý mestský podnik so 40 zamestnancami spĺňať požiadavky NIS2?",
+      "name": "Musí moja spoločnosť na zbere odpadu spĺňať NIS2, ak máme menej ako 50 zamestnancov?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie, ak máte menej ako 50 zamestnancov a ročný obrat nižší ako 10 miliónov EUR, nie ste zaradení ako dôležitý subjekt. Avšak ak pracujete s nebezpečným odpadom a máte systémy prepojené s národnými evidenčnými databázami, možno budete zaradení. Skontrolujte si rozhodnutie NBÚ."
+        "text": "Podľa NBÚ a zákona č. 69/2018 Z. z. sa NIS2 vzťahuje na dôležité subjekty v sektore odpadového hospodárstva bez ohľadu na počet zamestnancov, ak poskytujete podstatné služby zberu alebo spracovaní odpadu, ktoré by ich narušenie vážne ohrozilo bezpečnosť alebo zásobovanie. Veľkosť nemá primárny vplyv — rozhodujúce je, či ide o spoločnosť poskytujúcu kritickú službu v odpadovom hospodárstve na úrovni mesta alebo kraja."
       }
     },
     {
       "@type": "Question",
-      "name": "Čo sa stane, ak nezaznamenám incident s výpadkom zberu v systéme do 24 hodín?",
+      "name": "Aká je lehota na hlásenie kybernetického incidentu na SK-CERT, ak spôsobí prerušenie zberu odpadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Podľa zákona č. 69/2018 Z.z. hrozí pokuta až do 100 000 EUR za porušenie povinnosti oznamovania. Navyše si NBÚ môže vyžiadať dôkazy o škodách na životnom prostredí a verejnom zdraví. Doporučujeme vytvoriť automatizovanú notifikáciu, ktorá vás upozorní na krátko po detekcii výpadku."
+        "text": "Keď incident spôsobí operačné narušenie (napríklad nedostupnosť trasovacieho systému alebo prevádzková porucha flotilového managementu), musíte hlásenie poslať do 24 hodín. Ak incident nevedie k narušeniu dostupnosti služby počas tejto doby, hranica sa predlžuje na 72 hodín. V oboch prípadoch hlásenie posielate na SK-CERT cez NBÚ."
       }
     },
     {
       "@type": "Question",
-      "name": "Aké skúšky bezpečnosti systému mám vykonať pred začiatkom roku 2026?",
+      "name": "Aké sú pokuty za porušenie NIS2 požiadaviek pre operátorov odpadu na Slovensku?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minimálne testy penetrácie a audit zraniteľnosti (vulnerability assessment) dispečerských systémov, fleetových aplikácií a databáz, ktoré spracúvavajú údaje o nebezpečnom odpade. Tieto by mali byť vykonané nezávislou bezpečnostnou spoločnosťou a výsledky zaznamenané. Očakáva sa, že NBÚ bude skúmať tieto záznamy pri kontrolách od apríla 2026."
+        "text": "Podľa zákona č. 69/2018 Z. z. sú maximálne pokuty pre dôležité subjekty ako sú operátori odpadu až €7 miliónov alebo 1,4 % ročného obratu — podľa toho, ktorá suma je vyššia. NBÚ môže uložiť pokuty za nesplnenie bezpečnostných požiadaviek, nehlásenie incidentov v lehote alebo nerealizáciu opatrení na zmiernenie rizík."
       }
     }
   ]
@@ -106,7 +105,7 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pre zberače komunálneho odpadu a spracovateľov priemyselného odpadu na Slovensku — požiadavky 2026
+    NIS2 pre zberateľov komunálneho a nebezpečného odpadu na Slovensku — požiadavky 2026
   </div>
 </div>
 
@@ -114,15 +113,15 @@
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
     <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitý subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre zberače komunálneho odpadu a spracovateľov priemyselného odpadu na Slovensku — požiadavky 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená prevádzkam zberania a spracovania odpadu na Slovensku, ktoré sú zaradené ako dôležité subjekty. Dozviete sa, ako zabezpečiť fleetové systémy, chrániť záznamy o nebezpečnom odpade a splniť povinnosti oznamovania incidentov do roku 2026.</p>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre zberateľov komunálneho a nebezpečného odpadu na Slovensku — požiadavky 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená vedúcim bezpečnosti, manažérom IT a prevádzkovateľom waste management spoločností na Slovensku. Dozviete sa, aké konkrétne požiadavky NIS2 sa vzťahujú na vašu organizáciu a ako ich splniť v lehote.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnosťou je zaoberať sa subjekty, ktoré zbierajú alebo spracúvavajú komunálny, priemyselný alebo nebezpečný odpad na území Slovenskej republiky a majú minimálne 50 zamestnancov alebo ročný obrat aspoň 10 miliónov EUR. Patria sem mestské podniky, súkromní operátori s licenčným povolením NBÚ a špecializované firmy na likvidáciu nebezpečného odpadu registrované na Ministerstve životného prostredia SR.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod NIS2 podľa zákona č. 69/2018 Z. z. spadajú operátori komunálneho a nebezpečného odpadu, ktorí tvoria súčasť kritickej infraštruktúry waste management sektora. Medzi kvalifikovaných operátorov patria spoločnosti s celoštátnym či krajinským pokrytím zberu, spracovaním nebezpečných odpadov alebo operovaním mestských čistiacich systémov; podľa NBÚ musia spĺňať požiadavky NIS2 všetky subjekty poskytujúce podstatné služby v sektore odpadového hospodárstva na Slovensku.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť systémov správy vozového parku a plánovania trás</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetky systémy GPS, dispečerské aplikácie a telemetria vozov musia byť chránené kryptovaním koncový-koncový a silným overovaním (minimálne dvojfaktorové). Zabezpečiť izolovanú sieť pre IoT zariadenia monitorujúce zber odpadu a ich komunikáciu s centrálnymi servismi. Pravidelne (minimálne ročne) testovať penetráciu týchto systémov autorizovanými bezpečnostnými spoločnosťami.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť parkovacích a trasovacích systémov floty vozidiel</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Flota vozidiel na zberu odpadu je často vybavená IoT zariadeniami a GPS trasovacími systémami, ktoré sú kritickými operačnými prvkami. Podľa NIS2 musíte zaviesť autentifikáciu, šifrovanie a pravidelné audity týchto systémov. Predvolené prihlasovacie údaje musia byť bez výnimky zmenené a prístup je potrebné kontrolovať prostredníctvom centralizovaného systému správy identít a prístupu (IAM).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Ochrana záznamov o nebezpečnom odpade a výkazov o likvidácii</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dokumentácia o zbieraní, transporte a spracovaní nebezpečného odpadu (vrátane chemických látok a odpadu s obsahom azbeStu) musí byť uložená v šifrovanej databáze s prísnym riadením prístupu na základe rolí. Implementovať audit logy na zachytávanie všetkých prístupov a zmien v záznamoch. Záznamy musia byť archivované minimálne 10 rokov v súlade s legislatívou SR o odpadoch.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Ochrana záznamov o nebezpečných odpadoch a ich spôsobe likvidácie</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dokumentácia o nebezpečných odpadoch — vrátane údajov o zložení, opatreniach pri manipulácii a spôsobe likvidácie — musí byť chránená pred neoprávneným prístupom. Vyžaduje sa kontrola prístupu na základe rolí (RBAC), auditovanie všetkých zmien a šifrovanie pri prenose a v spocívaní. Záznamy musia ostať nedostupné pre externí údaje alebo konkurenčné systémy.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie operačných incidentov a výpadkov zberu</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Povinnosti je oznámiť NBÚ a dotknutým mestám/obciam do 24 hodín od zistenia incidentu, ktorý ovplyvní zbieranie alebo spracovanie odpadu (výpadky IT systémov, neoprávnené prístupy, fyzické poškodenie infraštruktúry). Zaregistrovať incident v národnom registri (CSIRT.SK) a poskytnúť detailnú analýzu príčiny a záberov do 72 hodín.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov operačného charakteru do NBÚ</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Keď kybernetický incident spôsobí prerušenie zberu odpadu, nedostupnosť trasovacieho systému alebo kompromitáciu záznamov o zbere a likvidácii, musíte hlásenie poslať do 24 hodín na SK-CERT prostredníctvom NBÚ. Ak incident počas tejto doby neovplyvní dostupnosť služby, hranica je 72 hodín. Hlásenie musí obsahovať povahu incidentu, zasiahnuté systémy a opatrenia, ktoré ste prijali.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľského reťazca pre IoT zariadenia monitorovania odpadu</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pred nasadením nových IoT senzorov na kontajnery alebo zberné miesta vyžadovať od dodávateľov certifikáty bezpečnosti a zoznamy chýb. Zmeniť všetky predvolené prihlasovacie údaje na bezpečné hesla a vypnúť nešifrované komunikačné protokoly. Udržiavať inventár všetkých IoT zariadení a ich firmvéru s jasným procesom aktualizácií bez prerušenia služby.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľského reťazca IoT monitorovacích zariadení</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">IoT senzory v kontajneroch, zariadenia na monitorovanie obsadenosti a teplotné senzory v transporte nebezpečných odpadov musia pochádzať od overených dodávateľov s kontrolou versií firmvéru. NIS2 vyžaduje vykonať bezpečnostný audit všetkých komponentov pred nasadením a registrovať všetky zmeny. Musíte mať uvedený zoznam autorizovaných IoT zariadení a podľa harmonogramu vykonávať zraniteľnosti patching.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Orientácia bezpečnosti IT personálu a operátorov vozov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetci zamestnanci s prístupom do dispečerských systémov alebo dát o trase musia absolvovať povinnú školenie o bezpečnosti a sociálnom inžinieri minimálne ročne. Operátori vozov musia vedieť, ako bezpečne pracovať s palubným IT vybavením a ako oznámiť podozrivú aktivitu. Podľa NIS2 musí mať vedenie jasne definovaného zodpovedného pracovníka za bezpečnosť IT (CISO alebo ekvivalent).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Analýza a riadenie rizík kybernetickej bezpečnosti (ISMS)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte zaviesť systém riadenia bezpečnosti informácií (ISMS) vrátane identifikácie kritických aktív (flota, evidencia odpadu, dopyt odpadákov). Vykonajte analýzu rizík najmä pre procesy súvisiace so zberu, triedením a likvidáciou odpadu. Táto analýza musí byť dokumentovaná, pravidelne aktualizovaná (minimálne ročne) a schválená vedením organizácie.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Fleetové systémy v prevádzke so základnými IoT povereniami výrobcu (fabrika predvolené heslo admin/admin) — zmeniť všetky prihlasovacie údaje a implementovať VPN tunely pre vzdialenú správu vozov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Flota vozidiel so zapnutými predvolenými IoT povereniami — GPS a trasovací systém nezmenené od inštalácie, čo umožňuje neoprávnený prístup na údaje o trasách a odpadoch.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chýbajúca bezpečnostná politika pre palubné IT vybavenie v vozoch — vypracovať písomný dokument s pravidlami o vypínaní systémov, ochrane USB portov a postupmi hlásenia bezpečnostných incidentov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Absenciu politiky bezpečnosti pre IT systémy namontované vo vozidlách — chýba autentifikácia riaditeľa vozidiel, audít zmien a kontrola prístupu ku kľúčom vozidiel.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Záznamy o nebezpečnom odpade uložené v zdieľaných tabuľkách bez kontroly prístupu — migrovať do šifrovanej databázy s riadením prístupu na základe funkcií a auditného logu.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Úschova dokumentácie o nebezpečných odpadoch bez kontroly prístupu — fyzické spisy bez označenia citlivosti a digitálne záznamy bez šifrovania alebo monitorovania nepovolených pokusov o prístup.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatok postupu oznamovania incidentov — vytvoriť jasný proces s určením času ohlasu (24 hodín) a konkrétnych osôb zodpovedných za komunikáciu s NBÚ a CSIRT.SK.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neexistencia plánu hlásenia incidentov — žiadna jasná procedúra kto, komu a ako hlási kybernetické incidenty vrátane doby, ktorá musí uplynúť medzi detekciou a nahlásením.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musím ako malý mestský podnik so 40 zamestnancami spĺňať požiadavky NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musí moja spoločnosť na zbere odpadu spĺňať NIS2, ak máme menej ako 50 zamestnancov?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie, ak máte menej ako 50 zamestnancov a ročný obrat nižší ako 10 miliónov EUR, nie ste zaradení ako dôležitý subjekt. Avšak ak pracujete s nebezpečným odpadom a máte systémy prepojené s národnými evidenčnými databázami, možno budete zaradení. Skontrolujte si rozhodnutie NBÚ.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Podľa NBÚ a zákona č. 69/2018 Z. z. sa NIS2 vzťahuje na dôležité subjekty v sektore odpadového hospodárstva bez ohľadu na počet zamestnancov, ak poskytujete podstatné služby zberu alebo spracovaní odpadu, ktoré by ich narušenie vážne ohrozilo bezpečnosť alebo zásobovanie. Veľkosť nemá primárny vplyv — rozhodujúce je, či ide o spoločnosť poskytujúcu kritickú službu v odpadovom hospodárstve na úrovni mesta alebo kraja.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Čo sa stane, ak nezaznamenám incident s výpadkom zberu v systéme do 24 hodín?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká je lehota na hlásenie kybernetického incidentu na SK-CERT, ak spôsobí prerušenie zberu odpadu?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Podľa zákona č. 69/2018 Z.z. hrozí pokuta až do 100 000 EUR za porušenie povinnosti oznamovania. Navyše si NBÚ môže vyžiadať dôkazy o škodách na životnom prostredí a verejnom zdraví. Doporučujeme vytvoriť automatizovanú notifikáciu, ktorá vás upozorní na krátko po detekcii výpadku.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Keď incident spôsobí operačné narušenie (napríklad nedostupnosť trasovacieho systému alebo prevádzková porucha flotilového managementu), musíte hlásenie poslať do 24 hodín. Ak incident nevedie k narušeniu dostupnosti služby počas tejto doby, hranica sa predlžuje na 72 hodín. V oboch prípadoch hlásenie posielate na SK-CERT cez NBÚ.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké skúšky bezpečnosti systému mám vykonať pred začiatkom roku 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú pokuty za porušenie NIS2 požiadaviek pre operátorov odpadu na Slovensku?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimálne testy penetrácie a audit zraniteľnosti (vulnerability assessment) dispečerských systémov, fleetových aplikácií a databáz, ktoré spracúvavajú údaje o nebezpečnom odpade. Tieto by mali byť vykonané nezávislou bezpečnostnou spoločnosťou a výsledky zaznamenané. Očakáva sa, že NBÚ bude skúmať tieto záznamy pri kontrolách od apríla 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Podľa zákona č. 69/2018 Z. z. sú maximálne pokuty pre dôležité subjekty ako sú operátori odpadu až €7 miliónov alebo 1,4 % ročného obratu — podľa toho, ktorá suma je vyššia. NBÚ môže uložiť pokuty za nesplnenie bezpečnostných požiadaviek, nehlásenie incidentov v lehote alebo nerealizáciu opatrení na zmiernenie rizík.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Súvisiace sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Súvisiace sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="water.html">NIS2 pre dodávateľov pitnej vody na Slovensku - Požiadavky 2026</a></li><li style="margin:0"><a href="accountants.html">NIS2 pre účtovné firmy a daňových poradcov v SR 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 pre banky a úverové inštitúcie v SR</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 pre poskytovateľov cloudových služieb na Slovensku 2026</a></li><li style="margin:0"><a href="construction.html">NIS2 pre stavebné spoločnosti a stavbyvedenie na Slovensku 2026</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 pre dodávateľov kybernetickej bezpečnosti na Slovensku 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

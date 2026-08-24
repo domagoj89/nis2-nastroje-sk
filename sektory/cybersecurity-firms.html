@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pre dodávateľov kybernetickej bezpečnosti na Slovensku 2026</title>
-  <meta name="description" content="Povinnosti NIS2 pre MSSP, SOC a penetračné testovanie. Termín 2026. Žiadosti NBÚ, bezpečnosť údajov klientov, hlásenie incidentov.">
+  <title>NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku 2026</title>
+  <meta name="description" content="Požiadavky NIS2 pre MSSP a penetračné testovanie na SK: incident reporting, bezpečnosť SOC, compliance do 2026.">
   <link rel="canonical" href="https://nis2-nastroje.sk/sektory/cybersecurity-firms.html">
-  <meta property="og:title" content="NIS2 pre dodávateľov kybernetickej bezpečnosti na Slovensku 2026">
-  <meta property="og:description" content="Povinnosti NIS2 pre MSSP, SOC a penetračné testovanie. Termín 2026. Žiadosti NBÚ, bezpečnosť údajov klientov, hlásenie incidentov.">
+  <meta property="og:title" content="NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku 2026">
+  <meta property="og:description" content="Požiadavky NIS2 pre MSSP a penetračné testovanie na SK: incident reporting, bezpečnosť SOC, compliance do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.sk/sektory/cybersecurity-firms.html">
   <meta property="og:locale" content="sk_SK">
   <meta property="og:site_name" content="NIS2-Nastroje.sk">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pre dodávateľov kybernetickej bezpečnosti na Slovensku 2026">
-  <meta name="twitter:description" content="Povinnosti NIS2 pre MSSP, SOC a penetračné testovanie. Termín 2026. Žiadosti NBÚ, bezpečnosť údajov klientov, hlásenie incidentov.">
+  <meta name="twitter:title" content="NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku 2026">
+  <meta name="twitter:description" content="Požiadavky NIS2 pre MSSP a penetračné testovanie na SK: incident reporting, bezpečnosť SOC, compliance do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku — špecifické požiadavky 2026",
+      "name": "NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku — povinnosti pre MSSP a SOC prevádzkovateľov",
       "item": "https://nis2-nastroje.sk/sektory/cybersecurity-firms.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ktorí poskytovatelia bezpečnostných služieb podliehajú NIS2 povinnostiam na Slovensku?",
+      "name": "Čo je považované za incident podľa NIS2, keď pracujem ako MSSP a jeden z mojich klientov bol prelomený?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Všetci MSSP, SOC operátori a penetračné testovací firmy, ktoré poskytujú služby právnickým osobám v SR. Bez ohľadu na veľkosť — ak ste v reťazci dodávky bezpečnosti, podliehaté NIS2. Registrácia u NBÚ je povinná do 31. decembra 2026."
+        "text": "Ak prelom alebo neúroveň bezpečnosti u vášho klienta vznikla z viny vašej bezpečnostnej služby (napr. slabá konfigurácia SOC, chyba v penetračnom teste, nevylúčená zraniteľnosť), považuje sa to za incident v dodávateľskej línii a musíte ho hlásiť NBÚ do 24 hodín. Dokonca aj ak je klient sám zaviniteľ, máte povinnosť dokumentovať príčinu a oznamovať ju, aby ste ukázali diligentnosť."
       }
     },
     {
       "@type": "Question",
-      "name": "Aká je lehota na hlásenie incidentu NBÚ, ak je ohrození bezpečnosť klientov?",
+      "name": "Ako sa má ako MSSP alebo SOC prevádzkovateľ s penetračnými testami zaobchodovať s údajmi, ktoré zbierajú počas testovania bez porušenia NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Predbežné hlásenie NBÚ do 72 hodín od zistenia incidentu, podrobná správa do 30 dní. Ak ide o veľký incident (stovky dotknutých užívateľov), musíte informovať klientov ihneď, aby mohli reagovať. Nedodržanie lehoty znamená pokuty od 2 % do 4 % obratu."
+        "text": "Všetky údaje zbierané počas penetračného testovania (výstupy nástrojov, sieťové pakety, záznamové súbory) musia byť šifrované v pokoji s prísnym riadením prístupu, a musia byť vymazané do 30 dní po ukončení projektu, pokiaľ nie je s klientom dohodnuté inak a zdokumentované. Penetračné testovací správy sú výnimkou a musia byť uchovávaní po dobu podľa zmluvy s klientom (zvyčajne 3 roky), ale tiež šifrované a kontrolované verzie."
       }
     },
     {
       "@type": "Question",
-      "name": "Aké sú minimálne bezpečnostné opatrenia pre naše SOC a SIEM infraštruktúru podľa NIS2?",
+      "name": "Aké pokuty sa uplatňujú, ak ako dôležitý subjekt podľa NIS2 porušim povinnosti hlásenia incidentov alebo bezpečnosti?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Šifrovanie údajov v pokoji (AES-256) a v prenose (TLS 1.2+), dvojfaktorové overenie pre všetkých operátorov, fyzická bezpečnosť servrov (kontrola prístupu, video), pravidelný patching, zálohovanie s testom obnovy, incident response plán. NBÚ tiež vyžaduje audit infraštruktúry aspoň raz za rok."
+        "text": "Ako dôležitý subjekt v Prílohe II môžete čeliť pokutám až do 7 miliónov EUR alebo 1,4 percent ročného obratu (v závislosti od toho, ktoré je vyššie), pokiaľ porušíte povinnosti NIS2. Najčastejšie postihy sa týkajú porušenia povinnosti hlásenia (meškanie hlásenia incidentu viac ako 24 hodín), absencie bezpečnostných politík a hlásenia incidentov bez podrobných informácií."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku — špecifické požiadavky 2026
+    NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku — povinnosti pre MSSP a SOC prevádzkovateľov
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitá entita</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku — špecifické požiadavky 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto stránka je určená dodávateľom bezpečnostných služieb, operátorom SOC, MSSP a penetračným testerom na Slovensku. Dozviete sa, ako spĺňať právne povinnosti NIS2, chrániť údaje klientov a správne hlasovať incidenty v lehote do 31. decembra 2026.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitý subjekt (poskytovateľ digitálnych služieb)</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre poskytovateľov kybernetickej bezpečnosti na Slovensku — povinnosti pre MSSP a SOC prevádzkovateľov</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Táto príručka je určená pre agentúry kybernetickej bezpečnosti, MSSP, SOC prevádzkovateľov a firmy zaoberajúce sa penetračným testovaním, ktorí podľa zákona č. 69/2018 Z. z. sú klasifikovaní ako dôležité subjekty a musia spĺňať rozsiahle bezpečnostné požiadavky vrátane hlásenia incidentov NBÚ.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnosťou NIS2 podliehajú všetci poskytovatelia bezpečnostných služieb, ktorí poskytujú monitorovanie bezpečnosti, SOC služby, MSSP služby alebo penetračné testovanie pre právnické osoby so sídlom na území Slovenskej republiky. Podlieha aj každá fyzická osoba alebo právnická osoba pôsobiaca na území SR bez ohľadu na veľkosť, ak spracováva údaje souvisejúce s bezpečnosťou informačných systémov klientov.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Výhradne subjekty, ktoré poskytujú správu bezpečnosti sieťovej infraštruktúry (MSSP), prevádzkujú Security Operations Centre (SOC) s monitorovaním klientskych systémov, alebo vykonávajú penetračné testy a zraniteľnostné posudky, sú automaticky zaradené do Prílohy II NIS2 bez ohľadu na veľkosť, pokiaľ majú bezprostredný prístup k citlivej infraštruktúre klientov alebo jej monitorovanie.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť infraštruktúry SOC a SIEM systémov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako operátor SOC musíte zabezpečiť technické a organizačné opatrenia na ochranu svojej infraštruktúry a najmä SIEM systémov, do ktorých zákazníci podávajú údaje. Povinné sú minimálne kontroly prístupu, šifrovanie údajov v pokoji a v prenose, pravidelné patching bezpečnostného softvéru a detekovanie neoprávnených pokusov o prístup. Fyzická bezpečnosť serverov v dátových centrách musí byť podľa NIS2 bez výnimky dokumentovaná.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov NBÚ do 24 a 72 hodín</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako MSSP alebo SOC prevádzkovateľ musíte hlásiť NBÚ prostredníctvom SK-CERT akýkoľvek bezpečnostný incident, ktorý ma vplyv na bezpečnosť vašich klientov alebo infraštruktúru, v lehote 24 hodín od zistenia, s podrobným hlásením do 72 hodín. Táto povinnosť platí aj v prípade, keď je incident objavený u vášho klienta v dôsledku vašej nesprávnosti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie incidentov NBÚ v prípade kompromitácie vašej infraštruktúry</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ak je vaša infraštruktúra či systém penetračného testovania kompromitovaný a toto má vplyv na bezpečnosť vašich klientov, povinne hlásiteľný incident musí byť nahlásený Úradu národnej bezpečnosti (NBÚ) do 72 hodín od zistenia. Ak ide o veľké porušenie, musíte informovať aj jednotlivých klientov v lehote, ktorá im umožní prijať bezpečnostné opatrenia.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť a šifrovanie údajov v SOC infraštruktúre</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">SOC infraštruktúra, ktorá zbiera, spracúva a skladuje údaje klientov (logy, sieťový provoz, telemetria), musí mať zavedené šifrovanie v pokoji aj pri prenose, prísne kontroly prístupu s multi-factor autentifikáciou a auditovanie všetkých prístupov. Penetračné testovací správy a správy o zraniteľnostiach musia byť skladované v zašifrovanej podobe a dostupné iba oprávneným personálom s dokumentovaným oprávnením.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola dodávateľského reťazca a subdodávateľov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte zaviesť procedúry na posúdenie bezpečnosti svojich dodávateľov a subdodávateľov, ktorí spracúvajú klientske údaje alebo majú prístup k vašim systémom. Bezpečnostné audity u subdodávateľov sú povinné minimálne raz za dva roky. Ak subdodávateľ zlyhal v bezpečnosti, ste povinní to nahlásiť NBÚ do 72 hodín.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľskej línii a zraniteľnosti tretích strán</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako poskytovateľ bezpečnostných služieb musíte mať formálny proces pre koordinovanú odpoveď na zraniteľnosti, vrátane zodpovedného zverejňovania (responsible disclosure) a časových rámcov pre opravu chýb v ňou poskytovaných nástrojoch. Zraniteľnosť v vašich vlastných produktoch alebo služieb, ktorá ovplyvňuje klientov, musí byť hlásená ako incident podľa NIS2.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola prístupu a riadenie identít penetračných testerov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý penetračný tester, ktorý testuje bezpečnosť klientskych systémov v mene vašej firmy, musí mať formálny mandát a svoj účet musí byť riadený s dvojfaktorovým overením. Všetky činnosti testeov sa musia zaznamenávať v revíznych záznamoch s časovými pečiatkami. Účty nesmú zostať aktívne po ukončení testovania.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Personál, školenie a bezpečnostná kulúra</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetci zamestnanci s prístupom k klientskym údajom alebo infraštruktúre musia prejsť kontrolou bezpečnosti, podpísať zmluvu o mlčanlivosti a absolvovať ročné školenie z kybernetickej bezpečnosti. SOC operátori a penetrační testeri musia byť certifikovaní (napr. CISSP, CEH, OSCP) a regulárne školení o bezpečnostných opatreniach, incidentných procedúrach a právnych povinnostiach podľa NIS2.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Ochrana správ o penetračných testoch a konfidenčných údajov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Správy z penetračných testov obsahujúce zraniteľnosti klientskych systémov musia byť šifrované na disku aj počas prenosu. Pracovníci s prístupom k správam musia prejsť bezpečnostným tréningom. Zákonná retenčná lehota týchto správ je minimálne 3 roky, pričom prístup sa musí zaznamenávať. Osobne identifikačné údaje z testov musia byť anonymizované alebo chránené špeciálnymi opatreniami.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Kontinuita prevádzky a plán obnovy po katastrofe</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte mať zdokumentovaný a testovaný plán kontinuity prevádzky (BCP) a plán obnovy po katastrofe (DRP) s cieľom obnovy (RTO) v čase do 4 hodín a cieľom bodu obnovy (RPO) do 1 hodiny. Tento plán musí zahŕňať scenáre, keď je vaša SOC infraštruktúra alebo penetračné testovací laboratórium vypálené, a musí byť testovaný minimálne ročne s dokumentáciou výsledkov.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,19 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SIEM a SOC infraštruktúra obsahuje údaje klientov bez formálne definovaných limitov retencie a bez šifrovania — vytvorte maticový harmonogram odstraňovania starých loggov a nastavte šifrovanie na úrovni databázy.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SOC SIEM a analytické systémy uchovávajú klientske údaje bez formálnych limitov retencie, čo vedie k vystaveniu zbytočne veľkých množstiev citlivých dát a porušovaniu GDPR; zavedite automatizovanú archivizáciu a vymazávanie starších ako 90 dní bez právneho dôvodu.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Správy z penetračných testov sú ukladané bez šifrovania v zdieľaných mapách — premiestnite ich do šifrovaného úložiska s kontrolou prístupu a zaznamenávaním všetkých prístupov.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Penetračné testovací správy sú ukladané v otvorenom textovom formáte bez šifrovania alebo kontroly verzií, čo umožňuje nepovolaný prístup a podvrh; implementujte šifrovanie v pokoji, digitálne podpisy a nemennosť dokumentov s pomôckou ako Vanta.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nie je žiadna formálna klasifikácia incidentov na úrovni dodávateľského reťazca — vytvorte vzornú tabuľku incidentov vrátane scénárov kompromitácie subdodávateľov a komunikačné postupy.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Neklasifikovaní a nedokumentovaní dodávaní (API, cloud služby, monitorovacie nástroje) bez formálneho procesu návrhu riziká tretích strán; zaveďte inventár všetkých tretích strán s ročným bezpečnostným posudkom a SLA požiadavkami.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Penetračný tester má stály účet v klientskych systémoch aj mesiac po ukončení testu — zavedzte automatizáciu deaktivácie účtov v lehote 24 hodín po formálnom uzavretí zmluvného vzťahu.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Absentujú formálne klasifikácie a procedúry pre hlásenie incidentov v dodávateľskej línii, napr. keď je zraniteľnosť v open-source knižnici používanej v SOC vyzývajúcej klientov; definujte kritériá na rozhodnutie, či ide o reportovateľný incident podľa NIS2, a zaveďte alert.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Žiadna Evidence bezpečnostných certifikácií alebo tréningov zamestnancov a žiadna políka prístupu na základe role (RBAC); vytvorte matricu oprávnení so schválením manažéra a auditujem каждый месяц so záznamom dostupnosti.
     </li>
   </ul>
 </div>
@@ -210,7 +212,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +220,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +228,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +239,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ktorí poskytovatelia bezpečnostných služieb podliehajú NIS2 povinnostiam na Slovensku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Čo je považované za incident podľa NIS2, keď pracujem ako MSSP a jeden z mojich klientov bol prelomený?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Všetci MSSP, SOC operátori a penetračné testovací firmy, ktoré poskytujú služby právnickým osobám v SR. Bez ohľadu na veľkosť — ak ste v reťazci dodávky bezpečnosti, podliehaté NIS2. Registrácia u NBÚ je povinná do 31. decembra 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ak prelom alebo neúroveň bezpečnosti u vášho klienta vznikla z viny vašej bezpečnostnej služby (napr. slabá konfigurácia SOC, chyba v penetračnom teste, nevylúčená zraniteľnosť), považuje sa to za incident v dodávateľskej línii a musíte ho hlásiť NBÚ do 24 hodín. Dokonca aj ak je klient sám zaviniteľ, máte povinnosť dokumentovať príčinu a oznamovať ju, aby ste ukázali diligentnosť.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká je lehota na hlásenie incidentu NBÚ, ak je ohrození bezpečnosť klientov?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Ako sa má ako MSSP alebo SOC prevádzkovateľ s penetračnými testami zaobchodovať s údajmi, ktoré zbierajú počas testovania bez porušenia NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Predbežné hlásenie NBÚ do 72 hodín od zistenia incidentu, podrobná správa do 30 dní. Ak ide o veľký incident (stovky dotknutých užívateľov), musíte informovať klientov ihneď, aby mohli reagovať. Nedodržanie lehoty znamená pokuty od 2 % do 4 % obratu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Všetky údaje zbierané počas penetračného testovania (výstupy nástrojov, sieťové pakety, záznamové súbory) musia byť šifrované v pokoji s prísnym riadením prístupu, a musia byť vymazané do 30 dní po ukončení projektu, pokiaľ nie je s klientom dohodnuté inak a zdokumentované. Penetračné testovací správy sú výnimkou a musia byť uchovávaní po dobu podľa zmluvy s klientom (zvyčajne 3 roky), ale tiež šifrované a kontrolované verzie.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú minimálne bezpečnostné opatrenia pre naše SOC a SIEM infraštruktúru podľa NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké pokuty sa uplatňujú, ak ako dôležitý subjekt podľa NIS2 porušim povinnosti hlásenia incidentov alebo bezpečnosti?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Šifrovanie údajov v pokoji (AES-256) a v prenose (TLS 1.2+), dvojfaktorové overenie pre všetkých operátorov, fyzická bezpečnosť servrov (kontrola prístupu, video), pravidelný patching, zálohovanie s testom obnovy, incident response plán. NBÚ tiež vyžaduje audit infraštruktúry aspoň raz za rok.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ako dôležitý subjekt v Prílohe II môžete čeliť pokutám až do 7 miliónov EUR alebo 1,4 percent ročného obratu (v závislosti od toho, ktoré je vyššie), pokiaľ porušíte povinnosti NIS2. Najčastejšie postihy sa týkajú porušenia povinnosti hlásenia (meškanie hlásenia incidentu viac ako 24 hodín), absencie bezpečnostných politík a hlásenia incidentov bez podrobných informácií.</p>
     </div>
   </div>
   </div>
@@ -270,8 +272,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Súvisiace sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Súvisiace sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="dental-clinics.html">NIS2 pre zubné kliniky na Slovensku</a></li><li style="margin:0"><a href="education.html">NIS2 pre vysoké školy na Slovensku</a></li><li style="margin:0"><a href="energy.html">NIS2 pre energetikov na Slovensku</a></li><li style="margin:0"><a href="fintech.html">NIS2 pre fintech spoločnosti na Slovensku</a></li><li style="margin:0"><a href="food.html">NIS2 pre potravinárske podniky na Slovensku</a></li><li style="margin:0"><a href="hospitals.html">NIS2 pre nemocnice a kliniky na Slovensku</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +284,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

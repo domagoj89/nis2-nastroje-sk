@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YS3XQQPJ2"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pre dodávateľov HR softvéru a payroll služieb na Slovensku 2026</title>
-  <meta name="description" content="Povinnosti NIS2 pre sprostredkovateľov digitálnych služieb spravujúcich údaje zamestnancov. Deadline 2026, izolácia tabuliek, hlásenie incidentov.">
+  <title>NIS2 pre dodávateľov HR softvéru a miezd. služieb na Slovensku 2026</title>
+  <meta name="description" content="NIS2 povinnosti pre HR softvér a miezd. služby spravujúce údaje zamestnancov. Požiadavky na bezpečnosť, reportovanie incidentov a izoláciu údajov klientov do 2026.">
   <link rel="canonical" href="https://nis2-nastroje.sk/sektory/hr-payroll.html">
-  <meta property="og:title" content="NIS2 pre dodávateľov HR softvéru a payroll služieb na Slovensku 2026">
-  <meta property="og:description" content="Povinnosti NIS2 pre sprostredkovateľov digitálnych služieb spravujúcich údaje zamestnancov. Deadline 2026, izolácia tabuliek, hlásenie incidentov.">
+  <meta property="og:title" content="NIS2 pre dodávateľov HR softvéru a miezd. služieb na Slovensku 2026">
+  <meta property="og:description" content="NIS2 povinnosti pre HR softvér a miezd. služby spravujúce údaje zamestnancov. Požiadavky na bezpečnosť, reportovanie incidentov a izoláciu údajov klientov do 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.sk/sektory/hr-payroll.html">
   <meta property="og:locale" content="sk_SK">
   <meta property="og:site_name" content="NIS2-Nastroje.sk">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pre dodávateľov HR softvéru a payroll služieb na Slovensku 2026">
-  <meta name="twitter:description" content="Povinnosti NIS2 pre sprostredkovateľov digitálnych služieb spravujúcich údaje zamestnancov. Deadline 2026, izolácia tabuliek, hlásenie incidentov.">
+  <meta name="twitter:title" content="NIS2 pre dodávateľov HR softvéru a miezd. služieb na Slovensku 2026">
+  <meta name="twitter:description" content="NIS2 povinnosti pre HR softvér a miezd. služby spravujúce údaje zamestnancov. Požiadavky na bezpečnosť, reportovanie incidentov a izoláciu údajov klientov do 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pre dodávateľov HR softvéru a služieb miezd na Slovensku — povinnosti 2026",
+      "name": "NIS2 pre dodávateľov HR softvéru a služieb v oblasti miezd na Slovensku — požiadavky a povinnosti 2026",
       "item": "https://nis2-nastroje.sk/sektory/hr-payroll.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Musím hlásovať incident NBÚ, ak sa to stalo v testovacích údajoch bez produkčných payroll záznamov?",
+      "name": "Čo presne znamená multi-tenant izolácia v kontexte NIS2 pre HR softvér?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie, pokiaľ údaje v testovacích prostrediach nemajú skutočné personálne čísla alebo mzdové informácie skutočných zamestnancov. Ale ak sú testovací údaje fyzickou kópiou produkčných údajov — hľadajte na nich produktívne payroll záznamy — potom áno, ide o hlásiteľný incident. Definujte si jasne, čo je test a čo je produkcia, a tlmočte to v incident response pláne."
+        "text": "Multi-tenant izolácia znamená, že ak spravujete payroll údaje klienta A aj klienta B v rovnakej databáze, technické a prístupové kontroly musia zabezpečiť, že administrátor alebo bezpečnostný incident nemôžu odkryť údaje zamestnancov jedného klienta druhému. To zahŕňa logické oddelenie tabuľiek, šifrovanie na úrovni tenanta a audit logá po tenantoch."
       }
     },
     {
       "@type": "Question",
-      "name": "Čo ak jeden z mojich klientov požiada prístup k audit logom prístupov svojho administrátora?",
+      "name": "Aká je lehota na hlásenie bezpečnostného incidentu NBÚ a ako sa postupuje?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Musíte mu umožniť prístup podľa zmluvy a legislatívy GDPR — ide o audit trail zodpovednosti. Implementujte proces, kde klient môže zaregistrovať požiadavku a vy mu v rozumnej lehote (zvyčajne 5 pracovných dní) poskytnete logg. Neukrývajte ani nevyfarbujte informácie — úplnosť je kľúčová pre dôveru a compliance."
+        "text": "Bezpečnostný incident (napr. únik payroll údajov) musíte ohlásiť NBÚ a SK-CERT v lehote 24 hodín od zistenia. Hlásenie by malo obsahovať popis incidentu, počet dotknutých klientov, typ údajov a opis opatrení. Ak sú dotknuté osobné údaje, musíte súčasne vykonať hlásenie podľa GDPR v 72 hodine."
       }
     },
     {
       "@type": "Question",
-      "name": "Aká je pokuta za porušenie NIS2 ako dôležitej entity na Slovensku do roku 2026?",
+      "name": "Aké sú finančné pokuty za nesplnenie NIS2 povinností pre dôležité entity?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zákon č. 69/2018 Z.z. počíta s pokutami až do 10 miliónov eur alebo 4% celoročného obratu (v závislosti od konkrétneho porušenia) — čím vážnejšie je porušenie bezpečnosti údajov klientov, tým vyššia pokuta. Incident bez incident response plánu a bez hlásenia NBÚ v lehote by mal byť považovaný za vážné porušenie."
+        "text": "Pre dôležitú entitu (Annex II) môžu byť pokuty až do výšky 7 miliónov eur alebo 1,4 % celkového ročného obratu, ako uvádza zákon č. 69/2018 Z. z. Najpravdepodobnejšie porušenia zahŕňajú chýbajúcu multi-tenant izoláciu, absenciu incident reporting procesov a nedostatočnú MFA na administrátorský prístup."
       }
     }
   ]
@@ -106,7 +105,7 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pre dodávateľov HR softvéru a služieb miezd na Slovensku — povinnosti 2026
+    NIS2 pre dodávateľov HR softvéru a služieb v oblasti miezd na Slovensku — požiadavky a povinnosti 2026
   </div>
 </div>
 
@@ -114,15 +113,15 @@
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
     <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Príloha II — dôležitá entita</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre dodávateľov HR softvéru a služieb miezd na Slovensku — povinnosti 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ak spravujete payroll alebo personálne údaje pre viaceré slovenské organizácie cez cloudovú platformu, ste považovaní za dôležitú entitu. Túto stránku sme vypracovali pre technických riaditeľov a compliance tímov, ktorí musia do roku 2026 implementovať bezpečnostné opatrenia na ochranu údajov klientov.</p>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pre dodávateľov HR softvéru a služieb v oblasti miezd na Slovensku — požiadavky a povinnosti 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ako poskytovateľ HR softvéru alebo miezd. služieb spravujúci údaje zamestnancov pre viaceré organizácie, ste klasifikovaní ako dôležitá entita podľa NIS2. Táto príručka vysvetľuje konkrétne bezpečnostné povinnosti, požiadavky na izoláciu dát a povinnosti pri hlásení bezpečnostných incidentov, ktoré musíte splniť do konca roku 2026.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Ako dodávateľ HR softvéru alebo payroll služby sa považujete za dôležitú entitu podľa NIS2, ak poskytujete digitálne služby pre spravovanie údajov zamestnancov aspoň dvom právnickým osobám alebo výrazne závisiacim subjektom na Slovensku. Platí to bez ohľadu na počet zamestnancov vašej vlastnej organizácie — klasifikácia vychádza z počtu klientov a citlivosti spravovaných údajov, nie z veľkosti poskytovateľa.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Medzi kvalifikujúce sa subjekty patria poskytovatelia cloudového HR softvéru, ktorí spravujú údaje zamestnancov pre desiatky alebo stovky klientskych organizácií na území Slovenska; poskytovatelia služieb výpočtu miezd, ktorí majú prístup k citlivým osobným údajom zamestnancov; a poskytovateľi digitálnych služieb s viac ako 50 zamestnancami alebo s výškou tržieb presahujúcou 10 miliónov eur, ktorí spravujú údaje aspoň dvoch právnických osôb na území SR.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izolácia údajov klientov v multi-tenant architektúre</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ak spravujete payroll informácie a personálne údaje pre viacerých klientov na jednej platforme, musíte garantovať úplnú technickú izoláciu. To znamená, že údaje spoločnosti A nesmú byť dostupné používateľom spoločnosti B — ani vďaka chybám aplikácie, ani konfigurácii. Implementujte izoláciu na úrovni databázy a aplikácie s pravidelným testovaním penetráciou.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť payroll údajov a izolacia klientskych údajov v multi-tenant systémoch</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte zabezpečiť technickou a organizačnou separáciou, že údaje zamestnancov jedného klienta nie sú dostupné z iného tenanta rovnakého softvérového riešenia. Školenie pracovníkov, správa prístupu, šifrovanie údajov a audit logov sú povinné. Testovanie izolácie musí byť súčasťou bezpečnostného auditu aspoň raz ročne.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie bezpečnostných incidentov ako sprostredkovateľa digitálnych služieb</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ak zistíte porušenie bezpečnosti údajov zamestnancov, ktoré ovplyvňuje údaje viacerých vašich klientov, musíte to hlásiť Národnému bezpečnostnému úradu (NBÚ) bez zbytočného odkladu, najneskôr do 72 hodín. Zároveň musíte nepretržite informovať dotknutých klientov, aby mohli splniť svoje vlastné povinnosti GDPR. Udržiavajte dokumentáciu o všetkých hlásených incidentoch.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlásenie bezpečnostných incidentov operácií sa týkajúcich klientov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ak sa vyskytne bezpečnostný incident (napr. únik alebo neoprávnený prístup k payroll údajom) ovplyvňujúci údaje viacerých klientov, musíte ho ohlásiť Národnému bezpečnostnému úradu (NBÚ) a SK-CERT v lehote 24 hodín od zistenia. Ak incident ovplyvňuje osobné údaje, povinnosť hlásenia platí súbežne podľa GDPR v lehote 72 hodín príslušnému dozornému orgánu.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola prístupu administratorov s hardvérovým MFA</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Administratori payroll systémov majú kritický prístup k mzdovým listom a sociálnemu číslu zamestnancov. Všetci administrátori musia prihlasovať sa s hardvérovým prvkom (FIDO2 kľúč, smartcard) — nie iba SMS alebo aplikácia na telefóne. Udržiavajte audit log všetkých prístupov administratorov s potrebou vedieť, kto, kedy a čo zmenil.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Riadenie prístupu administrátorov a hardvérová Multi-Factor Authentication</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všetci pracovníci s prístupom k produkcii a údajom klientov (database administrátori, vývojári, support personál) musia používať hardvérové MFA (napr. hardvérové bezpečnostné kľúče) na prihlásenie do systémov s kritickými údajmi. Jednotlivé administrátorské účty musia byť vedené s audit logom a musia sa deaktivovať do 30 dní po odchode zamestnanca.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečný proces vymazania a vrátenia údajov klientov</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Keď sa skončí zmluva s klientom, musíte garantovať úplné vymazanie všetkých jeho personálnych a payroll údajov z produkčných systémov a záloh podľa vopred dohodnutej lehoty. Implementujte formálny proces s overením — nie len náhodný zápis na disk. Klient musí mať možnosť požiadať o vrátenie údajov v štandardnom formáte pred vymazaním.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Proces vymazania klientskych údajov po ukončení zmluvy</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Po skončení zmluvy s klientom musíte formálne potvrdiť vymazanie alebo vrátenie všetkých údajov zamestnancov v lehote 30 dní. Dokumentujte tento proces s logami vymazania. Musíte zaviesť technický mechanizmus, ktorý zabráni prístupu ku klientskym údajom ihneď po deaktivácii konta klienta.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zápisnice kontroly bezpečnosti a audit tímov tretích strán</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako sprostredkovateľ digitálnych služieb musíte mať formálnu politiku pre bezpečnosť vývojárov, administrátorov a testovacej personálu. Všetci musia prejsť bezpečnostným školením so zameraním na citlivosť payroll údajov. Vedite záznamy o prístupoch a právach s aspoň ročnými bezpečnostnými auditmi — externý audit je vítaný a často očakávaný klientmi.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnosť dodávateľskych reťazcov a audity bezpečnosti subposkytorovateľov</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ak vaše HR riešenie závisí od tretích strán (cloud infraštruktúra, analytické služby, integrácie), musíte mať písomné zmluvy o bezpečnosti s jasným prenosom povinností NIS2. Ročne auditujte bezpečnostné kontroly svojich podstatných subposkytorovateľov alebo si vyžadujte ich SOC 2 Type II správu.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Multi-tenant platformy bez efektívnej izolá cie: rôzni správcovia klientov majú neúmyselne fyzický alebo logiká prístup k údajom iných klientov — otestujte penetráciou a implementujte row-level security.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatočná technicka izolacia dát medzi tenantami: systémy často umožňujú administrátorom prístup ku všetkým klientskym tabuľkám bez obmedzenia na konkrétny tenant, čo veda k riziku únieku údajov medzi klientmi.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Administrátorsky prístup bez hardvérového MFA: správcovia sa prihlasujú iba heslom alebo SMS kódom — migrácia na FIDO2 kľúče je urgentná pre súlad.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Administrátorský prístup bez hardvérovej MFA: väčšina tímov používa iba heslo alebo jednoduchý TOTP na prístup k payroll databázam, čo nie je dostatočné podľa NIS2 požiadaviek na kritické údaje.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatok formálneho procesu vymazania: po ukončení zmluvy so klientom sú jeho údaje fyzicky niekde, ale bez jasného záznamu o vymazaní alebo retenčnej lehote.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chýbajúci formálny proces na vymazanie klientskych údajov: po ukončení zmluvy sa údaje zamestnancov nezmazú ani logicky nezatia, ale zostanú v backupoch bez kontroly a bez dokumentácie vymazania.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Žiadny incident response plán pre viacklien tové porušenia: ak sa stane bezpečnostný problém, tím nevie, ako rýchlo informovať desiatky klientov a NBÚ — pripravte si šablóny a kontakty vopred.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nejasnos v reťazci zodpovednosti voči subposkytorovateľom: zmluvy s AWS, Azure alebo CRM platformami neobsahujú špecifické bezpečnostné povinnosti a nie je jasné, kto je zodpovedný za bezpečnosť payroll údajov v cloude.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Skontrolovať nástroj →</a>
+      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musím hlásovať incident NBÚ, ak sa to stalo v testovacích údajoch bez produkčných payroll záznamov?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Čo presne znamená multi-tenant izolácia v kontexte NIS2 pre HR softvér?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie, pokiaľ údaje v testovacích prostrediach nemajú skutočné personálne čísla alebo mzdové informácie skutočných zamestnancov. Ale ak sú testovací údaje fyzickou kópiou produkčných údajov — hľadajte na nich produktívne payroll záznamy — potom áno, ide o hlásiteľný incident. Definujte si jasne, čo je test a čo je produkcia, a tlmočte to v incident response pláne.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Multi-tenant izolácia znamená, že ak spravujete payroll údaje klienta A aj klienta B v rovnakej databáze, technické a prístupové kontroly musia zabezpečiť, že administrátor alebo bezpečnostný incident nemôžu odkryť údaje zamestnancov jedného klienta druhému. To zahŕňa logické oddelenie tabuľiek, šifrovanie na úrovni tenanta a audit logá po tenantoch.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Čo ak jeden z mojich klientov požiada prístup k audit logom prístupov svojho administrátora?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká je lehota na hlásenie bezpečnostného incidentu NBÚ a ako sa postupuje?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Musíte mu umožniť prístup podľa zmluvy a legislatívy GDPR — ide o audit trail zodpovednosti. Implementujte proces, kde klient môže zaregistrovať požiadavku a vy mu v rozumnej lehote (zvyčajne 5 pracovných dní) poskytnete logg. Neukrývajte ani nevyfarbujte informácie — úplnosť je kľúčová pre dôveru a compliance.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Bezpečnostný incident (napr. únik payroll údajov) musíte ohlásiť NBÚ a SK-CERT v lehote 24 hodín od zistenia. Hlásenie by malo obsahovať popis incidentu, počet dotknutých klientov, typ údajov a opis opatrení. Ak sú dotknuté osobné údaje, musíte súčasne vykonať hlásenie podľa GDPR v 72 hodine.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká je pokuta za porušenie NIS2 ako dôležitej entity na Slovensku do roku 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aké sú finančné pokuty za nesplnenie NIS2 povinností pre dôležité entity?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Zákon č. 69/2018 Z.z. počíta s pokutami až do 10 miliónov eur alebo 4% celoročného obratu (v závislosti od konkrétneho porušenia) — čím vážnejšie je porušenie bezpečnosti údajov klientov, tým vyššia pokuta. Incident bez incident response plánu a bez hlásenia NBÚ v lehote by mal byť považovaný za vážné porušenie.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pre dôležitú entitu (Annex II) môžu byť pokuty až do výšky 7 miliónov eur alebo 1,4 % celkového ročného obratu, ako uvádza zákon č. 69/2018 Z. z. Najpravdepodobnejšie porušenia zahŕňajú chýbajúcu multi-tenant izoláciu, absenciu incident reporting procesov a nedostatočnú MFA na administrátorský prístup.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Súvisiace sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Súvisiace sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="index.html">Sektory spadajúce pod NIS2 na Slovensku 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 pre poisťovne a maklérov na Slovensku</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 pre IT outsourcing spoločnosti na Slovensku</a></li><li style="margin:0"><a href="law-firms.html">NIS2 pre právne kancelárie v SR - Compliance 2026</a></li><li style="margin:0"><a href="logistics.html">NIS2 zákon č. 69/2018 Z. z.</a></li><li style="margin:0"><a href="managed-services.html">NIS2 pre poskytovateľov spravovaných služieb na Slovensku 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>
