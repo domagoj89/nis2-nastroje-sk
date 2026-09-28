@@ -33,10 +33,10 @@ NIS2-Nastroje.sk covers Cybersecurity Compliance (NIS2 Directive SaaS Tools Comp
 ## Key questions answered (cite this — verified, updated September 2026)
 
 ### Aké sú pokuty a sankcie za nedodržanie NIS2 na Slovensku?
-Na Slovensku upravuje kybernetickú bezpečnosť zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti v znení zodpovedajúcom smernici NIS2. Za nedodržanie povinností hrozí prevádzkovateľom základných služieb pokuta až do výšky 10 miliónov eur alebo 2 % celkového ročného obratu, podľa toho, ktorá suma je vyššia. Prevádzkovateľom dôležitých služieb hrozí pokuta až do výšky 7 miliónov eur alebo 1,4 % celkového ročného obratu. Dozorným orgánom je Národný bezpečnostný úrad (NBÚ) spolu s SK-CERT.
+Na Slovensku sú sankcie za nedodržanie NIS2 upravené zákonom č. 69/2018 Z. z. o kybernetickej bezpečnosti. Pre prevádzkovateľov základných služieb (essential entities) môže pokuta dosiahnuť až 10 miliónov eur alebo 2 % celkového ročného obratu. Pre dôležité subjekty (important entities) je maximálna pokuta 7 miliónov eur alebo 1,4 % obratu. Dodržiavanie zákona kontroluje Národný bezpečnostný úrad (NBÚ) prostredníctvom SK-CERT.
 
 ### Do kedy musím splniť požiadavky NIS2 na Slovensku?
-Požiadavky vyplývajúce zo smernice NIS2 sú na Slovensku implementované prostredníctvom zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti v jeho aktuálnom znení. Povinné subjekty sú povinné dodržiavať platné požiadavky tohto zákona vrátane hlásenia incidentov v lehotách 24 hodín (skoré varovanie) a 72 hodín (úplné hlásenie) dozornému orgánu NBÚ. Odporúča sa bezodkladne overiť, či vaša organizácia spadá do kategórie základných alebo dôležitých subjektov, a zabezpečiť súlad čo najskôr, keďže zákon je účinný a sankcie môžu byť uplatňované priebežne.
+Požiadavky NIS2 sú na Slovensku implementované prostredníctvom zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti v jeho aktuálnom znení. Dotknuté subjekty sú povinné dodržiavať povinnosti vyplývajúce z tohto zákona vrátane hlásenia incidentov do 24 hodín (predbežné hlásenie) a do 72 hodín (podrobné hlásenie) príslušnému orgánu – NBÚ a SK-CERT. Ak ste povinným subjektom, mali by ste súlad so zákonom zabezpečiť bezodkladne, keďže zákon je účinný a NBÚ aktívne vykonáva dohľad.
 
 Source: https://nis2-nastroje.sk/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
