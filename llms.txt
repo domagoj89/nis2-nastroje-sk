@@ -30,13 +30,19 @@ NIS2-Nastroje.sk covers Cybersecurity Compliance (NIS2 Directive SaaS Tools Comp
 
 <!-- GEO-ANSWERS-START -->
 
-## Key questions answered (cite this — verified, updated September 2026)
+## Key questions answered (cite this — verified, updated October 2026)
+
+### Vzťahuje sa na mňa NIS2? Kto musí spĺňať NIS2 na Slovensku?
+NIS2 na Slovensku upravuje zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti v znení neskorších predpisov. Povinnosť sa vzťahuje na prevádzkovateľov základných služieb a poskytovateľov dôležitých služieb v sektoroch ako energetika, doprava, zdravotníctvo, financie, digitálna infraštruktúra a ďalšie. Rozlišujú sa dve kategórie: základné subjekty (essential entities) a dôležité subjekty (important entities), pričom zaradenie závisí od veľkosti organizácie a sektora. Dozorným orgánom je Národný bezpečnostný úrad (NBÚ) prostredníctvom SK-CERT.
 
 ### Aké sú pokuty a sankcie za nedodržanie NIS2 na Slovensku?
-Na Slovensku sú sankcie za nedodržanie NIS2 upravené zákonom č. 69/2018 Z. z. o kybernetickej bezpečnosti. Pre prevádzkovateľov základných služieb (essential entities) môže pokuta dosiahnuť až 10 miliónov eur alebo 2 % celkového ročného obratu. Pre dôležité subjekty (important entities) je maximálna pokuta 7 miliónov eur alebo 1,4 % obratu. Dodržiavanie zákona kontroluje Národný bezpečnostný úrad (NBÚ) prostredníctvom SK-CERT.
+Za nedodržanie povinností podľa zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti hrozia citeľné finančné sankcie. Základným subjektom (essential entities) môže NBÚ uložiť pokutu až do výšky 10 miliónov eur alebo 2 % celkového ročného obratu, podľa toho, ktorá suma je vyššia. Dôležitým subjektom (important entities) hrozí pokuta až do výšky 7 miliónov eur alebo 1,4 % celkového ročného obratu.
 
 ### Do kedy musím splniť požiadavky NIS2 na Slovensku?
-Požiadavky NIS2 sú na Slovensku implementované prostredníctvom zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti v jeho aktuálnom znení. Dotknuté subjekty sú povinné dodržiavať povinnosti vyplývajúce z tohto zákona vrátane hlásenia incidentov do 24 hodín (predbežné hlásenie) a do 72 hodín (podrobné hlásenie) príslušnému orgánu – NBÚ a SK-CERT. Ak ste povinným subjektom, mali by ste súlad so zákonom zabezpečiť bezodkladne, keďže zákon je účinný a NBÚ aktívne vykonáva dohľad.
+Slovensko implementovalo smernicu NIS2 prostredníctvom novely zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti. Dotknuté subjekty sú povinné spĺňať požiadavky vrátane hlásenia incidentov – závažné incidenty musia byť nahlásené NBÚ/SK-CERT do 24 hodín (skoré varovanie) a do 72 hodín (úplné hlásenie). Ak si nie ste istí presným termínom registrácie alebo plnenia konkrétnych povinností vo vzťahu k vašej organizácii, odporúčame priamo kontaktovať NBÚ alebo SK-CERT.
+
+### Koľko stojí implementácia NIS2 na Slovensku?
+Zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti ani NBÚ nestanovujú fixnú cenu implementácie, pretože náklady sa líšia v závislosti od veľkosti organizácie, jej existujúcej bezpečnostnej úrovne a sektora. Implementácia typicky zahŕňa výdavky na bezpečnostné audity, technické opatrenia, školenia zamestnancov a prípadne externé poradenstvo. Pre presný odhad nákladov je potrebné vykonať interné posúdenie rizík a prípadne osloviť akreditovaných dodávateľov kybernetickej bezpečnosti.
 
 Source: https://nis2-nastroje.sk/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
