@@ -72,7 +72,7 @@
       "name": "Aká je presná lehota na ohlásenie incidentu NBÚ a finančnému dohľadcovi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Závažný incident musí byť ohlásený SK-CERT a vášmu finančnému dohľadcovi bez zbytočného odkladu, maximálne do 24 hodín od zistenia. Podrobná správa musí byť predložená do 72 hodín. Incident sa považuje za závažný, ak ovplyvňuje dostupnosť, integritu alebo dôvernosť vašich tržných funkcií."
+        "text": "Závažný incident musí byť ohlásený NBÚ a vášmu finančnému dohľadcovi bez zbytočného odkladu, maximálne do 24 hodín od zistenia. Podrobná správa musí byť predložená do 72 hodín. Incident sa považuje za závažný, ak ovplyvňuje dostupnosť, integritu alebo dôvernosť vašich tržných funkcií."
       }
     },
     {
@@ -155,7 +155,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Reportovanie incidentov na NBÚ a finančný dohľad</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý závažný bezpečnostný incident musí byť nahlásený národnej CSIRT (SK-CERT) a vášmu finančnému dohľadcovi v lehote do 24 hodín od zistenia, s podrobnou správou do 72 hodín. Incident sa považuje za závažný, ak vplýva na dostupnosť, integritu alebo dôvernosť vašich tržných funkcií alebo údajov zákazníkov. Vaša interná klasifikácia incidentov musí jasne definovať, ktoré udalosti spĺňajú prahové hodnoty na ohlasovanie.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý závažný bezpečnostný incident musí byť nahlásený NBÚ a vášmu finančnému dohľadcovi v lehote do 24 hodín od zistenia, s podrobnou správou do 72 hodín. Incident sa považuje za závažný, ak vplýva na dostupnosť, integritu alebo dôvernosť vašich tržných funkcií alebo údajov zákazníkov. Vaša interná klasifikácia incidentov musí jasne definovať, ktoré udalosti spĺňajú prahové hodnoty na ohlasovanie.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -164,7 +164,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Testovanie penetráciou a zraniteľností ročne</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte vykonať aspoň jednu nezávislú penetračnú skúšku a pravidelné hodnotenia zraniteľnosti za rok, ktoré sa zameraný na kritické bankové systémy, vrátane domáceho core bankingu, platobných brán a systémov spravujúcich dôverné údaje. Výsledky testov musia byť dokumentované a naliehavé zraniteľnosti (CVSS nad 7) musí byť riešené v lehote 30 dní.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vykonávajte penetračné skúšky a pravidelné hodnotenia zraniteľnosti, ktoré sa zameriavajú na kritické bankové systémy, vrátane domáceho core bankingu, platobných brán a systémov spravujúcich dôverné údaje. Výsledky testov musia byť dokumentované a naliehavé zraniteľnosti (CVSS nad 7) musí byť riešené v lehote 30 dní.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -182,7 +182,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Dodržiavanie požiadaviek DORA v oblasti ICT rizika</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako banka podliehate aj nariadeniu DORA (Digital Operational Resilience Act), ktorého požiadavky na ICT risk management sú vstrebané do vášho NIS2 rámca. Vaša stratégia ICT bezpečnosti musí pokrývať scenáre operačného stresu, testovanie odolnosti a plány kontinuity podnikania kompatibilné s požiadavkami DORA a NBÚ.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ako banka podliehate aj nariadeniu DORA (Digital Operational Resilience Act). Vaša stratégia ICT bezpečnosti musí pokrývať scenáre operačného stresu, testovanie odolnosti a plány kontinuity podnikania kompatibilné s požiadavkami DORA a NBÚ.</p>
       </div>
     </div>
   </div>
@@ -206,9 +206,7 @@
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
       <span style="color:#dc2626;margin-right:.5rem;">✗</span>Fintech integrácie a partneri pri spracovaní platieb sú registrovaní bez formálneho bezpečnostného hodnotenia alebo bez zahrnutia bindingových bezpečnostných klauzúl v zmluvách.
     </li>
-    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Interné kritériá na klasifikáciu incidentov sú príliš úzke alebo chýbajú, čo vedie k podceneniu hlásení incidentov na SK-CERT v 24-hodinovej lehote.
-    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">Interné kritériá na klasifikáciu incidentov sú príliš úzke alebo chýbajú, čo vedie k podceneniu hlásení incidentov na NBÚ v 24-hodinovej lehote.</li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
       <span style="color:#dc2626;margin-right:.5rem;">✗</span>Penetračné testy sa vykonávajú iba na povrchných vrstvách aplikácií a nezahrnujú bezpečnostné scenáre špecifické pre bankové operácie, ako sú útoky na API platobných brán.
     </li>
@@ -255,7 +253,7 @@
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Aká je presná lehota na ohlásenie incidentu NBÚ a finančnému dohľadcovi?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Závažný incident musí byť ohlásený SK-CERT a vášmu finančnému dohľadcovi bez zbytočného odkladu, maximálne do 24 hodín od zistenia. Podrobná správa musí byť predložená do 72 hodín. Incident sa považuje za závažný, ak ovplyvňuje dostupnosť, integritu alebo dôvernosť vašich tržných funkcií.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Závažný incident musí byť ohlásený NBÚ a vášmu finančnému dohľadcovi bez zbytočného odkladu, maximálne do 24 hodín od zistenia. Podrobná správa musí byť predložená do 72 hodín. Incident sa považuje za závažný, ak ovplyvňuje dostupnosť, integritu alebo dôvernosť vašich tržných funkcií.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
